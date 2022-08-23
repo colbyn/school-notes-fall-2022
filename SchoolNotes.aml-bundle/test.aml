@@ -1,0 +1,14 @@
+\macroRules![\myCmd]{
+    [] => {
+        Hello World
+    }
+    [{$0}] => {
+        Hello World
+    }
+    [{$0}{$1}] => {
+        Hello World
+    }
+    [{$0}{$1}{$2}] => {
+        Hello World
+    }
+}

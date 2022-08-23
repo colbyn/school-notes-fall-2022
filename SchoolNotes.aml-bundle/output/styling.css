@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+@media (prefers-color-scheme: dark) {
+    html,body {
+        background-color: #343941;
+    }
+}
+
+/* ========================================================================= */
+/* TOC */
+/* ========================================================================= */
+
+
+div[toc] {
+    margin-bottom: 50px;
+}
+div[toc] > ul[toc-entries] {
+    list-style: none;
+}
+
+div[toc] > h1[toc-title] {
+    padding: 20px 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #a5a5a5;
+    margin-bottom: 20px;
+}
+
+div[toc] > ul[toc-entries] {
+    margin: 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+div[toc] > ul[toc-entries] > li {
+    font-family: 'Yomogi', cursive;
+    color: #e10286;
+}
+div[toc] > ul[toc-entries] > li[entry="h1"] {
+    font-size: 2em;
+    margin-left: 0px;
+}
+div[toc] > ul[toc-entries] > li[entry="h2"] {
+    font-size: 1.8em;
+    margin-left: 25px;
+}
+div[toc] > ul[toc-entries] > li[entry="h3"] {
+    font-size: 1.6em;
+    margin-left: 50px;
+}
+div[toc] > ul[toc-entries] > li[entry="h4"] {
+    font-size: 1.4em;
+    margin-left: 75px;
+}
+div[toc] > ul[toc-entries] > li[entry="h5"] {
+    font-size: 1.2em;
+    margin-left: 100px;
+}
+div[toc] > ul[toc-entries] > li[entry="h6"] {
+    font-size: 1em;
+    margin-left: 125px;
+}
+div[toc] > ul[toc-entries] > li > a {
+    color: #e10286;
+    text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+    div[toc] > h1[toc-title] {
+        color: #fff;
+    }
+    div[toc] > ul[toc-entries] > li {
+        color: #00ffea;
+    }
+    div[toc] > ul[toc-entries] > li > a {
+        color: #00ffea;
+    }
+}
+
+
+/* ========================================================================= */
+/* KaTeX */
+/* ========================================================================= */
+.katex {
+    font-size: 1.1em;
+}
+@media (max-width: 1260px) {
+    [sub-grid] .katex {
+        font-size: 0.9em;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .katex {
+        color: #fff;
+    }
+}
+
+/* ========================================================================= */
+/* GRID STYLING & LAYOUT */
+/* ========================================================================= */
+
+[grid] {
+    display: grid;
+}
+[col="1"] {grid-template-columns: repeat(1, 1fr);}
+[col="2"] {grid-template-columns: repeat(2, 1fr);}
+[col="3"] {grid-template-columns: repeat(3, 1fr);}
+[col="4"] {grid-template-columns: repeat(4, 1fr);}
+@media (max-width: 900px) {
+    [col="1"] {grid-template-columns: 1fr;}
+    [col="2"] {grid-template-columns: 1fr;}
+    [col="3"] {grid-template-columns: 1fr;}
+    [col="4"] {grid-template-columns: 1fr;}
+
+    [sub-grid][col="1"] .katex,
+    [sub-grid][col="2"] .katex,
+    [sub-grid][col="3"] .katex,
+    [sub-grid][col="4"] .katex {
+        font-size: 1.1em;
+    }
+}
+
+
+/* ========================================================================= */
+/* HEADING */
+/* ========================================================================= */
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+h5 {
+    font-family: 'Playfair Display', serif;
+}
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+body > h1,
+body > h2,
+body > h3,
+body > h4,
+body > h5,
+body > h6 {
+    border-bottom: 1px solid #000;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+body > h1 {
+    margin: 0 auto;
+    padding-left: 0px;
+}
+body > h2 {
+    margin: 0 auto;
+    padding-left: 50px;
+}
+body > h3 {
+    margin: 0 auto;
+    padding-left: 100px;
+}
+body > h4 {
+    margin: 0 auto;
+    padding-left: 150px;
+}
+body > h5 {
+    margin: 0 auto;
+    padding-left: 200px;
+}
+body > h6 {
+    margin: 0 auto;
+    padding-left: 250px;
+}
+@media (max-width: 900px) {
+    body > h1 {
+        padding-left: 0px;
+    }
+    body > h2 {
+        padding-left: 10px;
+    }
+    body > h3 {
+        padding-left: 20px;
+    }
+    body > h4 {
+        padding-left: 30px;
+    }
+    body > h5 {
+        padding-left: 40px;
+    }
+    body > h6 {
+        padding-left: 50px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body > h1,
+    body > h2,
+    body > h3,
+    body > h4,
+    body > h5,
+    body > h6 {
+        border-bottom: 1px solid #747474;
+    }
+}
+
+[note] > h1,
+[note] > h2,
+[note] > h3,
+[note] > h4,
+[note] > h5,
+[note] > h6{
+    text-align: center;
+}
+
+/* ========================================================================= */
+/* TYPOGRAPHY */
+/* ========================================================================= */
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+    }
+}

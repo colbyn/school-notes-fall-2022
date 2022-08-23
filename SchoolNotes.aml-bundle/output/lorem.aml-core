@@ -1,0 +1,7 @@
+\\note[]{\\h3[]{Pythagorean Identities}
+    \\math[]{\cos^2\left(\theta\right) + \sin^2\left(\theta\right) = 1}
+    \\grid[col=2]{\\math[]{\sec^2\left(\theta\right) - \tan^2\left(\theta\right) &= 1 \\
+            \sec^2\left(\theta\right) &= 1 + \tan^2\left(\theta\right)}
+        \\math[]{\csc^2\left(\theta\right) - \cot^2\left(\theta\right) &= 1 \\
+            \csc^2\left(\theta\right) &= 1 + \cot^2\left(\theta\right)}}}
+
