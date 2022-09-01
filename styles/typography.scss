@@ -94,6 +94,10 @@ p {
     margin: 12px 4px;
 }
 
+p[center] {
+    text-align: center;
+}
+
 li, dt, dd, th, td {
     font-family: 'Roboto Slab', monospace;
     text-rendering: optimizeLegibility;

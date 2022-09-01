@@ -1,5 +1,29 @@
 <h1>Mathematics</h1>
 <h2>Algebra</h2>
+<h3>Function Composition And Notation Conveniences</h3>
+<layout cols="2">
+    <note boxed>
+        <h4>Right to Left Evaluation</h4>
+        <equation>
+            f \triangleleft x &= f(x)\\
+            f \triangleleft g \triangleleft x &= f(g(x))\\
+            f \circ g \triangleleft x &= f(g(x))
+        </equation>
+        <p center>(Reading and evaluating expressions from right to left should be the
+            standard in mathematics, as it is in Haskell.)</p>
+    </note>
+    <note boxed>
+        <h4>Left to Right Evaluation</h4>
+        <equation>
+            x \triangleright f &= f(x)\\
+            x \triangleright f \triangleright g &= g(f(x))
+        </equation>
+        <p center>(Somewhat confusing since it's not right to left,
+            but can be convenient...)</p>
+    </note>
+</layout>
+<p center>Parentheses are evil, inelegant, and requires more work to write/type. The fewer parentheses the better.</p>
+<h3>Algebra Basics</h3>
 <layout cols="3">
     <equation>
         a^{-x} &= \frac{1}{a^x}
@@ -25,22 +49,22 @@
 <layout cols="2">
     <equation>
         a &= e^x \\
-        \ln{\left(a\right)} &= x
+        \ln x &= x
     </equation>
     <equation>
-        \ln{\left(e^x\right)} &= x \\
+        \ln \triangleleft\; e^x &= x \\
         e^{\ln{\left(x\right)}} &= x 
     </equation>
 </layout>
 <layout cols="3">
     <equation>
-        \ln{\left(a b\right)} &= \ln{a} + \ln{b}
+        \ln \triangleleft\; a \cdot b &= \ln{a} + \ln{b}
     </equation>
     <equation>
-        \ln{\left(\frac{a}{b}\right)} &= \ln{a} - \ln{b}
+        \ln \triangleleft\; \frac{a}{b} &= \ln{a} - \ln{b}
     </equation>
     <equation>
-        \ln{\left(a^n\right)} &= n \cdot \ln{a}
+        \ln \triangleleft\; a^n &= n \cdot \ln{a}
     </equation>
 </layout>
 <h2>Trigonometry</h2>
@@ -48,13 +72,21 @@
     <note>
         <h3>The Unit Circle & Special Angles In Trig</h3>
         <img width="1000px" src="../images/7.svg">
-        <p>To memorize the special angles in trig, notice the repeating patterns on the above angles.</p>
+        <layout cols="1" boxed>
+            <note>
+                <h4>Warning</h4>
+                <p center>Never use Pi (<tex>\pi</tex>)! Tao (<tex>\tau</tex>) is what the enlightened trigonometer,
+                    and won't screw you over.</p>
+            </note>
+        </layout>
+        <p>To easily memorize the special angles in trig, notice the repeating patterns on the above angles.</p>
         <ul>
-            <li>For values on the x-axis, anything over <tex>\frac{1}{4}\tau</tex> and under <tex>\frac{3}{4}\tau</tex> will be negative</li>
+            <li>For values on the x-axis, anything over <tex>\frac{1}{4}\tau</tex>
+                and under <tex>\frac{3}{4}\tau</tex> will be negative</li>
             <li>For values on the y-axis, anything over <tex>\frac{1}{2}\tau</tex> will be negative</li>
             <li>
                 <p>Diagonals will be <tex>\pm \frac{\sqrt{2}}{2}</tex></p>
-                <p>For multiples of <tex>\frac{1}{12}\tau</tex>, i.e.
+                <p>For ratios of <tex>\frac{1}{12}\tau</tex> on the sides, i.e.
                     <tex>\frac{1}{12}\tau</tex>,
                     <tex>\frac{2}{12}\tau</tex>,
                     <tex>\frac{4}{12}\tau</tex>,
@@ -62,9 +94,10 @@
                     <tex>\frac{7}{12}\tau</tex>,
                     <tex>\frac{8}{12}\tau</tex>,
                     <tex>\frac{10}{12}\tau</tex>, and
-                    <tex>\frac{11}{12}\tau</tex></p>
-                    <p>Draw a circle and dot the point where it occurs
-                        (which is pretty easy since the above are ratios of a circle)</p>
+                    <tex>\frac{11}{12}\tau</tex>. Draw a circle and dot the point where it occurs
+                    (which is pretty easy since the above are simple ratios of a circle
+                    when expressed in terms of <tex>\tau</tex>).
+                    Then with regards to the <tex>x</tex> and <tex>y</tex> axis values:</p>
                     <ul>
                         <li>The longer size will be <tex>\pm \frac{\sqrt{3}}{2}</tex></li>
                         <li>The shorter side will be <tex>\pm \frac{1}{2}</tex></li>
@@ -79,6 +112,52 @@
         <h3>Conventions</h3>
         <layout cols="2">
             <img width="300px" src="../images/6.svg">
+            <layout cols="2">
+                <equation>
+                    \sin\theta &= \frac{b}{c}\\
+                    \cos\theta &= \frac{a}{c}\\
+                    \tan\theta &= \frac{b}{a}
+                </equation>
+                <equation>
+                    \csc\theta &= \frac{1}{\sin\theta} = \frac{c}{b}\\
+                    \sec\theta &= \frac{1}{\cos\theta} = \frac{c}{b}\\
+                    \cot\theta &= \frac{1}{\tan\theta} = \frac{a}{b}
+                </equation>
+            </layout>
+        </layout>
+    </note>
+    <note>
+        <h2>Radians & Radian Conversion</h2>
+        <layout cols="2">
+            <note>
+                <h3>Constants</h3>
+                <equation>
+                    \tau &= 2\pi = 360^{\circ} \\
+                    \pi &= \frac{1}{2}\tau = 180^{\circ}
+                </equation>
+            </note>
+            <note>
+                <h3>Conversion</h3>
+                <p>Given</p>
+                <equation>
+                    {1}^{\circ}
+                        &= \frac{{1}}{360} \tau \; {\displaystyle {\mathrm{rad}}} \\
+                    {1} \; \mathrm{rad}
+                        &= \frac{{1}}{\tau} \cdot 360^{\circ}
+                        = {1} \cdot \frac{360^{\circ}}{\tau}
+                </equation>
+                <p>Degrees to Radians (in terms of <tex>\tau</tex>)</p>
+                <equation>
+                    {x^{\circ}} &= \frac{{x}}{360} \tau \; {\displaystyle {\mathrm{rad}}}
+                </equation>
+                <p>Radians to (terrible and arbitrary) Degrees (the formula doesn't even look as nice)</p>
+                <equation>
+                    {x} \; \mathrm{rad}
+                        &= \frac{{x}}{\tau} \cdot 360^{\circ} \\
+                        &= {x} \cdot \frac{360^{\circ}}{\tau} \\
+                        &= {x} \cdot \frac{180^{\circ}}{\pi}
+                </equation>
+            </note>
         </layout>
     </note>
 </layout>
