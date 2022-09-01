@@ -1,0 +1,247 @@
+<h1>Physics</h1>
+<h2>Kinematic Equations</h2>
+<note small>
+    <h3>Conventions</h3>
+    <layout cols="2">
+        <equation>
+            \bar{v} &= \text{Average velocity}\\
+            \bar{a} &= \text{Average acceleration}\\
+        </equation>
+        <equation>
+            \Delta{x} &= x_2 - x_1\\
+            \Delta{v} &= v_2 - v_1\\
+        </equation>
+    </layout>
+</note>
+<layout cols="3" boxed>
+    <note>
+        <equation>
+        v_2 &= v_1 + a\Delta{t}
+        </equation>
+    </note>
+    <note>
+        <equation>
+        (v_2)^2 &= (v_1)^2 + 2a\Delta{x}
+        </equation>
+    </note>
+    <note>
+        <layout cols="2">
+            <equation>
+                \Delta{x} &= v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\\
+                          &= v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\\
+                          &= \left(\frac{v_2 + v_1}{2}\right)\Delta{t}
+            </equation>
+        </layout>
+    </note>
+</layout>
+<note>
+    <h3>Summary</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Formula</th>
+                <th>Missing</th>
+                <th>Quantities Present</th>
+            </tr>
+        </thead>
+        <tr>
+            <th><tex>v_2 = v_1 + a\Delta{t}</tex></th>
+            <td><tex>\Delta{x}</tex></td>
+            <td>
+                <span style="display: flex; justify-content: space-between;">
+                    <tex>v_2</tex>
+                    <tex>v_1</tex>
+                    <tex>a</tex>
+                    <tex>\Delta{t}</tex>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th><tex>\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}</tex></th>
+            <td><tex>a</tex></td>
+            <td>
+                <span style="display: flex; justify-content: space-between;">
+                    <tex>\Delta{x}</tex>
+                    <tex>v_2</tex>
+                    <tex>v_1</tex>
+                    <tex>\Delta{t}</tex>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th><tex>\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}</tex></th>
+            <td><tex>v_2</tex></td>
+            <td>
+                <span style="display: flex; justify-content: space-between;">
+                    <tex>\Delta{x}</tex>
+                    <tex>v_1</tex>
+                    <tex>\Delta{t}</tex>
+                    <tex>a</tex>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th><tex>\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}</tex></th>
+            <td><tex>v_1</tex></td>
+            <td>
+                <span style="display: flex; justify-content: space-between;">
+                    <tex>\Delta{x}</tex>
+                    <tex>v_2</tex>
+                    <tex>\Delta{t}</tex>
+                    <tex>a</tex>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th><tex>(v_2)^2 = (v_1)^2 + 2a\Delta{x}</tex></th>
+            <td><tex>\Delta{t}</tex></td>
+            <td>
+                <span style="display: flex; justify-content: space-between;">
+                    <tex>v_2</tex>
+                    <tex>v_1</tex>
+                    <tex>a</tex>
+                    <tex>\Delta{x}</tex>
+                </span>
+            </td>
+        </tr>
+    </table>
+</note>
+<layout cols="1" boxed>
+    <note>
+        <h3>Basics</h3>
+        <layout cols="3">
+            <note>
+                <h4>Constant Velocity</h4>
+                <equation>
+                    \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\\
+                    \Delta{x} &= \bar{v}\Delta{t}
+                </equation>
+            </note>
+            <note>
+                <h4>Uniform acceleration</h4>
+                <equation>
+                    \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\\
+                    v_2 &= v_1 + a\Delta{t}\\
+                    \Delta{x} &= v_0\Delta{t}+\frac{1}{2}a\Delta{t^2}\\
+                    (v_2)^2 &= (v_1)^2 - 2\bar{a}\Delta{x}
+                </equation>
+            </note>
+            <note>
+                <h3>Miscellaneous</h3>
+                <equation>
+                    \bar{v} &= \frac{\Delta{x}}{\Delta{t}} = \frac{v_2 + v_1}{2}\\
+                    \bar{a} &= \frac{\Delta{v}}{\Delta{t}}
+                </equation>
+            </note>
+        </layout>
+    </note>
+</layout>
+<h3>Displacement</h3>
+<layout cols="1" boxed>
+    <note>
+        <h4>Displacement when object moves with constant velocity</h4>
+        <img width="900px" src="../images/1.svg">
+        <equation>
+            \Delta{x} &= \bar{v}\Delta{t}
+        </equation>
+    </note>
+    <note>
+        <h4>Displacement when object accelerates from rest</h4>
+        <img width="900px" src="../images/2.svg">
+        <equation>
+            \Delta{x} &= \frac{1}{2}\Delta{v}\Delta{t}\\
+                      &= \frac{1}{2}\bar{a}\Delta{t^2}
+        </equation>
+    </note>
+    <note>
+        <h4>Displacement when object accelerates with initial velocity</h4>
+        <img width="900px" src="../images/3.svg">
+        <equation>
+            \Delta{x} &= v_1\Delta{t} + \frac{1}{2}\Delta{v}\Delta{t} \\
+                      &= v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}
+        </equation>
+    </note>
+</layout>
+<h3>Deriving Kinematic Formulas</h3>
+<layout cols="2" boxed>
+    <note>
+        <p>Given</p>
+        <equation>
+            \bar{a} &= \frac{\Delta{v}}{\Delta{t}} = \frac{v_2 - v_1}{\Delta{t}}\;(1)
+        </equation>
+        <p>We can rearrange <tex>v_2</tex> from equation (1) like so</p>
+        <equation>
+            \bar{a} &= \frac{v_2 - v_1}{\Delta{t}}\\
+            \bar{a}\Delta{t} &= v_2 - v_1\\
+            v_1 + \bar{a}\Delta{t} &= v_2\\
+            \therefore v_2 &= v_1 + \bar{a}\Delta{t}
+        </equation>
+        <p>Therefore</p>
+        <equation>
+            v_2 &= v_1 + \bar{a}\Delta{t}
+        </equation>
+    </note>
+    <note>
+        <p>Given</p>
+        <equation>
+            \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\;(1)\\
+            \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\;(2)\\
+                    &= \frac{v_2 + v_1}{2}\;(3)
+        </equation>
+        <p><tex>\Delta{t}</tex> from equation (1) can be rearranged as</p>
+        <equation>
+            \Delta{t} &= \frac{\Delta{v}}{\bar{a}} = \frac{v_2 - v_1}{\bar{a}}\;(4)
+        </equation>
+        <p><tex>\Delta{x}</tex> from equation (2) can be rearranged like so</p>
+        <equation>
+            \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\\
+            \bar{v}\Delta{t} &= \Delta{x}\\
+            \therefore \Delta{x} &= \bar{v}\cdot\Delta{t}
+        </equation>
+        <p>Using the following equations from above</p>
+        <ul>
+            <li><tex>\bar{v} = \frac{v_2 + v_1}{2}</tex> from equation (3)</li>
+            <li><tex>\Delta{t} = \frac{v_2 - v_1}{\bar{a}}</tex> from equation (4)</li>
+        </ul>
+        <equation>
+            \Delta{x} &= \bar{v}\cdot\Delta{t}\\
+                      &= \frac{v_2 + v_1}{2}\cdot\frac{v_2 - v_1}{\bar{a}}\\
+                      &= \frac{(v_2)^2 - (v_1)^2}{2\bar{a}}\;(5)
+        </equation>
+        <p>Rearranging equation (5)</p>
+        <equation>
+            2\bar{a}\Delta{x} &= (v_2)^2 - (v_1)^2
+        </equation>
+        <p>Rearrange again to obtain the more common form</p>
+        <equation>
+            (v_2)^2 &= (v_1)^2 + 2\bar{a}\Delta{x}
+        </equation>
+    </note>
+    <note>
+        <p>TODO</p>
+    </note>
+</layout>
+
+<!-- <div id="graph1" fullscreen-desmos></div>
+<style>
+    #graph1 {
+        height: 400px;
+    }
+</style>
+<script>
+    window.addEventListener("load", function on_load() {
+        var node = document.getElementById('graph1');
+        var options = {
+            expressionsCollapsed: true,
+            expressions: false,
+            lockViewport: true,
+            settingsMenu: false,
+            border: false,
+            xAxisNumbers: false,
+            yAxisNumbers: false,
+            showGrid: false,
+        };
+        var calculator = Desmos.GraphingCalculator(node, options);
+        calculator.setExpression({"id":"line1","latex":"y=x^2","color":"#ff0000"});
+    });
+</script> -->
