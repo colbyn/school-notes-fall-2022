@@ -12,6 +12,9 @@ else
 fi
 
 rm -rf output
+
+cp -r images/favicon/*.* docs output
+
 subscript-html serve --manifest subscript.toml --open-browser
 
 

@@ -12,6 +12,8 @@ subscript-html compile \
 rm -rf docs
 mv output-release docs
 
+cp -r images/favicon/*.* docs
+
 git add .
 git commit -m "update notes"
 git push
