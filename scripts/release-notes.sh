@@ -12,7 +12,12 @@ subscript-html compile \
 rm -rf docs
 mv output-release docs
 
-cp -r images/favicon/*.* docs
+cp ./images/favicon/android-chrome-192x192.png docs
+cp ./images/favicon/android-chrome-512x512.png docs
+cp ./images/favicon/apple-touch-icon.png docs
+cp ./images/favicon/favicon-16x16.png docs
+cp ./images/favicon/favicon-32x32.png docs
+cp ./images/favicon/favicon.ico docs
 
 git add .
 git commit -m "update notes"
