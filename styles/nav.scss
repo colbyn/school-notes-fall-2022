@@ -52,3 +52,20 @@
     [macro='toc'] > li[for='h6'] {margin-left: 30px;}
 
 }
+
+@mixin dark-mode-nav {
+    [macro=toc] > li, [macro=toc] > li a {
+        color: #dba4f9;
+    }
+}
+
+
+@if settings.$dark-theme {
+    @include dark-mode-nav;
+}
+
+@if settings.$auto-theme {
+    @media (prefers-color-scheme: dark) {
+        @include dark-mode-nav;
+    }
+}

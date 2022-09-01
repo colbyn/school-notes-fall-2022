@@ -91,5 +91,40 @@
 
 [macro='note'] table {
     margin: 0 auto;
+    width: 100%;
+}
+[macro='note'] img {
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 650px) {
+    [macro='layout'][boxed] > [boxed-child] {
+        box-shadow: unset;
+    }
+}
+
+
+@mixin dark-mode-macros {
+    [macro='layout'][boxed] > [boxed-child] {
+        box-shadow: 0px 0px 1px 1px #655f65;
+    }
+    [macro="equation"] {
+        // color: #fff;
+        color: #ffb7e4;
+    }
+    [macro="tex"] {
+        color: #ffb7e4;
+    }
+}
+
+@if settings.$dark-theme {
+    @include dark-mode-macros;
+}
+
+@if settings.$auto-theme {
+    @media (prefers-color-scheme: dark) {
+        @include dark-mode-macros;
+    }
 }
 

@@ -12,13 +12,71 @@ main > * {
     margin-right: 12px;
 }
 
-main > h1 {
+main > h1,
+main > h2,
+main > h3,
+main > h4,
+main > h5,
+main > h6 {
+    // font-family: 'Cinzel Decorative', cursive;
+    // font-weight: 600;
+    // font-family: 'Fredericka the Great', cursive;
+    // font-family: 'Cookie', cursive;
+    // font-family: 'Lobster', cursive;
+    // font-family: 'Lobster Two', cursive;
+    // font-family: 'Dancing Script', cursive;
+    font-family: 'Sail', cursive;
     width: 100%;
-    // box-shadow: 0px 3px 4px 0px #17171740;
     padding: 8px 20px;
     border-bottom: 1px solid #444;
 }
+main > h1 {
+    padding-left: 4px;
+}
+main > h2 {
+    padding-left: 50px;
+}
+main > h3 {
+    padding-left: 75px;
+}
+main > h4 {
+    padding-left: 100px;
+}
+main > h5 {
+    padding-left: 115px;
+}
+main > h6 {
+    padding-left: 125px;
+}
 
+@media (max-width: 800px) {
+    main > h1,
+    main > h2,
+    main > h3,
+    main > h4,
+    main > h5,
+    main > h6 {
+        max-width: unset;
+    }
+    main > h1 {
+        padding-left: 4px;
+    }
+    main > h2 {
+        padding-left: 10px;
+    }
+    main > h3 {
+        padding-left: 25px;
+    }
+    main > h4 {
+        padding-left: 50px;
+    }
+    main > h5 {
+        padding-left: 75px;
+    }
+    main > h6 {
+        padding-left: 100px;
+    }
+}
 
 @media (min-width: 900px) {
     main > * {

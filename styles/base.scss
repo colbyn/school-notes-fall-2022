@@ -12,9 +12,9 @@ table {
     border: none;
     align-self: center;
 }
-th, td {
+table th, table td {
     border: 1px solid black;
-    padding: 4px;
+    padding: 10px;
 }
 
 img {
@@ -40,4 +40,23 @@ hr {
 
 dl[center] {
     margin: 0 auto !important;
+}
+
+@mixin dark-mode-base {
+    html,body {
+        background-color: #343941;
+    }
+    table th, table td {
+        border: 1px solid #616161;
+    }
+}
+
+@if settings.$dark-theme {
+    @include dark-mode-base;
+}
+
+@if settings.$auto-theme {
+    @media (prefers-color-scheme: dark) {
+        @include dark-mode-base;
+    }
 }
