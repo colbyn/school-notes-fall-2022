@@ -98,6 +98,10 @@ p[center] {
     text-align: center;
 }
 
+p[justify] {
+    text-align: justify;
+}
+
 li, dt, dd, th, td {
     font-family: 'Roboto Slab', monospace;
     text-rendering: optimizeLegibility;
