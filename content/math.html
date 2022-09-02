@@ -2,7 +2,7 @@
 <h2>Algebra</h2>
 <h3>Function Composition And Notation Conveniences</h3>
 <layout cols="2">
-    <note boxed>
+    <note>
         <h4>Right to Left Evaluation</h4>
         <equation>
             f \triangleleft x &= f(x)\\
@@ -12,18 +12,19 @@
         <p center>(Reading and evaluating expressions from right to left should be the
             standard in mathematics, as it is in Haskell.)</p>
     </note>
-    <note boxed>
+    <note>
         <h4>Left to Right Evaluation</h4>
         <equation>
             x \triangleright f &= f(x)\\
             x \triangleright f \triangleright g &= g(f(x))
         </equation>
         <p center>(Somewhat confusing since it's not right to left,
-            but can be convenient...)</p>
+            but can be convenient and look nice...)</p>
     </note>
 </layout>
 <p center>Parentheses are evil, inelegant, and requires more work to write/type and read.
-    The fewer parentheses the better.</p>
+    The fewer parentheses the better. Smart use of function composition on the other hand
+    looks beautiful when used well.</p>
 <h3>Algebra Basics</h3>
 <layout cols="3">
     <equation>
