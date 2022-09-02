@@ -34,9 +34,15 @@ table th, table td {
 }
 
 [image-wrapper] {
-  display: block;
   width: 100%;
   overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+[image-wrapper] img {
+  margin: 0 auto;
 }
 
 a {
@@ -349,7 +355,8 @@ pre {
 }
 
 p {
-  margin: 12px 20px;
+  margin: 0;
+  padding: 12px 20px;
 }
 
 p[center] {
@@ -379,6 +386,17 @@ li, dd {
 li:last-child,
 dd:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 800px) {
+  p[justify] {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  p {
+    margin: 0;
+    padding: 10px 8px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {

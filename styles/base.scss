@@ -35,10 +35,17 @@ img {
 }
 
 [image-wrapper] {
-    display: block;
     width: 100%;
     overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+[image-wrapper] img {
+    margin: 0 auto;
+}
+
 
 a {
     font-family: 'Roboto';

@@ -93,7 +93,8 @@ pre {
 }
 
 p {
-    margin: 12px 20px;
+    margin: 0;
+    padding: 12px 20px;
 }
 
 p[center] {
@@ -125,12 +126,23 @@ dd:last-child {
     margin-bottom: 0;
 }
 
+@media (min-width: 800px) {
+    p[justify] {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 800px) {
+    p {
+        margin: 0;
+        padding: 10px 8px;
+    }
+}
+
 @mixin dark-mode-typography {
     h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
         color: #dec3c3;
     }
 }
-
 
 @if settings.$dark-theme {
     @include dark-mode-typography;
