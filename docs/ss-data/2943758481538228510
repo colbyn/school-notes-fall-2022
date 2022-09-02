@@ -19,6 +19,13 @@ table {
   border-collapse: collapse;
   border: none;
   align-self: center;
+  max-width: 100%;
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 table th, table td {
@@ -27,7 +34,13 @@ table th, table td {
 }
 
 img {
+  cursor: pointer;
+}
+
+[image-wrapper] {
+  display: block;
   width: 100%;
+  overflow-x: scroll;
 }
 
 a {
@@ -64,6 +77,8 @@ table th, table td {
 
 [macro=equation][latex=block] {
   font-size: 1.5rem;
+  max-width: 100%;
+  overflow: scroll;
 }
 
 [macro=equation][latex=inline] {
@@ -72,51 +87,36 @@ table th, table td {
 /* ========================================================================= */
 /* LAYOUT */
 /* ========================================================================= */
-
-[macro=layout] {
-  display: grid;
-  width: 100%;
-  column-gap: 8px;
-  row-gap: 8px;
-  padding: 0 10px;
-}
-
-[macro=layout][columns="2"] {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-[macro=layout][columns="3"] {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-[macro=layout][columns="4"] {
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 900px) {
-  [macro=layout][columns="2"],
-[macro=layout][columns="3"],
-[macro=layout][columns="4"] {
-    grid-template-columns: 1fr;
+@media (min-width: 800px) {
+  [macro=layout] {
+    display: grid;
+    width: 100%;
+    column-gap: 8px;
+    row-gap: 8px;
+    padding: 0 10px;
   }
-}
-
-[macro=layout] img {
-  align-self: flex-start;
-}
-
-[macro=layout][boxed] > [boxed-child] {
-  border-radius: 3px;
-  border-color: #fff;
-  box-shadow: 0 0 0px 1px #eeeeee;
-  display: flex;
-  flex-direction: column;
-  align-items: normal;
-  grid-row-gap: 12px;
-  padding-bottom: 12px;
-}
-
-[macro=note] {
-  padding: 12px;
+  [macro=layout][columns="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  [macro=layout][columns="3"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  [macro=layout][columns="4"] {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  [macro=layout][boxed] > [macro=note] {
+    border-radius: 3px;
+    border-color: #fff;
+    box-shadow: 0 0 0px 1px #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    grid-row-gap: 12px;
+    padding-bottom: 12px;
+  }
+  [macro=layout] > [macro=note] img {
+    min-width: unset !important;
+  }
 }
 
 [macro=note] h1,
@@ -126,6 +126,7 @@ table th, table td {
 [macro=note] h5,
 [macro=note] h6 {
   text-align: center;
+  margin: 8px auto;
 }
 
 [macro=note] p {
@@ -155,18 +156,32 @@ table th, table td {
   margin: 0 auto;
   width: 100%;
 }
-
-[macro=note] img {
-  margin: 0 auto;
-  display: block;
-}
 @media (max-width: 650px) {
-  [macro=layout][boxed] > [boxed-child] {
-    box-shadow: unset;
+  [macro=note] > * {
+    margin: 0 10px;
+  }
+  [macro=note] > img {
+    margin: 0;
+  }
+  [macro=note] > [macro=equation] {
+    margin: 0;
+  }
+  [macro=note] > [table-wrapper] {
+    margin: 0;
+  }
+}
+@media (min-width: 650px) {
+  [macro=note] {
+    padding: 10px;
+    margin: 20px 10px;
+  }
+  [macro=note] [macro=note] {
+    padding: 5px;
+    margin: 20px 5px;
   }
 }
 
-[macro=layout][boxed] > [boxed-child] {
+[macro=layout][boxed] > [macro=note] {
   box-shadow: 0px 0px 1px 1px #655f65;
 }
 
@@ -177,19 +192,14 @@ table th, table td {
 [macro=tex] {
   color: #ffb7e4;
 }
-
-main {
-  display: grid;
-  grid-row-gap: 12px;
+@media (max-width: 650px) {
+  [macro=layout][boxed] > [macro=note] {
+    box-shadow: unset;
+  }
 }
 
-main > * {
-  justify-self: center;
-  width: 90%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 12px;
-  margin-right: 12px;
+main {
+  overflow-x: hidden;
 }
 
 main > h1,
@@ -255,16 +265,14 @@ main > h6 {
     padding-left: 100px;
   }
 }
-@media (min-width: 900px) {
-  main > * {
-    width: 99%;
-  }
+@media (max-width: 900px) {
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   text-align: justify;
   text-rendering: optimizeLegibility;
+  hyphens: auto;
 }
 
 h1 {
@@ -336,6 +344,7 @@ dl, ul, ol {
 p, a {
   font-family: "Roboto", serif;
   text-rendering: optimizeLegibility;
+  hyphens: auto;
 }
 
 pre {
@@ -344,7 +353,7 @@ pre {
 }
 
 p {
-  margin: 12px 4px;
+  margin: 12px 20px;
 }
 
 p[center] {
@@ -359,6 +368,12 @@ li, dt, dd, th, td {
   font-family: "Roboto Slab", monospace;
   text-rendering: optimizeLegibility;
   text-align: justify;
+  hyphens: auto;
+  padding: 0 10px;
+}
+
+li p, dt p, dd p, th p, td p {
+  margin: 0;
 }
 
 li, dd {
@@ -377,6 +392,12 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
 /* TOC */
 /* ========================================================================= */
 
+[toc] {
+  padding: 12px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
 [toc] > h1 {
   font-size: 2em;
   padding: 20px 0;
@@ -387,11 +408,6 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
   margin: 0 auto;
   border-bottom: 1px solid #a5a5a5;
   margin-bottom: 20px;
-}
-
-[toc] {
-  padding: 12px;
-  border-radius: 3px;
 }
 
 [macro=toc] {
@@ -411,6 +427,7 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
 
 [macro=toc] > li {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 [macro=toc] > li a {

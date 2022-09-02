@@ -22,7 +22,7 @@
             but can be convenient and look nice...)</p>
     </note>
 </layout>
-<p justify style="max-width: 900px; margin: 0 auto;">
+<p justify style="max-width: 900px;">
     Parentheses are evil, inelegant, and requires more work to write/type and read.
     The fewer parentheses the better. When things get complicated, smart use of function composition
     on the other hand looks beautiful when used well.
@@ -75,7 +75,7 @@
 <layout boxed>
     <note>
         <h3>The Unit Circle & Special Angles In Trig</h3>
-        <img width="1000px" src="../images/7.svg">
+        <img min-width="500px" max-width="1000px" src="../images/7.svg">
         <layout cols="1" boxed>
             <note>
                 <h4>Warning</h4>
@@ -116,7 +116,7 @@
     <note>
         <h3>Conventions</h3>
         <layout cols="2">
-            <img width="300px" src="../images/6.svg">
+            <img max-width="300px" src="../images/6.svg">
             <layout cols="2">
                 <equation>
                     \sin\theta &= \frac{b}{c}\\
@@ -189,7 +189,7 @@
             </note>
             <note>
                 <h5>Graphical Representation</h5>
-                <img width="900px" src="../images/4.svg">
+                <img min-width="600px" max-width="900px" src="../images/4.svg">
             </note>
         </layout>
     </note>
@@ -198,96 +198,90 @@
     <note>
         <h3>Standard Equations</h3>
         <layout cols="3">
-            <note>
-                <equation>
+            <equation>
                 v_2 &= v_1 + a\Delta{t}
-                </equation>
-            </note>
-            <note>
-                <equation>
+            </equation>
+            <equation>
                 (v_2)^2 &= (v_1)^2 + 2a\Delta{x}
-                </equation>
-            </note>
-            <note>
-                <layout cols="2">
-                    <equation>
-                        \Delta{x} &= v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\\
-                                  &= v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\\
-                                  &= \left(\frac{v_2 + v_1}{2}\right)\Delta{t}
-                    </equation>
-                </layout>
-            </note>
+            </equation>
+            <equation>
+                \Delta{x} &= v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\\
+                          &= v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\\
+                          &= \left(\frac{v_2 + v_1}{2}\right)\Delta{t}
+            </equation>
         </layout>
         <h3>Summary</h3>
-        <table>
-            <thead>
+        <div table-wrapper>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Formula</th>
+                        <th>Missing</th>
+                        <th>Quantities Present</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th>Formula</th>
-                    <th>Missing</th>
-                    <th>Quantities Present</th>
+                    <th><tex>v_2 = v_1 + a\Delta{t}</tex></th>
+                    <td><tex>\Delta{x}</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>v_1</tex>
+                            <tex>v_2</tex>
+                            <tex>a</tex>
+                            <tex>\Delta{t}</tex>
+                        </span>
+                    </td>
                 </tr>
-            </thead>
-            <tr>
-                <th><tex>v_2 = v_1 + a\Delta{t}</tex></th>
-                <td><tex>\Delta{x}</tex></td>
-                <td>
-                    <span style="display: flex; justify-content: space-between;">
-                        <tex>v_1</tex>
-                        <tex>v_2</tex>
-                        <tex>a</tex>
-                        <tex>\Delta{t}</tex>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <th><tex>\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}</tex></th>
-                <td><tex>a</tex></td>
-                <td>
-                    <span style="display: flex; justify-content: space-between;">
-                        <tex>\Delta{x}</tex>
-                        <tex>v_1</tex>
-                        <tex>\Delta{t}</tex>
-                        <tex>v_2</tex>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <th><tex>\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}</tex></th>
-                <td><tex>v_2</tex></td>
-                <td>
-                    <span style="display: flex; justify-content: space-between;">
-                        <tex>\Delta{x}</tex>
-                        <tex>v_1</tex>
-                        <tex>\Delta{t}</tex>
-                        <tex>a</tex>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <th><tex>\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}</tex></th>
-                <td><tex>v_1</tex></td>
-                <td>
-                    <span style="display: flex; justify-content: space-between;">
-                        <tex>\Delta{x}</tex>
-                        <tex>v_2</tex>
-                        <tex>\Delta{t}</tex>
-                        <tex>a</tex>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <th><tex>(v_2)^2 = (v_1)^2 + 2a\Delta{x}</tex></th>
-                <td><tex>\Delta{t}</tex></td>
-                <td>
-                    <span style="display: flex; justify-content: space-between;">
-                        <tex>\Delta{x}</tex>
-                        <tex>v_1</tex>
-                        <tex>v_2</tex>
-                        <tex>a</tex>
-                    </span>
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <th><tex>\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}</tex></th>
+                    <td><tex>a</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_1</tex>
+                            <tex>\Delta{t}</tex>
+                            <tex>v_2</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}</tex></th>
+                    <td><tex>v_2</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_1</tex>
+                            <tex>\Delta{t}</tex>
+                            <tex>a</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}</tex></th>
+                    <td><tex>v_1</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_2</tex>
+                            <tex>\Delta{t}</tex>
+                            <tex>a</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>(v_2)^2 = (v_1)^2 + 2a\Delta{x}</tex></th>
+                    <td><tex>\Delta{t}</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_1</tex>
+                            <tex>v_2</tex>
+                            <tex>a</tex>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </note>
 </layout>
 <layout cols="1" boxed>
@@ -325,7 +319,7 @@
     <note>
         <h4>Displacement when object moves with constant velocity</h4>
         <h5>Deriving <tex>\Delta{x} = \bar{v}\Delta{t}</tex></h5>
-        <img width="500px" src="../images/1.svg">
+        <img max-width="500px" src="../images/1.svg">
         <equation>
             \Delta{x} &= \bar{v}\Delta{t}
         </equation>
@@ -333,7 +327,7 @@
     <note>
         <h4>Displacement when object accelerates from rest</h4>
         <h5>Deriving <tex>\Delta{x} = \frac{1}{2}\bar{a}\Delta{t^2}</tex></h5>
-        <img width="900px" src="../images/2.svg">
+        <img min-width="500px" max-width="900px" src="../images/2.svg">
         <equation>
             \Delta{x} &= \frac{1}{2}\Delta{v}\Delta{t}\\
                       &= \frac{1}{2}\bar{a}\Delta{t^2}
@@ -344,7 +338,7 @@
     <note>
         <h4>Displacement when object accelerates with initial velocity</h4>
         <h5>Deriving <tex>\Delta{x} = v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}</tex></h5>
-        <img width="900px" src="../images/4.svg">
+        <img min-width="500px" max-width="900px" src="../images/4.svg">
         <equation>
             \Delta{x} &= v_1\Delta{t} + \frac{1}{2}\Delta{v}\Delta{t} \\
                       &= v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}

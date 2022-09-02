@@ -1,6 +1,11 @@
 /* ========================================================================= */
 /* TOC */
 /* ========================================================================= */
+[toc] {
+    padding: 12px;
+    border-radius: 3px;
+    overflow: hidden;
+}
 [toc] > h1 {
     font-size: 2em;
     padding: 20px 0;
@@ -11,10 +16,6 @@
     margin: 0 auto;
     border-bottom: 1px solid #a5a5a5;
     margin-bottom: 20px;
-}
-[toc] {
-    padding: 12px;
-    border-radius: 3px;
 }
 [macro='toc'] {
     list-style: none;
@@ -31,6 +32,7 @@
 }
 [macro='toc'] > li {
     font-size: 1.5rem;
+    text-align: left;
 }
 [macro='toc'] > li a {
     text-decoration: none;

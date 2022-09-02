@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6 {
     // align-self: start;
     text-align: justify;
     text-rendering: optimizeLegibility;
+    hyphens: auto;
 }
 
 h1 {
@@ -83,6 +84,7 @@ dl, ul, ol {
 p, a {
     font-family: 'Roboto', serif;
     text-rendering: optimizeLegibility;
+    hyphens: auto;
 }
 
 pre {
@@ -91,7 +93,7 @@ pre {
 }
 
 p {
-    margin: 12px 4px;
+    margin: 12px 20px;
 }
 
 p[center] {
@@ -106,6 +108,12 @@ li, dt, dd, th, td {
     font-family: 'Roboto Slab', monospace;
     text-rendering: optimizeLegibility;
     text-align: justify;
+    hyphens: auto;
+    padding: 0 10px;
+}
+
+li p, dt p, dd p, th p, td p {
+    margin: 0;
 }
 
 li, dd {

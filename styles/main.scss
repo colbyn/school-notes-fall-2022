@@ -1,15 +1,16 @@
 main {
-    display: grid;
-    grid-row-gap: 12px;
+    // display: grid;
+    // grid-row-gap: 12px;
+    overflow-x: hidden;
 }
 
 main > * {
-    justify-self: center;
-    width: 90%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 12px;
-    margin-right: 12px;
+    // justify-self: center;
+    // width: 90%;
+    // margin-top: 0;
+    // margin-bottom: 0;
+    // margin-left: 12px;
+    // margin-right: 12px;
 }
 
 main > h1,
@@ -78,8 +79,10 @@ main > h6 {
     }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
     main > * {
-        width: 99%;
+        // width: 100%;
+        // margin-left: unset;
+        // margin-right: unset;
     }
 }
