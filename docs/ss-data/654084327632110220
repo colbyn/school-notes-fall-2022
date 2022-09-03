@@ -80,7 +80,7 @@ table th, table td {
 [macro=equation][latex=block] {
   font-size: 1.5rem;
   max-width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 [macro=equation][latex=inline] {
