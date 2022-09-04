@@ -447,7 +447,96 @@
 </script> -->
 
 <h2>Two-dimensional Projectile Motion</h2>
+<layout cols="1" boxed>
+    <note>
+        <h3>Conventions</h3>
+        <layout cols="2">
+            <img max-width="900px" src="../images/17.svg">
+            <note>
+                <img max-width="900px" src="../images/18.svg">
+                <p justify>
+                    It's easy to see in the above visualization that <tex>t</tex>
+                    and <tex>x</tex> increase linearly, while <tex>y</tex> is non-linear.
+                </p>
+            </note>
+            <img max-width="900px" src="../images/20.svg">
+        </layout>
+    </note>
+</layout>
 <h3>Formulas</h3>
+<layout cols="1" boxed>
+    <note>
+        <h4>Displacement & Projectile Position</h4>
+        <layout cols="2">
+            <note>
+                <h5>Generalized</h5>
+                <p>In general (without respect to any <tex>x</tex> or <tex>y</tex> axis values)</p>
+                <equation>
+                    \text{Displacement}
+                        &= \Delta_{\text{general}}\\
+                        &= \bar{v}\cdot\Delta{t}
+                </equation>
+                <p>Where the distance traveled or displaced is</p>
+                <equation>
+                    \text{Displacement}
+                        &= \Delta_{\text{general}}\\
+                        &= V_1\cdot\Delta{t} + \frac{1}{2}a\Delta{t^2}
+                </equation>
+            </note>
+            <note>
+                <h5>In terms of <tex>x</tex> and <tex>y</tex> axis values</h5>
+                <equation>
+                    \Delta{x} &= x_2 - x_1\\
+                    \Delta{y} &= y_2 - y_1
+                </equation>
+            </note>
+            <note>
+                <h5>With respect to the <tex>y</tex> axis</h5>
+                <p>The displacement of a given projectile in terms of the <tex>y</tex> axis is</p>
+                <equation>
+                    \Delta{y} = V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                </equation>
+                <p>Since <tex>\Delta{y} = y_2 - y_1</tex></p>
+                <equation>
+                    \Delta{y} &= V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}\\
+                    y_2 - y_1 &= V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}\\
+                    y_2  &= y_1 + V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                </equation>
+                <p>Which can be read as (in terms of the <tex>y</tex> axis)</p>
+                <equation>
+                    \small{\text{the final position}}\;
+                        &= \small{\text{the initial position}}\;
+                        + V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                </equation>
+            </note>
+            <note>
+                <h5>With respect to the <tex>x</tex> axis</h5>
+                <p>The displacement of a given projectile in terms of the <tex>x</tex> axis is</p>
+                <equation>
+                    \Delta{x} = V_{x}\cdot\Delta{t} + \frac{1}{2}a_x\Delta{t^2} (1)
+                </equation>
+                <p>
+                    Note that <tex>a_x = 0</tex> (because there is no force acting on the projectile in
+                    the horizontal direction), and therefore the initial and final velocities are the same.
+                    I.e. it's constant throughout. Therefore in summary
+                </p>
+                <ul>
+                    <li><tex>a_x = 0</tex></li>
+                    <li>
+                        <tex>v_{x1} = v_{x2}</tex> and therefore we will simple refer to the velocity
+                        vector as as <tex>v_x</tex>.
+                    </li>
+                </ul>
+                <p>Therefore we can simplify equation (1) considerably</p>
+                <equation>
+                    \Delta{x}
+                        &= V_{x}\cdot\Delta{t} + 0\\
+                        &= V_{x}\cdot\Delta{t}
+                </equation>
+            </note>
+        </layout>
+    </note>
+</layout>
 <layout cols="2" boxed>
     <note>
         <h4>Range</h4>
@@ -466,6 +555,7 @@
 <layout cols="2" boxed>
     <note>
         <img min-width="100px" max-width="500px" src="../images/12.svg">
+        <img min-width="100px" max-width="500px" src="../images/15.svg">
     </note>
     <note>
         <h4>Notes</h4>
