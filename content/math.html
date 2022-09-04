@@ -543,6 +543,160 @@
         </layout>
     </note>
 </layout>
+<h3>Solving Projectile Motion Problems</h3>
+<layout cols="1" boxed>
+    <note>
+        <h4>Projectile Motion from an initial height, with given initial velocity and angle</h4>
+        <img max-width="800px" src="../images/22.svg">
+        <p>Given</p>
+        <ul>
+            <li>A projectile angle <tex>\theta</tex></li>
+            <li>The initial height <tex>y_0</tex></li>
+            <li>The initial velocity <tex>v_0</tex></li>
+        </ul>
+        <p>
+            We can therefore derive the the initial velocities for <tex>x</tex> and <tex>y</tex> in terms of
+            the given angle and initial velocity.
+        </p>
+        <equation>
+            v_{0x} &= v_0 \cdot \cos\theta\\
+            v_{0y} &= v_0 \cdot \sin\theta
+        </equation>
+        <p>Given the general formulas for displacement and velocity</p>
+        <equation>
+            \small
+            \text{displacement}
+                &= \text{initial displacement}
+                + \text{initial velocity} \cdot \Delta{t}
+                + \frac{1}{2}a\Delta{t^2}\\
+            \text{velocity} &= \text{initial velocity} + a\cdot\Delta{t}
+        </equation>
+        <p>
+            We will derive specific equations in terms of the <tex>x</tex> and <tex>y</tex> axes governing the projectile.
+        </p>
+        <layout cols="2">
+            <note>
+                <h5>In terms of the <tex>x</tex> axis</h5>
+                <h6>Deriving displacement as a function of time</h6>
+                <p>
+                    Using the general formula from above in terms of <tex>x</tex> as a function
+                    of time.
+                </p>
+                <equation>
+                    x(t) &= x_0 + v_{0x} t + \frac{1}{2}a_x t^2
+                </equation>
+                <p>Which we can simplify using the following facts</p>
+                <ul>
+                    <li>From the given depiction of the problem, we know that <tex>x(0) = 0</tex>.</li>
+                    <li>There is no acceleration along the <tex>x</tex> axis, so <tex>a_x = 0</tex>.</li>
+                    <li><tex>v_{0x} = v_0\cdot\cos\theta</tex> as shown above.</li>
+                </ul>
+                <p>Therefore</p>
+                <equation>
+                    x(t) &= 0 + v_{0x}\cdot t + \frac{1}{2}0 t^2\\
+                         &= v_{0x} t\\
+                         &= v_0\cos\theta\cdot t
+                </equation>
+                <h6>Deriving velocity</h6>
+                <equation>
+                    v_x &= v_{0x} + a_x\cdot t\\
+                        &= v_0\cdot\cos\theta + 0\cdot t\\
+                        &= v_0\cdot\cos\theta
+                </equation>
+            </note>
+            <note>
+                <h5>In terms of the <tex>y</tex> axis</h5>
+                <h6>Deriving displacement as a function of time</h6>
+                <p>
+                    Using the general formula from above in terms of <tex>y</tex> as a function
+                    of time.
+                </p>
+                <equation>
+                    y(t) &= y_0 + v_{0y} t + \frac{1}{2}a_y t^2
+                </equation>
+                <p>Which we can simplify using the following facts</p>
+                <ul>
+                    <li>
+                        Initial height is given to us which we will represent as <tex>y_0</tex>,
+                        for the sake of generality.
+                    </li>
+                    <li>
+                        Acceleration along the <tex>y</tex> axis is the constant for gravity,
+                        so <tex>a_y = -9.8\frac{\mathrm{m}}{\mathrm{s^2}}</tex>.
+                    </li>
+                    <li><tex>v_{0y} = v_0\cdot\sin\cdot\theta</tex> as shown above.</li>
+                </ul>
+                <p>Therefore</p>
+                <equation>
+                    y(t) &= y_0 + v_{0y} t + \frac{1}{2}a_y t^2\\
+                         &= y_0
+                         + v_0\cdot\sin\theta\cdot t
+                         + \frac{1}{2}\left(-9.8\right) t^2\\
+                         &= y_0
+                         + v_0\cdot\sin\theta\cdot t
+                         - 4.9 t^2
+                </equation>
+                <h6>Deriving velocity</h6>
+                <equation>
+                    v_y &= v_{0y} + a_y\cdot t\\
+                        &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}}
+                </equation>
+            </note>
+        </layout>
+        <h5>In summary</h5>
+        <layout cols="2">
+            <equation>
+                x(t) &= v_0\cos\theta\cdot t\\
+                y(t) &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\\
+                     &= y_0 + v_0\cdot\sin\theta\cdot t - 4.9 t^2
+            </equation>
+            <equation>
+                v_x &= v_0\cdot\cos\theta\\
+                v_y &= v_0\cdot\sin\theta + g\\
+                    &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}}
+            </equation>
+        </layout>
+        <h5>To find the range</h5>
+        <layout cols="2">
+            <note>
+                <h6>Example 1</h6>
+                <p>We know that at the moment of impact <tex>y = 0</tex>, therefore we can use the equation</p>
+                <equation>
+                    y = y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2
+                </equation>
+                <p>
+                    Rearranging a bit and setting <tex>y = 0</tex>, we can see that solving for <tex>t</tex>
+                    will yield the time at which <tex>y = 0</tex>.
+                </p>
+                <equation>
+                    0 = \underbrace{\frac{1}{2}g}_{\text{a}}\;t^2
+                    + \underbrace{v_0\cdot\sin\theta}_{\text{b}}\; t
+                    + \underbrace{y_0}_{\text{c}}
+                </equation>
+                <p>Therefore</p>
+                <equation>
+                    t &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
+                    &= \frac
+                        {-v_0\cdot\sin\theta\pm\sqrt{\left(v_0\cdot\sin\theta\right)^2 - 4\left(\frac{1}{2}g\right)y_0}}
+                        {2\frac{1}{2}g}\\
+                    &= \frac
+                        {-v_0\cdot\sin\theta\pm\sqrt{\left(v_0\cdot\sin\theta\right)^2 - 2 g y_0}}
+                        {g}
+                </equation>
+                <p>
+                    Plugging the solution for <tex>t</tex> (and ignoring the negative or non-real solutions for <tex>t</tex>)
+                    into <tex>x(t)</tex> will yield the horizontal displacement (range) at the time <tex>y = 0</tex>.
+                </p>
+            </note>
+            <note>
+                <h6>Alternatively</h6>
+                <equation>
+                    \text{range}\;=\frac{v^2 \cdot sin\left(2\theta\right)}{g}
+                </equation>
+            </note>
+        </layout>
+    </note>
+</layout>
 <layout cols="2" boxed>
     <note>
         <h4>Range</h4>

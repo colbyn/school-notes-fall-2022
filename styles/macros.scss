@@ -10,6 +10,9 @@
     font-size: 1rem;
 }
 
+[macro="equation"] > mjx-container {
+    margin: 10px 0 !important;
+}
 
 
 /* ========================================================================= */
@@ -53,7 +56,17 @@
 [macro='note'] h3,
 [macro='note'] h4,
 [macro='note'] h5,
-[macro='note'] h6 {
+[macro='note'] h6{
+    margin: 0;
+    margin-left: 12px;
+}
+
+[macro='note'] h1:first-child,
+[macro='note'] h2:first-child,
+[macro='note'] h3:first-child,
+[macro='note'] h4:first-child,
+[macro='note'] h5:first-child,
+[macro='note'] h6:first-child {
     text-align: center;
     margin: 8px auto;
 }
