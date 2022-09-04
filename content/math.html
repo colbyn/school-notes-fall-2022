@@ -572,7 +572,8 @@
             \text{velocity} &= \text{initial velocity} + a\cdot\Delta{t}
         </equation>
         <p>
-            We will derive specific equations in terms of the <tex>x</tex> and <tex>y</tex> axes governing the projectile.
+            Which this information, we will derive specific equations in terms of the <tex>x</tex>
+            and <tex>y</tex> axes governing the projectile.
         </p>
         <layout cols="2">
             <note>
@@ -624,7 +625,7 @@
                         Acceleration along the <tex>y</tex> axis is the constant for gravity,
                         so <tex>a_y = -9.8\frac{\mathrm{m}}{\mathrm{s^2}}</tex>.
                     </li>
-                    <li><tex>v_{0y} = v_0\cdot\sin\cdot\theta</tex> as shown above.</li>
+                    <li><tex>v_{0y} = v_0\cdot\sin\theta</tex> as shown above.</li>
                 </ul>
                 <p>Therefore</p>
                 <equation>
@@ -638,29 +639,31 @@
                 </equation>
                 <h6>Deriving velocity</h6>
                 <equation>
-                    v_y &= v_{0y} + a_y\cdot t\\
+                    v_y &= v_{0y} + a_y\cdot t
+                        &= v_{0y} + g \cdot t\\
                         &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}}
                 </equation>
             </note>
         </layout>
+        <hr>
         <h5>In summary</h5>
         <layout cols="2">
             <equation>
-                x(t) &= v_0\cos\theta\cdot t\\
-                y(t) &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\\
-                     &= y_0 + v_0\cdot\sin\theta\cdot t - 4.9 t^2
+                x(t) &= v_0\cos\theta\cdot t\;(1)\\
+                v_x &= v_0\cdot\cos\theta\;(2)
             </equation>
             <equation>
-                v_x &= v_0\cdot\cos\theta\\
-                v_y &= v_0\cdot\sin\theta + g\\
-                    &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}}
+                y(t) &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\;(3)\\
+                    &= y_0 + v_0\cdot\sin\theta\cdot t - 4.9 t^2\\
+                v_y &= v_0\cdot\sin\theta + g \cdot t\\
+                    &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}} \cdot t\;(4)
             </equation>
         </layout>
-        <h5>To find the range</h5>
+        <hr>
         <layout cols="2">
             <note>
-                <h6>Example 1</h6>
-                <p>We know that at the moment of impact <tex>y = 0</tex>, therefore we can use the equation</p>
+                <h5>To find the range</h5>
+                <p>We know that at the moment of impact <tex>y = 0</tex>, therefore we can use equation <tex>(3)</tex></p>
                 <equation>
                     y = y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2
                 </equation>
@@ -686,12 +689,73 @@
                 <p>
                     Plugging the solution for <tex>t</tex> (and ignoring the negative or non-real solutions for <tex>t</tex>)
                     into <tex>x(t)</tex> will yield the horizontal displacement (range) at the time <tex>y = 0</tex>.
+                    Therefore:
                 </p>
+                <equation>
+                    \text{range}\;=x(t)\;\small\text{where $t$ is the point at which $y=0$}
+                </equation>
             </note>
             <note>
-                <h6>Alternatively</h6>
+                <h5>To find the maximum vertical displacement (i.e. peak height)</h5>
+                <p>We begin with equation <tex>\text{(4)}</tex></p>
                 <equation>
-                    \text{range}\;=\frac{v^2 \cdot sin\left(2\theta\right)}{g}
+                    v_y &= v_0\cdot\sin\theta + g t
+                </equation>
+                <p>
+                    We know that at the moment our projectile crests its trajectory,
+                    the vertical component of our projectile will be zero. 
+                    Therefore <tex>v_y = 0</tex>. To find the time, we simply solve for <tex>t</tex>.
+                </p>
+                <equation>
+                    0 &= v_0\cdot\sin\theta + g \cdot t\\
+                    -v_0\cdot\sin\theta &= g \cdot t\\
+                    \frac{-v_0\cdot\sin\theta}{g} &= t\\
+                    \therefore\;t &= \frac{-v_0\cdot\sin\theta}{g}
+                </equation>
+                <p>
+                    Therefore, knowing the time at which our projectile crests its trajectory,
+                    we simply plugin our solution for <tex>t</tex> into the function given in
+                    equation <tex>(4)</tex>. I.e:
+                </p>
+                <equation>
+                    y_{\text{max}}
+                        &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\\
+                        &= \small y_0 + v_0\cdot\sin\theta\cdot\left(\frac{-v_0\cdot\sin\theta}{g}\right)
+                        + \frac{1}{2}g \left(\frac{-v_0\cdot\sin\theta}{g}\right)^2
+                </equation>
+            </note>
+            <note>
+                <h5>To find the velocity at a given moment of time</h5>
+                <p>
+                    Given some time which we will denote as <tex>t_n</tex>,
+                    to find the velocity we simply plug in our given values
+                    for <tex>\theta</tex> and <tex>v_0</tex> into equations <tex>(2)</tex>
+                    and <tex>(4)</tex>. I.e.
+                </p>
+                <equation>
+                    v_x &= v_0\cdot\cos\theta\\
+                    v_y &= v_0\cdot\sin\theta + g \cdot t
+                </equation>
+                <p>
+                    With the given value for <tex>t_n</tex>, yielding the vector at time <tex>t = t_n</tex>,
+                    which we will denote as <tex>\vec{v_n}</tex>
+                </p>
+                <equation>
+                    A &= v_y(t_n)\\
+                    B &= v_x(t_n)\\
+                </equation>
+                <p>To define the vector in terms of engineering notation,
+                    (i.e. <tex>v_x\hat{i} + v_y\hat{j}</tex>)</p>
+                <equation>
+                    \vec{v_n} &= B\hat{\textbf{i}} + A\hat{\textbf{j}}
+                </equation>
+                <p>
+                    To define the vector in terms of magnitude (which we will denote as <tex>v_n</tex>)
+                    and direction (which we will denote as <tex>\theta_n</tex>)
+                </p>
+                <equation>
+                    v_n &= \sqrt{A^2 + B^2}\\
+                    \theta_n &= \tan^{-1}\left(\frac{A}{B}\right)
                 </equation>
             </note>
         </layout>

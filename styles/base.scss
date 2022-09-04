@@ -79,6 +79,9 @@ dl[center] {
     table th, table td {
         border: 1px solid #616161;
     }
+    hr {
+        border-bottom: 1px solid #696969;
+    }
 }
 
 @if settings.$dark-theme {
