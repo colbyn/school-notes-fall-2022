@@ -70,6 +70,11 @@ dl[center] {
   margin: 0 auto !important;
 }
 
+mark[font] {
+  background-color: unset;
+  color: #0fffae;
+}
+
 html, body {
   background-color: #343941;
 }
@@ -101,6 +106,42 @@ hr {
 /* ========================================================================= */
 /* LAYOUT */
 /* ========================================================================= */
+
+[macro=note] {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  grid-row-gap: 12px;
+  padding-bottom: 12px;
+}
+
+[macro=note][compact] {
+  grid-row-gap: 5px;
+}
+
+[macro=note][compact] p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+[macro=note][compact] mjx-container.MathJax {
+  margin: 0 !important;
+}
+
+[macro=layout][compact] [macro=note] {
+  grid-row-gap: 0px;
+  padding-top: 15px 10px;
+}
+
+[macro=layout][compact] [macro=note] p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+[macro=layout][compact] > [macro=equation] > mjx-container.MathJax {
+  margin: 0 !important;
+  padding: 10px;
+}
 @media (min-width: 800px) {
   [macro=layout] {
     display: grid;
@@ -122,11 +163,11 @@ hr {
     border-radius: 3px;
     border-color: #fff;
     box-shadow: 0 0 0px 1px #eeeeee;
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    grid-row-gap: 12px;
-    padding-bottom: 12px;
+  }
+  [macro=layout][boxed] > [macro=equation] {
+    border-radius: 3px;
+    border-color: #fff;
+    box-shadow: 0 0 0px 1px #eeeeee;
   }
   [macro=layout] > [macro=note] img {
     min-width: unset !important;
@@ -197,15 +238,17 @@ hr {
 @media (min-width: 650px) {
   [macro=note] {
     padding: 10px;
-    margin: 20px 10px;
   }
   [macro=note] [macro=note] {
     padding: 5px;
-    margin: 20px 5px;
   }
 }
 
 [macro=layout][boxed] > [macro=note] {
+  box-shadow: 0px 0px 1px 1px #655f65;
+}
+
+[macro=layout][boxed] > [macro=equation] {
   box-shadow: 0px 0px 1px 1px #655f65;
 }
 
@@ -236,6 +279,8 @@ main > h6 {
   width: 100%;
   padding: 8px 20px;
   border-bottom: 1px solid #444;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 main > h1 {

@@ -72,6 +72,11 @@ dl[center] {
     margin: 0 auto !important;
 }
 
+mark[font] {
+    background-color: unset;
+    color: #0fffae;
+}
+
 @mixin dark-mode-base {
     html,body {
         background-color: #343941;
