@@ -6,7 +6,25 @@
     border-radius: 3px;
     overflow: hidden;
 }
-[toc] > h1 {
+[toc] > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+[toc] > h1[site-title] {
+    font-family: "Sail", cursive;
+    text-align: center;
+}
+[toc] > h1[site-title] > span[date] {
+    font-family: monospace;
+    font-weight: 100;
+    margin-left: 20px;
+    border: 1px solid #929292;
+    padding: 8px;
+    border-radius: 3px;
+    color: #b3b3b3;
+}
+[toc] > h1[toc-title] {
     font-size: 2em;
     padding: 20px 0;
     margin: 0;
@@ -15,6 +33,7 @@
     max-width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid #a5a5a5;
+    border-top: 1px solid #a5a5a5;
     margin-bottom: 20px;
 }
 [macro='toc'] {
