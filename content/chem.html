@@ -31,6 +31,12 @@
         </note>
     </note>
 </layout>
+<h2>Conventions on homework</h2>
+<layout cols="4" boxed>
+    <note>
+        <p>When a question says, determine the energy of 1 ㏖ of photons, the unit will be ᴶ/㏖.</p>
+    </note>
+</layout>
 <h2>Units</h2>
 <layout cols="3" boxed compact>
     <equation>
@@ -63,8 +69,172 @@
 <h2>Quantum Mechanics</h2>
 <layout cols="1" boxed>
     <note>
-        <h3>Waves</h3>
+        <h3>Overview</h3>
         <img max-width="500px" src="../images/chem/4.svg">
+        <layout cols="1">
+            <note>
+                <h4>Formulas</h4>
+                <layout cols="3">
+                    <equation>
+                        \mathrm{f} = \nu &= \frac{c}{\lambda}
+                    </equation>
+                    <equation>
+                        \mathrm{E}
+                        &= \mathrm{h}\times\mathrm{f}\\
+                        &= \mathrm{h}\frac{\mathrm{c}}{\lambda}
+                    </equation>
+                    <equation>
+                        \mathrm{T} &= \frac{1}{f}
+                    </equation>
+                </layout>
+            </note>
+            <note>
+                <h4>Values</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Unit</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>Wavelength</th>
+                        <td><tex>\mathrm{\lambda}</tex></td>
+                        <td>Any unit for distance</td>
+                        <td>Distance between two analogous points</td>
+                    </tr>
+                    <tr>
+                        <th>Frequency</th>
+                        <td><tex>f</tex> or <tex>\nu</tex> (nu)</td>
+                        <td>
+                            <span style="display: flex; justify-content: space-between;">
+                                <tex>㎐ = \frac{\text{1 cycle}}{\text{second}}</tex>
+                                <tex>\mathrm{s}^1</tex>
+                            </span>
+                        </td>
+                        <td>Number of cycles</td>
+                    </tr>
+                    <tr>
+                        <th>Energy</th>
+                        <td><tex>\mathrm{E}</tex></td>
+                        <td>
+                            <span style="display: flex; justify-content: space-between;">
+                                <span><tex>\mathrm{J}</tex> (joule)</span>
+                            </span>
+                        </td>
+                        <td>Amount of energy (<tex>\mathrm{E}</tex>) in a light packet</td>
+                    </tr>
+                </table>
+            </note>
+            <note>
+                <h4>Constants</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Unit</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>Speed of Light</th>
+                        <td><tex>\mathrm{c}</tex></td>
+                        <td><tex>\v</tex></td>
+                        <td><tex>\mathrm{c} = \sci{3.00}{8}\v</tex></td>
+                    </tr>
+                    <tr>
+                        <th>Planck's constant</th>
+                        <td><tex>\mathrm{h}</tex></td>
+                        <td>
+                            <ul>
+                                <li>Energy multiplied by time</li>
+                                <li>joule-seconds</li>
+                                <li><tex>\mathrm{J}\cdot\mathrm{s}</tex></li>
+                            </ul>
+                        </td>
+                        <td><tex>\mathrm{h} = \sci{6.626}{-34}\;\mathrm{J}\cdot\mathrm{s}</tex></td>
+                    </tr>
+                </table>
+            </note>
+            <note>
+                <h4>Other Formulas</h4>
+                <layout cols="2" boxed compact>
+                    <note>
+                        <p center>de Broglie Relation</p>
+                        <equation>
+                            \lambda &= \frac{\mathrm{h}}{\mathrm{m}\mathrm{v}}\\
+                            \text{where}&\\
+                                m &= \text{mass}\\
+                                v &= \text{velocity} \neq \nu\;\text{(nu)}
+                        </equation>
+                    </note>
+                    <note>
+                        <p center>Heisenberg's Uncertainty Principle</p>
+                        <equation>
+                            \Delta{x} \times \mathrm{m} \Delta{v} \geq \frac{\mathrm{h}}{4\pi}
+                        </equation>
+                        <p>Where</p>
+                        <ul>
+                            <li><tex>\Delta{x}</tex> is the uncertainty in position.</li>
+                            <li><tex>\Delta{v}</tex> is the uncertainty in velocity.</li>
+                            <li><tex>\mathrm{m}</tex> is the mass of the particle.</li>
+                            <li><tex>\mathrm{h}</tex> is the plank's constant.</li>
+                        </ul>
+                        <p>
+                            In general it states that the more you know about an electrons position,
+                            the less you know about it's velocity.
+                        </p>
+                    </note>
+                    <note>
+                        <p center>
+                            Energy of an Electron in an Orbital with Quantum Number
+                            <tex>\mathrm{n}</tex> in a Hydrogen Atom
+                        </p>
+                        <equation>
+                            E_n &= \sci{-2.18}{-18} \mathrm{J} \left(\frac{1}{n^2}\right)
+                        </equation>
+                    </note>
+                    <note>
+                        <p center>
+                            Change in Energy That Occurs in an Atom When It Undergoes
+                            a Transition between Levels
+                            <tex>n_{\small\text{initial}}</tex> and <tex>n_{\small\text{final}}</tex> 
+                        </p>
+                        <equation>
+                            \Delta{E} &= \sci{-2.18}{-18} \mathrm{J} \left(\frac{1}{n^2_f} - \frac{1}{n^2_i}\right)
+                        </equation>
+                    </note>
+                </layout>
+                <h4>Quantum numbers</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th><tex>\mathrm{n}</tex></th>
+                        <td>The principle quantum number</td>
+                    </tr>
+                    <tr>
+                        <th><tex>\mathrm{l}</tex></th>
+                        <td>The angular momentum quantum number</td>
+                    </tr>
+                    <tr>
+                        <th><tex>\mathrm{m}_1</tex></th>
+                        <td>The magnetic quantum number</td>
+                    </tr>
+                    <tr>
+                        <th><tex>\mathrm{m}_s</tex></th>
+                        <td>The spin quantum number</td>
+                    </tr>
+                </table>
+            </note>
+        </layout>
     </note>
 </layout>
 
