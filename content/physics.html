@@ -1,0 +1,1110 @@
+<h1>Physics</h1>
+<h2>Constants</h2>
+<layout cols="3">
+    <equation>g &= 9.8 \frac{m}{s^2}\;\text{downward} \;\text{where}\; a &= -g</equation>
+</layout>
+<h2>Tables</h2>
+<layout cols="2" style="grid-template-rows: max-content; grid-template-areas: 'a c' 'b d'">
+    <h3 style="grid-area: a">Linear Kinematic Equations <small>(1D)</small></h3>
+    <note style="grid-area: b">
+        <table>
+            <thead>
+                <tr>
+                    <th>Formula</th>
+                    <th>Missing</th>
+                    <th>Quantities Present</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><tex>v_2 = v_1 + a\Delta{t}</tex></th>
+                <td><tex>\Delta{x}</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>v_1</tex>
+                        <tex>v_2</tex>
+                        <tex>a</tex>
+                        <tex>\Delta{t}</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}</tex></th>
+                <td><tex>a</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta{x}</tex>
+                        <tex>v_1</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>v_2</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}</tex></th>
+                <td><tex>v_2</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta{x}</tex>
+                        <tex>v_1</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>a</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}</tex></th>
+                <td><tex>v_1</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta{x}</tex>
+                        <tex>v_2</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>a</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>(v_2)^2 = (v_1)^2 + 2a\Delta{x}</tex></th>
+                <td><tex>\Delta{t}</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta{x}</tex>
+                        <tex>v_1</tex>
+                        <tex>v_2</tex>
+                        <tex>a</tex>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </note>
+    <h3 style="grid-area: c">Rotational Kinematic Equations</h3>
+    <note style="grid-area: d">
+        <table>
+            <thead>
+                <tr>
+                    <th>Formula</th>
+                    <th>Missing</th>
+                    <th>Quantities Present</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><tex>\omega_2 = \omega_1 + \alpha\Delta{t}</tex></th>
+                <td><tex>\Delta\theta</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\omega_1</tex>
+                        <tex>\omega_2</tex>
+                        <tex>\alpha</tex>
+                        <tex>\Delta{t}</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta\theta = \left(\frac{\omega_2 + \omega_1}{2}\right)\Delta{t}</tex></th>
+                <td><tex>a</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_1</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>\omega_2</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta\theta = \omega_1 \Delta{t} + \frac{1}{2}\alpha\Delta{t^2}</tex></th>
+                <td><tex>\omega_2</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_1</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>\alpha</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta\theta = \omega_2\Delta{t} - \frac{1}{2}\alpha\Delta{t^2}</tex></th>
+                <td><tex>\omega_1</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_2</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>\alpha</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>(\omega_2)^2 = (\omega_1)^2 + 2\alpha\Delta\theta</tex></th>
+                <td><tex>\Delta{t}</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_1</tex>
+                        <tex>\omega_2</tex>
+                        <tex>\alpha</tex>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </note>
+</layout>
+<layout cols="3">
+    <note>
+        <h3>Scalar or Vector</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tr><th>Speed</th><td>Scalar</td></tr>
+            <tr><th>Distance</th><td>Scalar</td></tr>
+            <tr><th>Velocity</th><td>Vector</td></tr>
+            <tr><th>Acceleration</th><td>Vector</td></tr>
+            <tr><th>Average Velocity</th><td>Vector</td></tr>
+            <tr><th>Displacement</th><td>Vector</td></tr>
+            <tr><th>Position</th><td>Vector</td></tr>
+        </table>
+    </note>
+</layout>
+<h2>Kinematic Equations in 1D</h2>
+<layout cols="1" boxed>
+    <note>
+        <layout cols="2">
+            <note>
+                <h3>Conventions</h3>
+                <equation>
+                    \bar{v} &= \text{Average velocity}\\
+                    \bar{a} &= \text{Average acceleration}\\
+                    \text{Time} = \Delta{t} &= t_2 - t_1\\
+                    \text{Displacement} = \Delta{x} &= x_2 - x_1\\
+                    \Delta{v} &= v_2 - v_1\\
+                </equation>
+            </note>
+            <note>
+                <h5>Graphical Representation</h5>
+                <img min-width="600px" max-width="900px" src="../images/physics/4.svg">
+            </note>
+        </layout>
+    </note>
+</layout>
+<layout cols="1" boxed>
+    <note>
+        <h3>Standard Equations</h3>
+        <layout cols="3">
+            <equation>
+                v_2 &= v_1 + a\Delta{t}
+            </equation>
+            <equation>
+                (v_2)^2 &= (v_1)^2 + 2a\Delta{x}
+            </equation>
+            <equation>
+                \Delta{x} &= v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\\
+                          &= v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\\
+                          &= \left(\frac{v_2 + v_1}{2}\right)\Delta{t}
+            </equation>
+        </layout>
+        <h3>Summary</h3>
+        <div table-wrapper>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Formula</th>
+                        <th>Missing</th>
+                        <th>Quantities Present</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th><tex>v_2 = v_1 + a\Delta{t}</tex></th>
+                    <td><tex>\Delta{x}</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>v_1</tex>
+                            <tex>v_2</tex>
+                            <tex>a</tex>
+                            <tex>\Delta{t}</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}</tex></th>
+                    <td><tex>a</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_1</tex>
+                            <tex>\Delta{t}</tex>
+                            <tex>v_2</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}</tex></th>
+                    <td><tex>v_2</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_1</tex>
+                            <tex>\Delta{t}</tex>
+                            <tex>a</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}</tex></th>
+                    <td><tex>v_1</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_2</tex>
+                            <tex>\Delta{t}</tex>
+                            <tex>a</tex>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><tex>(v_2)^2 = (v_1)^2 + 2a\Delta{x}</tex></th>
+                    <td><tex>\Delta{t}</tex></td>
+                    <td>
+                        <span style="display: flex; justify-content: space-between;">
+                            <tex>\Delta{x}</tex>
+                            <tex>v_1</tex>
+                            <tex>v_2</tex>
+                            <tex>a</tex>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </note>
+</layout>
+<layout cols="1" boxed>
+    <note>
+        <h3>Basics</h3>
+        <layout cols="3">
+            <note>
+                <h4>Constant Velocity</h4>
+                <equation>
+                    \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\\
+                    \Delta{x} &= \bar{v}\Delta{t}
+                </equation>
+            </note>
+            <note>
+                <h4>Uniform acceleration</h4>
+                <equation>
+                    \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\\
+                    v_2 &= v_1 + a\Delta{t}\\
+                    \Delta{x} &= v_0\Delta{t}+\frac{1}{2}a\Delta{t^2}\\
+                    (v_2)^2 &= (v_1)^2 - 2\bar{a}\Delta{x}
+                </equation>
+            </note>
+            <note>
+                <h3>Miscellaneous</h3>
+                <equation>
+                    \bar{v} &= \frac{\Delta{x}}{\Delta{t}} = \frac{v_2 + v_1}{2}\\
+                    \bar{a} &= \frac{\Delta{v}}{\Delta{t}}
+                </equation>
+            </note>
+        </layout>
+    </note>
+</layout>
+<h3>Deriving Displacement Formulas</h3>
+<layout cols="2" boxed>
+    <note>
+        <h4>Displacement when object moves with constant velocity</h4>
+        <h5>Deriving <tex>\Delta{x} = \bar{v}\Delta{t}</tex></h5>
+        <img max-width="500px" src="../images/physics/1.svg">
+        <equation>
+            \Delta{x} &= \bar{v}\Delta{t}
+        </equation>
+    </note>
+    <note>
+        <h4>Displacement when object accelerates from rest</h4>
+        <h5>Deriving <tex>\Delta{x} = \frac{1}{2}\bar{a}\Delta{t^2}</tex></h5>
+        <img min-width="500px" max-width="900px" src="../images/physics/2.svg">
+        <equation>
+            \Delta{x} &= \frac{1}{2}\Delta{v}\Delta{t}\\
+                      &= \frac{1}{2}\bar{a}\Delta{t^2}
+        </equation>
+    </note>
+</layout>
+<layout cols="1" boxed>
+    <note>
+        <h4>Displacement when object accelerates with initial velocity</h4>
+        <h5>Deriving <tex>\Delta{x} = v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}</tex></h5>
+        <img min-width="500px" max-width="900px" src="../images/physics/4.svg">
+        <equation>
+            \Delta{x} &= v_1\Delta{t} + \frac{1}{2}\Delta{v}\Delta{t} \\
+                      &= v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}
+        </equation>
+    </note>
+</layout>
+<h3>Deriving The Other Kinematic Formulas</h3>
+<layout cols="2" boxed>
+    <note>
+        <h4>Deriving <tex>v_2 = v_1 + \bar{a}\Delta{t}</tex></h4>
+        <p>Given</p>
+        <equation>
+            \bar{a} &= \frac{\Delta{v}}{\Delta{t}} = \frac{v_2 - v_1}{\Delta{t}}\;(1)
+        </equation>
+        <p>We can rearrange <tex>v_2</tex> from equation (1) like so</p>
+        <equation>
+            \bar{a} &= \frac{v_2 - v_1}{\Delta{t}}\\
+            \bar{a}\Delta{t} &= v_2 - v_1\\
+            v_1 + \bar{a}\Delta{t} &= v_2\\
+            \therefore v_2 &= v_1 + \bar{a}\Delta{t}
+        </equation>
+        <p>Therefore</p>
+        <equation>
+            v_2 &= v_1 + \bar{a}\Delta{t}
+        </equation>
+    </note>
+    <note>
+        <h4>Deriving <tex>v_2^2 = v_1^2 + 2\bar{a}\Delta{x}</tex></h4>
+        <p>Given</p>
+        <equation>
+            \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\;(1)\\
+            \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\;(2)\\
+                    &= \frac{v_2 + v_1}{2}\;(3)
+        </equation>
+        <p><tex>\Delta{t}</tex> from equation (1) can be rearranged as</p>
+        <equation>
+            \Delta{t} &= \frac{\Delta{v}}{\bar{a}} = \frac{v_2 - v_1}{\bar{a}}\;(4)
+        </equation>
+        <p><tex>\Delta{x}</tex> from equation (2) can be rearranged like so</p>
+        <equation>
+            \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\\
+            \bar{v}\Delta{t} &= \Delta{x}\\
+            \therefore \Delta{x} &= \bar{v}\cdot\Delta{t}
+        </equation>
+        <p>Using the following equations from above</p>
+        <ul>
+            <li><tex>\bar{v} = \frac{v_2 + v_1}{2}</tex> from equation (3)</li>
+            <li><tex>\Delta{t} = \frac{v_2 - v_1}{\bar{a}}</tex> from equation (4)</li>
+        </ul>
+        <equation>
+            \Delta{x} &= \bar{v}\cdot\Delta{t}\\
+                      &= \frac{v_2 + v_1}{2}\cdot\frac{v_2 - v_1}{\bar{a}}\\
+                      &= \frac{(v_2)^2 - (v_1)^2}{2\bar{a}}\;(5)
+        </equation>
+        <p>Rearranging equation (5)</p>
+        <equation>
+            2\bar{a}\Delta{x} &= (v_2)^2 - (v_1)^2
+        </equation>
+        <p>Rearrange again to obtain the more common form</p>
+        <equation>
+            (v_2)^2 &= (v_1)^2 + 2\bar{a}\Delta{x}
+        </equation>
+    </note>
+    <note>
+        <p>TODO</p>
+    </note>
+</layout>
+
+<!-- <div id="graph1" fullscreen-desmos></div>
+<style>
+    #graph1 {
+        height: 400px;
+    }
+</style>
+<script>
+    window.addEventListener("load", function on_load() {
+        var node = document.getElementById('graph1');
+        var options = {
+            expressionsCollapsed: true,
+            expressions: false,
+            lockViewport: true,
+            settingsMenu: false,
+            border: false,
+            xAxisNumbers: false,
+            yAxisNumbers: false,
+            showGrid: false,
+        };
+        var calculator = Desmos.GraphingCalculator(node, options);
+        calculator.setExpression({"id":"line1","latex":"y=x^2","color":"#ff0000"});
+    });
+</script> -->
+
+<h2>Two-dimensional Projectile Motion</h2>
+<layout cols="1" boxed>
+    <note>
+        <h3>Conventions</h3>
+    </note>
+</layout>
+<layout cols="1" boxed>
+    <note>
+        <h3>Summary</h3>
+        <layout cols="2">
+            <img max-width="900px" src="../images/physics/17.svg">
+            <note>
+                <img max-width="900px" src="../images/physics/18.svg">
+                <p justify>
+                    It's easy to see in the above visualization that <tex>t</tex>
+                    and <tex>x</tex> increase linearly, while <tex>y</tex> is non-linear.
+                </p>
+            </note>
+            <img max-width="900px" src="../images/physics/20.svg">
+            <img max-width="900px" src="../images/physics/21.svg">
+        </layout>
+    </note>
+</layout>
+<h3>Formulas</h3>
+<layout cols="1" boxed>
+    <note>
+        <h4>Displacement & Projectile Position</h4>
+        <layout cols="2">
+            <note>
+                <h5>Generalized</h5>
+                <p>In general (without respect to any <tex>x</tex> or <tex>y</tex> axis values)</p>
+                <equation>
+                    \text{Displacement}
+                        &= \Delta_{\text{general}}\\
+                        &= \bar{v}\cdot\Delta{t}
+                </equation>
+                <p>Where the distance traveled or displaced is</p>
+                <equation>
+                    \text{Displacement}
+                        &= \Delta_{\text{general}}\\
+                        &= V_1\cdot\Delta{t} + \frac{1}{2}a\Delta{t^2}
+                </equation>
+            </note>
+            <note>
+                <h5>In terms of <tex>x</tex> and <tex>y</tex> axis values</h5>
+                <equation>
+                    \Delta{x} &= x_2 - x_1\\
+                    \Delta{y} &= y_2 - y_1
+                </equation>
+            </note>
+            <note>
+                <h5>With respect to the <tex>y</tex> axis</h5>
+                <p>The displacement of a given projectile in terms of the <tex>y</tex> axis is</p>
+                <equation>
+                    \Delta{y} = V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                </equation>
+                <p>Since <tex>\Delta{y} = y_2 - y_1</tex></p>
+                <equation>
+                    \Delta{y} &= V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}\\
+                    y_2 - y_1 &= V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}\\
+                    y_2  &= y_1 + V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                </equation>
+                <p>Which can be read as (in terms of the <tex>y</tex> axis)</p>
+                <equation>
+                    \small{\text{the final position}}\;
+                        &= \small{\text{the initial position}}\;
+                        + V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                </equation>
+            </note>
+            <note>
+                <h5>With respect to the <tex>x</tex> axis</h5>
+                <p>The displacement of a given projectile in terms of the <tex>x</tex> axis is</p>
+                <equation>
+                    \Delta{x} = V_{x}\cdot\Delta{t} + \frac{1}{2}a_x\Delta{t^2} (1)
+                </equation>
+                <p>
+                    Note that <tex>a_x = 0</tex> (because there is no force acting on the projectile in
+                    the horizontal direction), and therefore the initial and final velocities are the same.
+                    I.e. it's constant throughout. Therefore in summary
+                </p>
+                <ul>
+                    <li><tex>a_x = 0</tex></li>
+                    <li>
+                        <tex>v_{x1} = v_{x2}</tex> and therefore we will simple refer to the velocity
+                        vector as as <tex>v_x</tex>.
+                    </li>
+                </ul>
+                <p>Therefore we can simplify equation (1) considerably</p>
+                <equation>
+                    \Delta{x}
+                        &= V_{x}\cdot\Delta{t} + 0\\
+                        &= V_{x}\cdot\Delta{t}
+                </equation>
+            </note>
+        </layout>
+    </note>
+</layout>
+<h3>Solving Projectile Motion Problems</h3>
+<layout cols="1" boxed>
+    <note>
+        <h4>Projectile Motion</h4>
+        <img max-width="600px" src="../images/physics/23.svg">
+        <layout cols="2">
+            <note>
+                <h5>In terms of the <tex>x</tex> axis</h5>
+                <p>TODO</p>
+                <equation>
+                    \Delta{x}
+                        &= x_2 - x_1 = V_{0,x} \dot t\\
+                    v_{x}
+                        &= v_{0,x} + a_x
+                </equation>
+                <p>TODO</p>
+            </note>
+            <note>
+                <h5>In terms of the <tex>y</tex> axis</h5>
+                <p>TODO</p>
+                <equation>
+                    \Delta{y}
+                        &= y_2 - y_1 = V_{0,x} \dot t\\
+                    v_{y}
+                        &= v_{0,y} + a_y
+                </equation>
+                <p>TODO</p>
+            </note>
+        </layout>
+        <h5>In Summary</h5>
+        <p>Initial Quantities</p>
+        <layout cols="2">
+            <equation>
+                v_x &= v_o\cdot\cos\theta\\
+                v_y &= v_o\cdot\sin\theta
+            </equation>
+            <equation>
+                a_y &= -g\\
+                a_x &= 0
+            </equation>
+        </layout>
+        <p>Derived expressions</p>
+        <layout cols="2">
+            <equation>
+                \Delta{x} &= v_{0,x} \cdot \Delta{t}\\
+                v_x &= v_{0,x}
+            </equation>
+            <equation>
+                \Delta{y} &= v_{0,y} \cdot \Delta{t} - \frac{1}{2} g \Delta{t^2}\\
+                v_y &= v_{0,y} - g \Delta{t}
+            </equation>
+        </layout>
+        <p>Solutions</p>
+        <equation>
+            t_{\text{top}} &= \frac{v_0\cdot\sin\theta}{g}\\
+            \Delta{y_{\text{max}}} &= \frac{v_0^2 + sin^2\theta}{2g}\\
+            \text{Range} &= \frac
+                {2 \cdot v_0^2 \cdot \sin\theta \cdot \cos\theta}
+                {g}
+        </equation>
+    </note>
+    <note>
+        <h4>Projectile Motion from an initial height, with given initial velocity and angle</h4>
+        <img max-width="800px" src="../images/physics/22.svg">
+        <p>Given</p>
+        <ul>
+            <li>A projectile angle <tex>\theta</tex></li>
+            <li>The initial height <tex>y_0</tex></li>
+            <li>The initial velocity <tex>v_0</tex></li>
+        </ul>
+        <p>
+            We can therefore derive the the initial velocities for <tex>x</tex> and <tex>y</tex> in terms of
+            the given angle and initial velocity.
+        </p>
+        <equation>
+            v_{0x} &= v_0 \cdot \cos\theta\\
+            v_{0y} &= v_0 \cdot \sin\theta
+        </equation>
+        <p>Given the general formulas for displacement and velocity</p>
+        <equation>
+            \small
+            \text{displacement}
+                &= \text{initial displacement}
+                + \text{initial velocity} \cdot \Delta{t}
+                + \frac{1}{2}a\Delta{t^2}\\
+            \text{velocity} &= \text{initial velocity} + a\cdot\Delta{t}
+        </equation>
+        <p>
+            Which this information, we will derive specific equations in terms of the <tex>x</tex>
+            and <tex>y</tex> axes governing the projectile.
+        </p>
+        <layout cols="2">
+            <note>
+                <h5>In terms of the <tex>x</tex> axis</h5>
+                <h6>Deriving displacement as a function of time</h6>
+                <p>
+                    Using the general formula from above in terms of <tex>x</tex> as a function
+                    of time.
+                </p>
+                <equation>
+                    x(t) &= x_0 + v_{0x} t + \frac{1}{2}a_x t^2
+                </equation>
+                <p>Which we can simplify using the following facts</p>
+                <ul>
+                    <li>From the given depiction of the problem, we know that <tex>x(0) = 0</tex>.</li>
+                    <li>There is no acceleration along the <tex>x</tex> axis, so <tex>a_x = 0</tex>.</li>
+                    <li><tex>v_{0x} = v_0\cdot\cos\theta</tex> as shown above.</li>
+                </ul>
+                <p>Therefore</p>
+                <equation>
+                    x(t) &= 0 + v_{0x}\cdot t + \frac{1}{2}0 t^2\\
+                         &= v_{0x} t\\
+                         &= v_0\cos\theta\cdot t
+                </equation>
+                <h6>Deriving velocity</h6>
+                <equation>
+                    v_x &= v_{0x} + a_x\cdot t\\
+                        &= v_0\cdot\cos\theta + 0\cdot t\\
+                        &= v_0\cdot\cos\theta
+                </equation>
+            </note>
+            <note>
+                <h5>In terms of the <tex>y</tex> axis</h5>
+                <h6>Deriving displacement as a function of time</h6>
+                <p>
+                    Using the general formula from above in terms of <tex>y</tex> as a function
+                    of time.
+                </p>
+                <equation>
+                    y(t) &= y_0 + v_{0y} t + \frac{1}{2}a_y t^2
+                </equation>
+                <p>Which we can simplify using the following facts</p>
+                <ul>
+                    <li>
+                        Initial height is given to us which we will represent as <tex>y_0</tex>,
+                        for the sake of generality.
+                    </li>
+                    <li>
+                        Acceleration along the <tex>y</tex> axis is the constant for gravity,
+                        so <tex>a_y = -9.8\frac{\mathrm{m}}{\mathrm{s^2}}</tex>.
+                    </li>
+                    <li><tex>v_{0y} = v_0\cdot\sin\theta</tex> as shown above.</li>
+                </ul>
+                <p>Therefore</p>
+                <equation>
+                    y(t) &= y_0 + v_{0y} t + \frac{1}{2}a_y t^2\\
+                         &= y_0
+                         + v_0\cdot\sin\theta\cdot t
+                         + \frac{1}{2}\left(-9.8\right) t^2\\
+                         &= y_0
+                         + v_0\cdot\sin\theta\cdot t
+                         - 4.9 t^2
+                </equation>
+                <h6>Deriving velocity</h6>
+                <equation>
+                    v_y &= v_{0y} + a_y\cdot t
+                        &= v_{0y} + g \cdot t\\
+                        &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}}
+                </equation>
+            </note>
+        </layout>
+        <hr>
+        <h5>In summary</h5>
+        <layout cols="2">
+            <equation>
+                x(t) &= v_0\cos\theta\cdot t\;(1)\\
+                v_x &= v_0\cdot\cos\theta\;(2)
+            </equation>
+            <equation>
+                y(t) &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\;(3)\\
+                    &= y_0 + v_0\cdot\sin\theta\cdot t - 4.9 t^2\\
+                v_y &= v_0\cdot\sin\theta + g \cdot t\;(4)\\
+                    &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}} \cdot t
+            </equation>
+        </layout>
+        <hr>
+        <layout cols="2">
+            <note>
+                <h5>To find the range</h5>
+                <p>We know that at the moment of impact <tex>y = 0</tex>, therefore we can use equation <tex>(3)</tex></p>
+                <equation>
+                    y = y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2
+                </equation>
+                <p>
+                    Rearranging a bit and setting <tex>y = 0</tex>, we can see that solving for <tex>t</tex>
+                    will yield the time at which <tex>y = 0</tex>.
+                </p>
+                <equation>
+                    0 = \underbrace{\frac{1}{2}g}_{\text{a}}\;t^2
+                    + \underbrace{v_0\cdot\sin\theta}_{\text{b}}\; t
+                    + \underbrace{y_0}_{\text{c}}
+                </equation>
+                <p>Therefore</p>
+                <equation>
+                    t &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
+                    &= \frac
+                        {-v_0\cdot\sin\theta\pm\sqrt{\left(v_0\cdot\sin\theta\right)^2 - 4\left(\frac{1}{2}g\right)y_0}}
+                        {2\frac{1}{2}g}\\
+                    &= \frac
+                        {-v_0\cdot\sin\theta\pm\sqrt{\left(v_0\cdot\sin\theta\right)^2 - 2 g y_0}}
+                        {g}
+                </equation>
+                <p>
+                    Plugging the solution for <tex>t</tex> (and ignoring the negative or non-real solutions for <tex>t</tex>)
+                    into <tex>x(t)</tex> will yield the horizontal displacement (range) at the time <tex>y = 0</tex>.
+                    Therefore:
+                </p>
+                <equation>
+                    \text{range}\;=x(t)\;\small\text{where $t$ is the point at which $y=0$}
+                </equation>
+            </note>
+            <note>
+                <h5>To find the maximum vertical displacement (i.e. peak height)</h5>
+                <p>We begin with equation <tex>\text{(4)}</tex></p>
+                <equation>
+                    v_y &= v_0\cdot\sin\theta + g t
+                </equation>
+                <p>
+                    We know that at the moment our projectile crests its trajectory,
+                    the vertical component of our projectile will be zero. 
+                    Therefore <tex>v_y = 0</tex>. To find the time, we simply solve for <tex>t</tex>.
+                </p>
+                <equation>
+                    0 &= v_0\cdot\sin\theta + g \cdot t\\
+                    -v_0\cdot\sin\theta &= g \cdot t\\
+                    \frac{-v_0\cdot\sin\theta}{g} &= t\\
+                    \therefore\;t &= \frac{-v_0\cdot\sin\theta}{g}
+                </equation>
+                <p>
+                    Therefore, knowing the time at which our projectile crests its trajectory,
+                    we simply plugin our solution for <tex>t</tex> into the function given in
+                    equation <tex>(4)</tex>. I.e:
+                </p>
+                <equation>
+                    y_{\text{max}}
+                        &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\\
+                        &= \small y_0 + v_0\cdot\sin\theta\cdot\left(\frac{-v_0\cdot\sin\theta}{g}\right)
+                        + \frac{1}{2}g \left(\frac{-v_0\cdot\sin\theta}{g}\right)^2
+                </equation>
+            </note>
+            <note>
+                <h5>To find the velocity at a given moment of time</h5>
+                <p>
+                    Given some time which we will denote as <tex>t_n</tex>,
+                    to find the velocity we simply plug in our given values
+                    for <tex>\theta</tex> and <tex>v_0</tex> into equations <tex>(2)</tex>
+                    and <tex>(4)</tex>. I.e.
+                </p>
+                <equation>
+                    v_x &= v_0\cdot\cos\theta\\
+                    v_y &= v_0\cdot\sin\theta + g \cdot t
+                </equation>
+                <p>
+                    With the given value for <tex>t_n</tex>, yielding the vector at time <tex>t = t_n</tex>,
+                    which we will denote as <tex>\vec{v_n}</tex>
+                </p>
+                <equation>
+                    A &= v_y(t_n)\\
+                    B &= v_x(t_n)\\
+                </equation>
+                <p>To define the vector in terms of engineering notation,
+                    (i.e. <tex>v_x\hat{i} + v_y\hat{j}</tex>)</p>
+                <equation>
+                    \vec{v_n} &= B\hat{\textbf{i}} + A\hat{\textbf{j}}
+                </equation>
+                <p>
+                    To define the vector in terms of magnitude (which we will denote as <tex>v_n</tex>)
+                    and direction (which we will denote as <tex>\theta_n</tex>)
+                </p>
+                <equation>
+                    v_n &= \sqrt{A^2 + B^2}\\
+                    \theta_n &= \tan^{-1}\left(\frac{A}{B}\right)
+                </equation>
+            </note>
+        </layout>
+    </note>
+</layout>
+<layout cols="2" boxed>
+    <note>
+        <h4>Range</h4>
+        <p>The distance a projectile travels is called its range.</p>
+        <equation>
+            \underbrace
+                {\text{range}\;=\frac{v^2 \cdot sin\left(2\theta\right)}{g}}
+                _{\small{\text{start/end elevation must be the same}}}
+        </equation>
+        <p>Only applies in situations where the projectile lands at the same elevation from which it was fired.</p>
+        <img max-width="100%" src="../images/physics/13.svg">
+    </note>
+</layout>
+
+<h3>Reasoning About Projectile Motion</h3>
+<layout cols="2" boxed>
+    <note>
+        <img min-width="100px" max-width="500px" src="../images/physics/12.svg">
+        <img min-width="100px" max-width="500px" src="../images/physics/15.svg">
+    </note>
+    <note>
+        <h4>Notes</h4>
+        <ul>
+            <li>An object is in free fall when the only force acting on it is the force of gravity.</li>
+        </ul>
+    </note>
+    <note>
+        <img min-width="100px" max-width="500px" src="../images/physics/24.svg">
+        <h4>Question</h4>
+        <p>Based on the figure, for which trajectory was the object in the air for the greatest amount of time?</p>
+        <h4>Answer</h4>
+        <p><mark font>Trajectory A</mark></p>
+        <h5>Explanation</h5>
+        <p>
+            All that matters is the vertical height of the trajectory, which is based on the component of the
+            initial velocity in the vertical direction (<tex>v_0\sin\theta</tex>).
+            The <mark font>higher the trajectory</mark>, the more time the object will be in the air,
+            <u>regardless of the object's range or horizontal velocity</u>.
+        </p>
+    </note>
+</layout>
+<h3>Problems</h3>
+<layout cols="2" boxed>
+    <note>
+        <img max-width="600px" src="../images/physics/14.svg">
+        <p>The function in this graph represents an object that is speeding up,
+            or accelerating at a constant rate.</p>
+    </note>
+    <note>
+        <p>When you throw a ball directly upward, what is true about
+            its acceleration after the ball has left your hand?</p>
+        <p>Answer: The ball’s acceleration is always directed downward.</p>
+        <p>Wrong: The ball’s acceleration is always directed downward,
+            except at the top of the motion, where the acceleration is zero.</p>
+    </note>
+    <note>
+        <dl>
+            <dt>Question</dt>
+            <dd>
+                As an object moves in the x-y plane, which statement is true about the object’s
+                instantaneous velocity at a given moment?
+            </dd>
+            <dt>Answer</dt>
+            <dd>
+                The instantaneous velocity is tangent to the object’s path
+            </dd>
+            <dt>Wrong</dt>
+            <dd>
+                <ul>
+                    <li>The instantaneous velocity is perpendicular to the object’s path.</li>
+                    <li>The instantaneous velocity can point in any direction, independent of the object’s path.</li>
+                </ul>
+            </dd>
+            <dt>Explanation</dt>
+            <dd>
+                As an object moves in the x-y plane the instantaneous velocity is tangent to the
+                object‘s path at a given moment. This is because the displacement vector during
+                an infinitesimally small time interval is always directed along the object’s path
+                and the velocity vector always has the same direction as the displacement vector.  
+            </dd>
+        </dl>
+    </note>
+</layout>
+<h2>Relative Motion</h2>
+<layout cols="2" boxed>
+    <note>
+        <h3>Galilean transformation of velocity</h3>
+        <p>
+            The velocity <tex>\vec{v}</tex> of some object P <mark font>as seen from a stationary frame</mark>
+            must be the sum of <tex>\vec{w}</tex> and <tex>\vec{v_F}</tex>
+        </p>
+        <equation>
+            \vec{v} &= \vec{w} + \vec{v_F}
+        </equation>
+        <p>Where</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><tex>\vec{v}</tex></th>
+                <td>Velocity as measured in a stationary frame</td>
+            </tr>
+            <tr>
+                <th><tex>\vec{w}</tex></th>
+                <td>Velocity of an object measured in the moving frame relative to the moving frame</td>
+            </tr>
+            <tr>
+                <th><tex>\vec{v_F}</tex></th>
+                <td>velocity of the moving frame - with respect to the stationary frame</td>
+            </tr>
+        </table>
+    </note>
+    <note>
+        <h3>Galilean transformation of velocity (alternate notation)</h3>
+        <p>
+            Given two reference frames <text>A</text> and <tex>B</tex> and some object <tex>O</tex>.
+            The velocity of the object can be defined in terms of <tex>A</tex> or <tex>B</tex> as shown
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><tex>\vec{v_{O,A}}</tex></th>
+                <td>The velocity of <tex>O</tex> relative to <tex>A</tex></td>
+            </tr>
+            <tr>
+                <th><tex>\vec{v_{O,B}}</tex></th>
+                <td>The velocity of <tex>O</tex> relative to <tex>B</tex></td>
+            </tr>
+            <tr>
+                <th><tex>\vec{v_{A,B}}</tex></th>
+                <td>The velocity of <tex>A</tex> relative to <tex>B</tex></td>
+            </tr>
+            <tr>
+                <th><tex>\vec{v_{B,A}}</tex></th>
+                <td>
+                    The velocity of <tex>B</tex> relative to <tex>A</tex>.
+                    It locates the origin of <tex>A</tex> relative to the origin of <tex>B</tex>.
+                </td>
+            </tr>
+        </table>
+        <p>Therefore</p>
+        <equation>
+            \vec{v_{O,B}} &= \vec{v_{O,A}} + \vec{v_{A,B}}\\
+            \vec{v_{O,A}} &= \vec{v_{O,B}} + \vec{v_{B,A}}
+        </equation>
+    </note>
+</layout>
+<h2>Rotational Motion</h2>
+<h3>Conventions</h3>
+<layout cols="2" boxed>
+    <note>
+        <equation>
+            \text{Period} = T &= \frac{1}{f}
+        </equation>
+    </note>
+    <note>
+        <equation>
+            \smallText{Angular Velocity} = \omega
+                &= 2 \pi f\\
+                &= \frac{2\pi}{T}\\
+            \smallText{velocity} = v &= \omega r\\
+            \tinyText{Centripetal acceleration} = A_C
+                &= \frac{v^2}{r}\\
+                &= \frac{\omega^2 r^2}{r}\\
+                &= \omega^2 r
+        </equation>
+    </note>
+</layout>
+<h2>Rotational Kinematics</h2>
+<layout cols="2" boxed>
+    <note>
+        <equation>
+            \theta
+                &= \omega \cdot t\\
+                &= \omega_1 \cdot t + \frac{1}{2} \alpha t^2\\
+            \omega_2 &= \omega_1 + \alpha \cdot t\\
+            \omega_2^2 &= \omega_1^2 + 2\cdot\alpha\cdot\theta\\
+            v &= \smaller{\frac{1 \text{circumference}}{1 \text{period}}}\\
+                &= \frac{2 \pi r}{T}
+        </equation>
+    </note>
+    <note>
+        <table>
+            <thead>
+                <tr>
+                    <th>Formula</th>
+                    <th>Missing</th>
+                    <th>Quantities Present</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><tex>\omega_2 = \omega_1 + \alpha\Delta{t}</tex></th>
+                <td><tex>\Delta\theta</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\omega_1</tex>
+                        <tex>\omega_2</tex>
+                        <tex>\alpha</tex>
+                        <tex>\Delta{t}</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta\theta = \left(\frac{\omega_2 + \omega_1}{2}\right)\Delta{t}</tex></th>
+                <td><tex>a</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_1</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>\omega_2</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta\theta = \omega_1 \Delta{t} + \frac{1}{2}\alpha\Delta{t^2}</tex></th>
+                <td><tex>\omega_2</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_1</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>\alpha</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>\Delta\theta = \omega_2\Delta{t} - \frac{1}{2}\alpha\Delta{t^2}</tex></th>
+                <td><tex>\omega_1</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_2</tex>
+                        <tex>\Delta{t}</tex>
+                        <tex>\alpha</tex>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th><tex>(\omega_2)^2 = (\omega_1)^2 + 2\alpha\Delta\theta</tex></th>
+                <td><tex>\Delta{t}</tex></td>
+                <td>
+                    <span style="display: flex; justify-content: space-between;">
+                        <tex>\Delta\theta</tex>
+                        <tex>\omega_1</tex>
+                        <tex>\omega_2</tex>
+                        <tex>\alpha</tex>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </note>
+    <note>
+        <equation>
+            \underbrace{\smallText{Arc Length}}_{S}
+                &=  \underbrace{\smallText{radius}}_{r}
+                    \cdot
+                    \underbrace{\smallText{Central angle}}_{\theta}\\
+            S &= r\cdot\theta\\
+            \underbrace{\smallText{Linear displacement}}_{\Delta{x}}
+                &= \underbrace{\smallText{Angular displacement}}_{\theta}
+                    \cdot
+                   \underbrace{\smallText{radius}}_{r}\\
+            \Delta{x} &= \theta \cdot r\\
+            \underbrace{\smallText{Linear velocity}}_{v}
+                &=  \underbrace{\smallText{Angular Velocity}}_{\omega}
+                    \cdot
+                    \underbrace{\smallText{radius}}_{r}\\
+            v &= \omega \cdot r\\
+            \underbrace{\smallText{Linear acceleration}}_{a}
+                &=  \underbrace{\smallText{Angular acceleration}}_{\alpha}
+                    \cdot
+                    \underbrace{\smallText{radius}}_{r}\\
+            a &= \alpha \cdot r
+        </equation>
+    </note>
+    <note>
+        <equation>
+            \underbrace{\smallText{Angular displacement}}_{\theta}
+                &= \underbrace{\smallText{Angular speed}}_{\omega}
+                    \cdot
+                   \underbrace{\smallText{time}}_{t}\\
+            \theta &= \omega \cdot t
+        </equation>
+        <p>
+            A particle moves with uniform circular motion if and only
+            if its angular velocity V is constant and unchanging.
+        </p>
+    </note>
+</layout>
+<h2>Uniform Circular Motion</h2>
+<p>Uniform means content speed</p>
+<layout cols="3" boxed>
+    <note>
+
+    </note>
+</layout>

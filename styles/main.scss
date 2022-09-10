@@ -81,6 +81,10 @@ main > h6 {
     }
 }
 
+main > [macro="layout"]:last-child {
+    margin-bottom: 1px;
+}
+
 @media (max-width: 900px) {
     main > * {
         // width: 100%;

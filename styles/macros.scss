@@ -24,6 +24,7 @@
     align-items: normal;
     grid-row-gap: 12px;
     padding-bottom: 12px;
+    overflow: hidden;
 }
 
 
@@ -101,6 +102,15 @@
 [macro='note'] h4:first-child,
 [macro='note'] h5:first-child,
 [macro='note'] h6:first-child {
+    text-align: center;
+    margin: 8px auto;
+}
+[macro='layout'] > h1,
+[macro='layout'] > h2,
+[macro='layout'] > h3,
+[macro='layout'] > h4,
+[macro='layout'] > h5,
+[macro='layout'] > h6{
     text-align: center;
     margin: 8px auto;
 }
