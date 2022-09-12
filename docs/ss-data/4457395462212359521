@@ -19,10 +19,10 @@ table {
   border-collapse: collapse;
   border: none;
   align-self: center;
-  max-width: 100%;
   display: block;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
   overflow-x: auto;
   white-space: nowrap;
@@ -230,7 +230,7 @@ hr {
 
 [macro=note] table {
   margin: 0 auto;
-  width: 100%;
+  width: fit-content;
 }
 @media (max-width: 650px) {
   [macro=note] > * {
