@@ -107,6 +107,10 @@ hr {
 /* LAYOUT */
 /* ========================================================================= */
 
+[macro=layout] {
+  margin-bottom: 10px;
+}
+
 [macro=note] {
   display: flex;
   flex-direction: column;
