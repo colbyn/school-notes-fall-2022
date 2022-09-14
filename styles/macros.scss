@@ -1,10 +1,14 @@
+
+
+
 /* ========================================================================= */
 /* LATEX */
 /* ========================================================================= */
 [macro="equation"][latex="block"] {
     font-size: 1.5rem;
     max-width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 [macro="equation"][latex="inline"] {
     font-size: 1rem;

@@ -7,6 +7,15 @@ body {
     // overflow-x: hidden;
 }
 
+[table-wrapper] {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+    overflow-x: scroll;
+}
+
 table {
     width: fit-content;
     border-collapse: collapse;
@@ -19,6 +28,9 @@ table {
     margin: 0 auto;
     overflow-x: auto;
     white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 table th, table td {
     border: 1px solid black;

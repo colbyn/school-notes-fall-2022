@@ -14,6 +14,15 @@ body {
   padding-bottom: 200px;
 }
 
+[table-wrapper] {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  overflow-x: scroll;
+}
+
 table {
   width: fit-content;
   border-collapse: collapse;
@@ -26,6 +35,9 @@ table {
   margin: 0 auto;
   overflow-x: auto;
   white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
 table th, table td {
@@ -93,7 +105,8 @@ hr {
 [macro=equation][latex=block] {
   font-size: 1.5rem;
   max-width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 [macro=equation][latex=inline] {
