@@ -115,6 +115,15 @@ li, dt, dd, th, td {
 
 li p, dt p, dd p, th p, td p {
     margin: 0;
+    padding: 0;
+}
+
+li > *, li > p {
+    margin-bottom: 4px;
+}
+
+li > *:last-child, li > p:last-child {
+    margin-bottom: 0;
 }
 
 li, dd {

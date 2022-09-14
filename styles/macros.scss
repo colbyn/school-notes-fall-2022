@@ -33,7 +33,7 @@
 
 
 [macro="note"][compact] {
-    grid-row-gap: 5px;
+    grid-row-gap: 8px;
 }
 [macro="note"][compact] p {
     padding-top: 0;
@@ -120,6 +120,12 @@
 }
 [macro='note'] p {
     text-align: justify;
+}
+[macro="note"] ul {
+    padding-left: 18px;
+}
+[macro="note"] ul > li {
+    padding-left: 0;
 }
 
 [macro='layout'] [macro='layout'] [latex="block"] {
