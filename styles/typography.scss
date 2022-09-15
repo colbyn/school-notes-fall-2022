@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     // border-bottom: 1px solid #444;
     // align-self: start;
-    text-align: justify;
+    text-align: left;
     text-rendering: optimizeLegibility;
     hyphens: auto;
 }
@@ -82,13 +82,13 @@ dl, ul, ol {
 }
 
 p, a {
-    font-family: 'Roboto', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-rendering: optimizeLegibility;
     hyphens: auto;
 }
 
 pre {
-    font-family: 'Roboto Slab', monospace;
+    font-family: 'Source Code Pro', monospace;
     text-rendering: optimizeLegibility;
 }
 
@@ -106,7 +106,7 @@ p[justify] {
 }
 
 li, dt, dd, th, td {
-    font-family: 'Roboto Slab', monospace;
+    font-family: 'Source Code Pro', monospace;
     text-rendering: optimizeLegibility;
     text-align: justify;
     hyphens: auto;

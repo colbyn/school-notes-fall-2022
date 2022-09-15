@@ -1,0 +1,1318 @@
+<html>
+  <head>
+    <title>Note</title>
+    <link rel="preconnect" ss.link.processed href="https://colbyn.github.io/school-notes-fall-2022/pages/../template/https://fonts.googleapis.com"></link>
+    <link rel="preconnect" href="https://colbyn.github.io/school-notes-fall-2022/pages/../template/https://fonts.gstatic.com" crossorigin ss.link.processed></link>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sail&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Yomogi&display=swap" rel="stylesheet"></link>
+    <link href="https://colbyn.github.io/school-notes-fall-2022/ss-data/15995822224300584206" rel="stylesheet" ss.link.processed></link><script>window.MathJax = {
+    loader: {load: ['[tex]/mhchem', '[tex]/mathtools']},
+    tex: {
+        inlineMath: [['\\(', '\\)'], ['stem:[', ']'], ['`', '`']],
+        macros: {
+            'dx': "{\\, \\mathrm{d}x\\;}",
+            'Integrate': ['{\\int_{#1}^{#2}\\, #3 \\dx}', 3],
+            'IntegrateFor': ['{\\int_{#1}^{#2}\\, #3 {\\, \\mathrm{d}{#4}\\;}}', 4],
+            'I': ['{\\Integrate{a}{b}{#1}}', 1],
+            'angles': ['\\langle {#1},{#2} \\rangle', 2],
+            's': ['\\;\\mathrm{{#1}}', 1], // symbol
+            'D': ['{\\frac{\\mathrm{d}{#1}}{\\mathrm{d}{#2}}}', 2],
+            'colorA': ['\\textcolor{Periwinkle}{#1}', 1],
+            'colorB': ['\\textcolor{DarkOrchid}{#1}', 1],
+            'colorC': ['\\textcolor{Aquamarine}{#1}', 1],
+            'colorD': ['\\textcolor{SeaGreen}{#1}', 1],
+            'dPrime': '{\\prime\\prime}',
+            'reciprocal': ['\\frac{1}{#1}', 1],
+            'parens': ['\\left({#1}\\right)', 1],
+            'mol': "\\;\\mathrm{mol}",
+            'a': "\\frac{\\mathrm{m}}{\\mathrm{s}^2}",
+            'v': "\\frac{\\mathrm{m}}{\\mathrm{s}}",
+            'm': "\\mathrm{m}",
+            'sci': ["{#1}\\times10^{{#2}}", 2],
+            'smaller': ["\\small{#1}\\normalsize", 1],
+            'tinier': ["\\tiny{#1}\\normalsize", 1],
+            'smallText': ["\\small\\text{#1}\\normalsize", 1],
+            'tinyText': ["\\tiny\\text{#1}\\normalsize", 1],
+        },
+        packages: {
+            '[+]': ['tagformat', 'mhchem', 'mathtools'],
+        },
+        // extensions: ["[mhchem]/mhchem.js"],
+    },
+    // svg: {
+    //     fontCache: 'global',
+    //     minScale: 0.2
+    // },
+    svg: {
+        scale: 0.9,                      // global scaling factor for all expressions
+        minScale: 0.2,                  // smallest scaling factor to use
+        mtextInheritFont: false,       // true to make mtext elements use surrounding font
+        merrorInheritFont: true,       // true to make merror text use surrounding font
+        mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
+        skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
+        exFactor: 0.5,                  // default size of ex in em units
+        displayAlign: 'center',        // default for indentalign when set to 'auto'
+        displayIndent: '0',            // default for indentshift when set to 'auto'
+        fontCache: 'global',            // or 'global' or 'none'
+        titleID: 0                     // initial id number to use for aria-labeledby titles
+    },
+    processEscapes: true,
+    options: {enableMenu: false},
+};</script><script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+    <meta charset="utf-8"></meta><script src="https://www.geogebra.org/apps/deployggb.js"></script><script src="https://www.desmos.com/api/v1.5/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <style>    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }</style></head>
+  <body>
+    <div toc>
+      <h1 toc-ignore site-title id="--Colbyn%27s%5FSchool%5FNotes%5F-Fall%5F2022">Colbyn's School Notes <span date>Fall 2022</span></h1>
+      <h1 id="--Navigation%5F-%5FSub%5FSections" page-title toc-ignore>Navigation - Sub Sections</h1>
+      <ul macro="page-nav">
+        <li><a href="https://colbyn.github.io/school-notes-fall-2022/index.html">Everything</a>
+          <ul>
+            <li><a href="https://colbyn.github.io/school-notes-fall-2022/chem.html">Chemistry</a></li>
+            <li><a href="https://colbyn.github.io/school-notes-fall-2022/math.html">Mathematics</a></li>
+            <li><a href="https://colbyn.github.io/school-notes-fall-2022/physics.html">Physics</a></li></ul></li></ul>
+      <h1 toc-ignore id="--Table%5Fof%5FContents%5F%28Current%5FPage%29" toc-title>Table of Contents (Current Page)</h1>
+      <ul macro="toc">
+        <li top-level for="h1"><a href="#--Physics">Physics</a></li>
+        <li for="h1"><a href="#--Constants">Constants</a></li>
+        <li for="h1"><a href="#--Tables">Tables</a></li>
+        <li for="h3"><a href="#--Tables--Linear%5FKinematic%5FEquations%5F-%281D%29">Linear Kinematic Equations  (1D)</a></li>
+        <li for="h3"><a href="#--Tables--Rotational%5FKinematic%5FEquations">Rotational Kinematic Equations</a></li>
+        <li for="h3"><a href="#--Tables--Scalar%5For%5FVector">Scalar or Vector</a></li>
+        <li for="h1"><a href="#--Kinematic%5FEquations%5Fin%5F1D">Kinematic Equations in 1D</a></li>
+        <li for="h2"><a href="#--Kinematic%255FEquations%255Fin%255F1D--Conventions">Conventions</a></li>
+        <li for="h5"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Conventions--Graphical%5FRepresentation">Graphical Representation</a></li>
+        <li for="h2"><a href="#--Kinematic%255FEquations%255Fin%255F1D--Standard%5FEquations">Standard Equations</a></li>
+        <li for="h2"><a href="#--Kinematic%255FEquations%255Fin%255F1D--Summary">Summary</a></li>
+        <li for="h2"><a href="#--Kinematic%255FEquations%255Fin%255F1D--Basics">Basics</a></li>
+        <li for="h4"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Basics--Constant%5FVelocity">Constant Velocity</a></li>
+        <li for="h4"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Basics--Uniform%5Facceleration">Uniform acceleration</a></li>
+        <li for="h2"><a href="#--Kinematic%255FEquations%255Fin%255F1D--Miscellaneous">Miscellaneous</a></li>
+        <li for="h2"><a href="#--Kinematic%255FEquations%255Fin%255F1D--Deriving%5FDisplacement%5FFormulas">Deriving Displacement Formulas</a></li>
+        <li for="h3"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas--Displacement%5Fwhen%5Fobject%5Fmoves%5Fwith%5Fconstant%5Fvelocity">Displacement when object moves with constant velocity</a></li>
+        <li for="h4"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas---Kinematic%25255FEquations%25255Fin%25255F1D---Kinematic%2525255FEquations%2525255Fin%2525255F1D--Deriving%25255FDisplacement%25255FFormulas--Displacement%255Fwhen%255Fobject%255Fmoves%255Fwith%255Fconstant%255Fvelocity--Deriving%5F-%5C%28%5CDelta%7Bx%7D%5F%3D%5F%5Cbar%7Bv%7D%5CDelta%7Bt%7D%5C%29">Deriving  \(\Delta{x} = \bar{v}\Delta{t}\)</a></li>
+        <li for="h3"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas--Displacement%5Fwhen%5Fobject%5Faccelerates%5Ffrom%5Frest">Displacement when object accelerates from rest</a></li>
+        <li for="h4"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas---Kinematic%25255FEquations%25255Fin%25255F1D---Kinematic%2525255FEquations%2525255Fin%2525255F1D--Deriving%25255FDisplacement%25255FFormulas--Displacement%255Fwhen%255Fobject%255Faccelerates%255Ffrom%255Frest--Deriving%5F-%5C%28%5CDelta%7Bx%7D%5F%3D%5F%5Cfrac%7B1%7D%7B2%7D%5Cbar%7Ba%7D%5CDelta%7Bt%5E2%7D%5C%29">Deriving  \(\Delta{x} = \frac{1}{2}\bar{a}\Delta{t^2}\)</a></li>
+        <li for="h3"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas--Displacement%5Fwhen%5Fobject%5Faccelerates%5Fwith%5Finitial%5Fvelocity">Displacement when object accelerates with initial velocity</a></li>
+        <li for="h4"><a href="#--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas---Kinematic%25255FEquations%25255Fin%25255F1D---Kinematic%2525255FEquations%2525255Fin%2525255F1D--Deriving%25255FDisplacement%25255FFormulas--Displacement%255Fwhen%255Fobject%255Faccelerates%255Fwith%255Finitial%255Fvelocity--Deriving%5F-%5C%28%5CDelta%7Bx%7D%5F%3D%5Fv%5F1%5CDelta%7Bt%7D%5F%2B%5F%5Cfrac%7B1%7D%7B2%7D%5Cbar%7Ba%7D%5CDelta%7Bt%5E2%7D%5C%29">Deriving  \(\Delta{x} = v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}\)</a></li>
+        <li for="h1"><a href="#--Deriving%5FThe%5FOther%5FKinematic%5FFormulas">Deriving The Other Kinematic Formulas</a></li>
+        <li for="h2"><a href="#--Deriving%255FThe%255FOther%255FKinematic%255FFormulas--Deriving%5F-%5C%28v%5F2%5F%3D%5Fv%5F1%5F%2B%5F%5Cbar%7Ba%7D%5CDelta%7Bt%7D%5C%29">Deriving  \(v_2 = v_1 + \bar{a}\Delta{t}\)</a></li>
+        <li for="h3"><a href="#--Deriving%255FThe%255FOther%255FKinematic%255FFormulas---Deriving%25255FThe%25255FOther%25255FKinematic%25255FFormulas--Deriving%255F-%255C%2528v%255F2%255F%253D%255Fv%255F1%255F%252B%255F%255Cbar%257Ba%257D%255CDelta%257Bt%257D%255C%2529--Deriving%5F-%5C%28v%5F2%5E2%5F%3D%5Fv%5F1%5E2%5F%2B%5F2%5Cbar%7Ba%7D%5CDelta%7Bx%7D%5C%29">Deriving  \(v_2^2 = v_1^2 + 2\bar{a}\Delta{x}\)</a></li>
+        <li for="h1"><a href="#--Two-dimensional%5FProjectile%5FMotion">Two-dimensional Projectile Motion</a></li>
+        <li for="h2"><a href="#--Two-dimensional%255FProjectile%255FMotion--Conventions">Conventions</a></li>
+        <li for="h2"><a href="#--Two-dimensional%255FProjectile%255FMotion--Summary">Summary</a></li>
+        <li for="h2"><a href="#--Two-dimensional%255FProjectile%255FMotion--Formulas">Formulas</a></li>
+        <li for="h3"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas--Displacement%5F%26%5FProjectile%5FPosition">Displacement & Projectile Position</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--Generalized">Generalized</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--In%5Fterms%5Fof%5F-%5C%28x%5C%29-%5Fand%5F-%5C%28y%5C%29-%5Faxis%5Fvalues">In terms of  \(x\)  and  \(y\)  axis values</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--With%5Frespect%5Fto%5Fthe%5F-%5C%28y%5C%29-%5Faxis">With respect to the  \(y\)  axis</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--With%5Frespect%5Fto%5Fthe%5F-%5C%28x%5C%29-%5Faxis">With respect to the  \(x\)  axis</a></li>
+        <li for="h2"><a href="#--Two-dimensional%255FProjectile%255FMotion--Solving%5FProjectile%5FMotion%5FProblems">Solving Projectile Motion Problems</a></li>
+        <li for="h3"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems--Projectile%5FMotion">Projectile Motion</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion--In%5Fterms%5Fof%5Fthe%5F-%5C%28x%5C%29-%5Faxis">In terms of the  \(x\)  axis</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion--In%5Fterms%5Fof%5Fthe%5F-%5C%28y%5C%29-%5Faxis">In terms of the  \(y\)  axis</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion--In%5FSummary">In Summary</a></li>
+        <li for="h3"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems--Projectile%5FMotion%5Ffrom%5Fan%5Finitial%5Fheight%2C%5Fwith%5Fgiven%5Finitial%5Fvelocity%5Fand%5Fangle">Projectile Motion from an initial height, with given initial velocity and angle</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--In%5Fterms%5Fof%5Fthe%5F-%5C%28x%5C%29-%5Faxis">In terms of the  \(x\)  axis</a></li>
+        <li for="h5"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528x%255C%2529-%255Faxis--Deriving%5Fdisplacement%5Fas%5Fa%5Ffunction%5Fof%5Ftime">Deriving displacement as a function of time</a></li>
+        <li for="h6"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528x%255C%2529-%255Faxis---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems---Two-dimensional%252525255FProjectile%252525255FMotion---Two-dimensional%25252525255FProjectile%25252525255FMotion--Solving%252525255FProjectile%252525255FMotion%252525255FProblems--Projectile%2525255FMotion%2525255Ffrom%2525255Fan%2525255Finitial%2525255Fheight%2525252C%2525255Fwith%2525255Fgiven%2525255Finitial%2525255Fvelocity%2525255Fand%2525255Fangle--In%25255Fterms%25255Fof%25255Fthe%25255F-%25255C%252528x%25255C%252529-%25255Faxis--Deriving%255Fdisplacement%255Fas%255Fa%255Ffunction%255Fof%255Ftime--Deriving%5Fvelocity">Deriving velocity</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--In%5Fterms%5Fof%5Fthe%5F-%5C%28y%5C%29-%5Faxis">In terms of the  \(y\)  axis</a></li>
+        <li for="h5"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528y%255C%2529-%255Faxis--Deriving%5Fdisplacement%5Fas%5Fa%5Ffunction%5Fof%5Ftime">Deriving displacement as a function of time</a></li>
+        <li for="h5"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528y%255C%2529-%255Faxis--Deriving%5Fvelocity">Deriving velocity</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--In%5Fsummary">In summary</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--To%5Ffind%5Fthe%5Frange">To find the range</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--To%5Ffind%5Fthe%5Fmaximum%5Fvertical%5Fdisplacement%5F%28i%2Ee%2E%5Fpeak%5Fheight%29">To find the maximum vertical displacement (i.e. peak height)</a></li>
+        <li for="h4"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--To%5Ffind%5Fthe%5Fvelocity%5Fat%5Fa%5Fgiven%5Fmoment%5Fof%5Ftime">To find the velocity at a given moment of time</a></li>
+        <li for="h3"><a href="#--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems--Range">Range</a></li>
+        <li for="h1"><a href="#--Reasoning%5FAbout%5FProjectile%5FMotion">Reasoning About Projectile Motion</a></li>
+        <li for="h2"><a href="#--Reasoning%255FAbout%255FProjectile%255FMotion--Notes">Notes</a></li>
+        <li for="h2"><a href="#--Reasoning%255FAbout%255FProjectile%255FMotion--Question">Question</a></li>
+        <li for="h2"><a href="#--Reasoning%255FAbout%255FProjectile%255FMotion--Answer">Answer</a></li>
+        <li for="h3"><a href="#--Reasoning%255FAbout%255FProjectile%255FMotion---Reasoning%25255FAbout%25255FProjectile%25255FMotion--Answer--Explanation">Explanation</a></li>
+        <li for="h2"><a href="#--Reasoning%255FAbout%255FProjectile%255FMotion--Problems">Problems</a></li>
+        <li for="h1"><a href="#--Relative%5FMotion">Relative Motion</a></li>
+        <li for="h2"><a href="#--Relative%255FMotion--Galilean%5Ftransformation%5Fof%5Fvelocity">Galilean transformation of velocity</a></li>
+        <li for="h2"><a href="#--Relative%255FMotion--Galilean%5Ftransformation%5Fof%5Fvelocity%5F%28alternate%5Fnotation%29">Galilean transformation of velocity (alternate notation)</a></li>
+        <li for="h1"><a href="#--Rotational%5FMotion%5F%26%5FKinematics">Rotational Motion & Kinematics</a></li>
+        <li for="h2"><a href="#--Rotational%255FMotion%255F%2526%255FKinematics--Basics">Basics</a></li>
+        <li for="h2"><a href="#--Rotational%255FMotion%255F%2526%255FKinematics--Auxiliary%5FFormula%5FReference">Auxiliary Formula Reference</a></li>
+        <li for="h1"><a href="#--Uniform%5FCircular%5FMotion">Uniform Circular Motion</a></li>
+        <li for="h1"><a href="#--Newton%27s%5FLaws%5Fof%5FMotion">Newton's Laws of Motion</a></li>
+        <li for="h2"><a href="#--Newton%2527s%255FLaws%255Fof%255FMotion--Laws">Laws</a></li>
+        <li for="h2"><a href="#--Newton%2527s%255FLaws%255Fof%255FMotion--Terms">Terms</a></li>
+        <li for="h2"><a href="#--Newton%2527s%255FLaws%255Fof%255FMotion--Notes">Notes</a></li>
+        <li for="h4"><a href="#--Newton%2527s%255FLaws%255Fof%255FMotion---Newton%252527s%25255FLaws%25255Fof%25255FMotion--Notes--Question">Question</a></li>
+        <li for="h4"><a href="#--Newton%2527s%255FLaws%255Fof%255FMotion---Newton%252527s%25255FLaws%25255Fof%25255FMotion--Notes--Question">Question</a></li></ul></div>
+    <main>
+      <h1 top-level id="--Physics">Physics</h1>      <h1 id="--Constants">Constants</h1>      <div columns="3" cols="3" macro="layout">
+        <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+g &= 9.8 \frac{m}{s^2}\;\text{downward} \;\text{where}\; a &= -g
+\end{split}
+\end{equation}$$</div></div>      <h1 id="--Tables">Tables</h1>      <div macro="layout" columns="2" cols="2" style="grid-template-rows: max-content; grid-template-areas: 'a c' 'b d'">
+        <h3 style="grid-area: a" id="--Tables--Linear%5FKinematic%5FEquations%5F-%281D%29">Linear Kinematic Equations <small>(1D)</small></h3>
+        <div macro="note" style="grid-area: b">
+          <div table-wrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th>Formula</th>
+                  <th>Missing</th>
+                  <th>Quantities Present</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(v_2 = v_1 + a\Delta{t}\)</span></th>
+                  <td><span latex="inline" macro="tex">\(\Delta{x}\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(v_1\)</span><span latex="inline" macro="tex">\(v_2\)</span><span macro="tex" latex="inline">\(a\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span></span></td></tr>
+                <tr>
+                  <th><span macro="tex" latex="inline">\(\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(a\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span latex="inline" macro="tex">\(v_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(v_2\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\)</span></th>
+                  <td><span latex="inline" macro="tex">\(v_2\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span macro="tex" latex="inline">\(v_1\)</span><span latex="inline" macro="tex">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(a\)</span></span></td></tr>
+                <tr>
+                  <th><span macro="tex" latex="inline">\(\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\)</span></th>
+                  <td><span latex="inline" macro="tex">\(v_1\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span macro="tex" latex="inline">\(v_2\)</span><span latex="inline" macro="tex">\(\Delta{t}\)</span><span latex="inline" macro="tex">\(a\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\((v_2)^2 = (v_1)^2 + 2a\Delta{x}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\Delta{t}\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span latex="inline" macro="tex">\(v_1\)</span><span latex="inline" macro="tex">\(v_2\)</span><span latex="inline" macro="tex">\(a\)</span></span></td></tr></tbody></table></div></div>
+        <h3 style="grid-area: c" id="--Tables--Rotational%5FKinematic%5FEquations">Rotational Kinematic Equations</h3>
+        <div style="grid-area: d" macro="note">
+          <div table-wrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th>Formula</th>
+                  <th>Missing</th>
+                  <th>Quantities Present</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\omega_2 = \omega_1 + \alpha\Delta{t}\)</span></th>
+                  <td><span latex="inline" macro="tex">\(\Delta\theta\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span macro="tex" latex="inline">\(\omega_1\)</span><span macro="tex" latex="inline">\(\omega_2\)</span><span macro="tex" latex="inline">\(\alpha\)</span><span latex="inline" macro="tex">\(\Delta{t}\)</span></span></td></tr>
+                <tr>
+                  <th><span macro="tex" latex="inline">\(\Delta\theta = \left(\frac{\omega_2 + \omega_1}{2}\right)\Delta{t}\)</span></th>
+                  <td><span latex="inline" macro="tex">\(a\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span macro="tex" latex="inline">\(\omega_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(\omega_2\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\Delta\theta = \omega_1 \Delta{t} + \frac{1}{2}\alpha\Delta{t^2}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\omega_2\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span macro="tex" latex="inline">\(\omega_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span latex="inline" macro="tex">\(\alpha\)</span></span></td></tr>
+                <tr>
+                  <th><span macro="tex" latex="inline">\(\Delta\theta = \omega_2\Delta{t} - \frac{1}{2}\alpha\Delta{t^2}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\omega_1\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span latex="inline" macro="tex">\(\omega_2\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(\alpha\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\((\omega_2)^2 = (\omega_1)^2 + 2\alpha\Delta\theta\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\Delta{t}\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span latex="inline" macro="tex">\(\omega_1\)</span><span latex="inline" macro="tex">\(\omega_2\)</span><span latex="inline" macro="tex">\(\alpha\)</span></span></td></tr></tbody></table></div></div></div>      <div macro="layout" columns="3" cols="3">
+        <div macro="note">
+          <h3 id="--Tables--Scalar%5For%5FVector">Scalar or Vector</h3>
+          <div table-wrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th>Speed</th>
+                  <td>Scalar</td></tr>
+                <tr>
+                  <th>Distance</th>
+                  <td>Scalar</td></tr>
+                <tr>
+                  <th>Velocity</th>
+                  <td>Vector</td></tr>
+                <tr>
+                  <th>Acceleration</th>
+                  <td>Vector</td></tr>
+                <tr>
+                  <th>Average Velocity</th>
+                  <td>Vector</td></tr>
+                <tr>
+                  <th>Displacement</th>
+                  <td>Vector</td></tr>
+                <tr>
+                  <th>Position</th>
+                  <td>Vector</td></tr></tbody></table></div></div></div>      <h1 id="--Kinematic%5FEquations%5Fin%5F1D">Kinematic Equations in 1D</h1>      <div macro="layout" cols="1" boxed columns="1">
+        <div macro="note">
+          <div macro="layout" columns="2" cols="2">
+            <div macro="note">
+              <h2 id="--Kinematic%255FEquations%255Fin%255F1D--Conventions">Conventions</h2>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \bar{v} &= \text{Average velocity}\\
+                    \bar{a} &= \text{Average acceleration}\\
+                    \text{Time} = \Delta{t} &= t_2 - t_1\\
+                    \text{Displacement} = \Delta{x} &= x_2 - x_1\\
+                    \Delta{v} &= v_2 - v_1\\
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h5 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Conventions--Graphical%5FRepresentation">Graphical Representation</h5>
+              <div image-wrapper><img ss.proc.min-width max-width="900px" ss.proc.max-width ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/5793882822436811926.svg" style="min-width: 600px; max-width: 900px; width: 100%;" min-width="600px"></img></div></div></div></div></div>      <div columns="1" boxed cols="1" macro="layout">
+        <div macro="note">
+          <h2 id="--Kinematic%255FEquations%255Fin%255F1D--Standard%5FEquations">Standard Equations</h2>
+          <div macro="layout" columns="3" cols="3">
+            <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                v_2 &= v_1 + a\Delta{t}
+            
+\end{split}
+\end{equation}$$</div>
+            <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                (v_2)^2 &= (v_1)^2 + 2a\Delta{x}
+            
+\end{split}
+\end{equation}$$</div>
+            <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                \Delta{x} &= v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\\
+                          &= v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\\
+                          &= \left(\frac{v_2 + v_1}{2}\right)\Delta{t}
+            
+\end{split}
+\end{equation}$$</div></div>
+          <h2 id="--Kinematic%255FEquations%255Fin%255F1D--Summary">Summary</h2>
+          <div table-wrapper>
+            <div table-wrapper>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Formula</th>
+                    <th>Missing</th>
+                    <th>Quantities Present</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th><span latex="inline" macro="tex">\(v_2 = v_1 + a\Delta{t}\)</span></th>
+                    <td><span macro="tex" latex="inline">\(\Delta{x}\)</span></td>
+                    <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(v_1\)</span><span latex="inline" macro="tex">\(v_2\)</span><span macro="tex" latex="inline">\(a\)</span><span latex="inline" macro="tex">\(\Delta{t}\)</span></span></td></tr>
+                  <tr>
+                    <th><span latex="inline" macro="tex">\(\Delta{x} = \left(\frac{v_2 + v_1}{2}\right)\Delta{t}\)</span></th>
+                    <td><span latex="inline" macro="tex">\(a\)</span></td>
+                    <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span latex="inline" macro="tex">\(v_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(v_2\)</span></span></td></tr>
+                  <tr>
+                    <th><span latex="inline" macro="tex">\(\Delta{x} = v_1 \Delta{t} + \frac{1}{2}a\Delta{t^2}\)</span></th>
+                    <td><span latex="inline" macro="tex">\(v_2\)</span></td>
+                    <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span latex="inline" macro="tex">\(v_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(a\)</span></span></td></tr>
+                  <tr>
+                    <th><span latex="inline" macro="tex">\(\Delta{x} = v_2\Delta{t} - \frac{1}{2}a\Delta{t^2}\)</span></th>
+                    <td><span macro="tex" latex="inline">\(v_1\)</span></td>
+                    <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span macro="tex" latex="inline">\(v_2\)</span><span latex="inline" macro="tex">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(a\)</span></span></td></tr>
+                  <tr>
+                    <th><span macro="tex" latex="inline">\((v_2)^2 = (v_1)^2 + 2a\Delta{x}\)</span></th>
+                    <td><span macro="tex" latex="inline">\(\Delta{t}\)</span></td>
+                    <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta{x}\)</span><span latex="inline" macro="tex">\(v_1\)</span><span latex="inline" macro="tex">\(v_2\)</span><span macro="tex" latex="inline">\(a\)</span></span></td></tr></tbody></table></div></div></div></div>      <div boxed columns="1" macro="layout" cols="1">
+        <div macro="note">
+          <h2 id="--Kinematic%255FEquations%255Fin%255F1D--Basics">Basics</h2>
+          <div cols="3" macro="layout" columns="3">
+            <div macro="note">
+              <h4 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Basics--Constant%5FVelocity">Constant Velocity</h4>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\\
+                    \Delta{x} &= \bar{v}\Delta{t}
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Basics--Uniform%5Facceleration">Uniform acceleration</h4>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\\
+                    v_2 &= v_1 + a\Delta{t}\\
+                    \Delta{x} &= v_0\Delta{t}+\frac{1}{2}a\Delta{t^2}\\
+                    (v_2)^2 &= (v_1)^2 - 2\bar{a}\Delta{x}
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h2 id="--Kinematic%255FEquations%255Fin%255F1D--Miscellaneous">Miscellaneous</h2>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \bar{v} &= \frac{\Delta{x}}{\Delta{t}} = \frac{v_2 + v_1}{2}\\
+                    \bar{a} &= \frac{\Delta{v}}{\Delta{t}}
+                
+\end{split}
+\end{equation}$$</div></div></div></div></div>      <h2 id="--Kinematic%255FEquations%255Fin%255F1D--Deriving%5FDisplacement%5FFormulas">Deriving Displacement Formulas</h2>      <div cols="2" boxed macro="layout" columns="2">
+        <div macro="note">
+          <h3 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas--Displacement%5Fwhen%5Fobject%5Fmoves%5Fwith%5Fconstant%5Fvelocity">Displacement when object moves with constant velocity</h3>
+          <h4 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas---Kinematic%25255FEquations%25255Fin%25255F1D---Kinematic%2525255FEquations%2525255Fin%2525255F1D--Deriving%25255FDisplacement%25255FFormulas--Displacement%255Fwhen%255Fobject%255Fmoves%255Fwith%255Fconstant%255Fvelocity--Deriving%5F-%5C%28%5CDelta%7Bx%7D%5F%3D%5F%5Cbar%7Bv%7D%5CDelta%7Bt%7D%5C%29">Deriving <span latex="inline" macro="tex">\(\Delta{x} = \bar{v}\Delta{t}\)</span></h4>
+          <div image-wrapper><img max-width="500px" ss.proc.max-width ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/11339614115074033586.svg" style="max-width: 500px; width: 100%;"></img></div>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \Delta{x} &= \bar{v}\Delta{t}
+        
+\end{split}
+\end{equation}$$</div></div>
+        <div macro="note">
+          <h3 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas--Displacement%5Fwhen%5Fobject%5Faccelerates%5Ffrom%5Frest">Displacement when object accelerates from rest</h3>
+          <h4 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas---Kinematic%25255FEquations%25255Fin%25255F1D---Kinematic%2525255FEquations%2525255Fin%2525255F1D--Deriving%25255FDisplacement%25255FFormulas--Displacement%255Fwhen%255Fobject%255Faccelerates%255Ffrom%255Frest--Deriving%5F-%5C%28%5CDelta%7Bx%7D%5F%3D%5F%5Cfrac%7B1%7D%7B2%7D%5Cbar%7Ba%7D%5CDelta%7Bt%5E2%7D%5C%29">Deriving <span macro="tex" latex="inline">\(\Delta{x} = \frac{1}{2}\bar{a}\Delta{t^2}\)</span></h4>
+          <div image-wrapper><img ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/2307929114917461224.svg" style="min-width: 500px; max-width: 900px; width: 100%;" ss.proc.max-width max-width="900px" min-width="500px" ss.proc.min-width></img></div>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \Delta{x} &= \frac{1}{2}\Delta{v}\Delta{t}\\
+                      &= \frac{1}{2}\bar{a}\Delta{t^2}
+        
+\end{split}
+\end{equation}$$</div></div></div>      <div boxed cols="1" macro="layout" columns="1">
+        <div macro="note">
+          <h3 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas--Displacement%5Fwhen%5Fobject%5Faccelerates%5Fwith%5Finitial%5Fvelocity">Displacement when object accelerates with initial velocity</h3>
+          <h4 id="--Kinematic%255FEquations%255Fin%255F1D---Kinematic%25255FEquations%25255Fin%25255F1D--Deriving%255FDisplacement%255FFormulas---Kinematic%25255FEquations%25255Fin%25255F1D---Kinematic%2525255FEquations%2525255Fin%2525255F1D--Deriving%25255FDisplacement%25255FFormulas--Displacement%255Fwhen%255Fobject%255Faccelerates%255Fwith%255Finitial%255Fvelocity--Deriving%5F-%5C%28%5CDelta%7Bx%7D%5F%3D%5Fv%5F1%5CDelta%7Bt%7D%5F%2B%5F%5Cfrac%7B1%7D%7B2%7D%5Cbar%7Ba%7D%5CDelta%7Bt%5E2%7D%5C%29">Deriving <span latex="inline" macro="tex">\(\Delta{x} = v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}\)</span></h4>
+          <div image-wrapper><img style="min-width: 500px; max-width: 900px; width: 100%;" ss.img.processed min-width="500px" max-width="900px" ss.proc.max-width ss.proc.min-width src="https://colbyn.github.io/school-notes-fall-2022/ss-data/5793882822436811926.svg"></img></div>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \Delta{x} &= v_1\Delta{t} + \frac{1}{2}\Delta{v}\Delta{t} \\
+                      &= v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}
+        
+\end{split}
+\end{equation}$$</div></div></div>      <h1 id="--Deriving%5FThe%5FOther%5FKinematic%5FFormulas">Deriving The Other Kinematic Formulas</h1>      <div boxed macro="layout" cols="2" columns="2">
+        <div macro="note">
+          <h2 id="--Deriving%255FThe%255FOther%255FKinematic%255FFormulas--Deriving%5F-%5C%28v%5F2%5F%3D%5Fv%5F1%5F%2B%5F%5Cbar%7Ba%7D%5CDelta%7Bt%7D%5C%29">Deriving <span macro="tex" latex="inline">\(v_2 = v_1 + \bar{a}\Delta{t}\)</span></h2>
+          <p>Given</p>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \bar{a} &= \frac{\Delta{v}}{\Delta{t}} = \frac{v_2 - v_1}{\Delta{t}}\;(1)
+        
+\end{split}
+\end{equation}$$</div>
+          <p>We can rearrange <span macro="tex" latex="inline">\(v_2\)</span> from equation (1) like so</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \bar{a} &= \frac{v_2 - v_1}{\Delta{t}}\\
+            \bar{a}\Delta{t} &= v_2 - v_1\\
+            v_1 + \bar{a}\Delta{t} &= v_2\\
+            \therefore v_2 &= v_1 + \bar{a}\Delta{t}
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Therefore</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            v_2 &= v_1 + \bar{a}\Delta{t}
+        
+\end{split}
+\end{equation}$$</div></div>
+        <div macro="note">
+          <h3 id="--Deriving%255FThe%255FOther%255FKinematic%255FFormulas---Deriving%25255FThe%25255FOther%25255FKinematic%25255FFormulas--Deriving%255F-%255C%2528v%255F2%255F%253D%255Fv%255F1%255F%252B%255F%255Cbar%257Ba%257D%255CDelta%257Bt%257D%255C%2529--Deriving%5F-%5C%28v%5F2%5E2%5F%3D%5Fv%5F1%5E2%5F%2B%5F2%5Cbar%7Ba%7D%5CDelta%7Bx%7D%5C%29">Deriving <span macro="tex" latex="inline">\(v_2^2 = v_1^2 + 2\bar{a}\Delta{x}\)</span></h3>
+          <p>Given</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\;(1)\\
+            \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\;(2)\\
+                    &= \frac{v_2 + v_1}{2}\;(3)
+        
+\end{split}
+\end{equation}$$</div>
+          <p><span latex="inline" macro="tex">\(\Delta{t}\)</span> from equation (1) can be rearranged as</p>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \Delta{t} &= \frac{\Delta{v}}{\bar{a}} = \frac{v_2 - v_1}{\bar{a}}\;(4)
+        
+\end{split}
+\end{equation}$$</div>
+          <p><span macro="tex" latex="inline">\(\Delta{x}\)</span> from equation (2) can be rearranged like so</p>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \bar{v} &= \frac{\Delta{x}}{\Delta{t}}\\
+            \bar{v}\Delta{t} &= \Delta{x}\\
+            \therefore \Delta{x} &= \bar{v}\cdot\Delta{t}
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Using the following equations from above</p>
+          <ul>
+            <li><span macro="tex" latex="inline">\(\bar{v} = \frac{v_2 + v_1}{2}\)</span> from equation (3)</li>
+            <li><span latex="inline" macro="tex">\(\Delta{t} = \frac{v_2 - v_1}{\bar{a}}\)</span> from equation (4)</li></ul>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \Delta{x} &= \bar{v}\cdot\Delta{t}\\
+                      &= \frac{v_2 + v_1}{2}\cdot\frac{v_2 - v_1}{\bar{a}}\\
+                      &= \frac{(v_2)^2 - (v_1)^2}{2\bar{a}}\;(5)
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Rearranging equation (5)</p>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            2\bar{a}\Delta{x} &= (v_2)^2 - (v_1)^2
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Rearrange again to obtain the more common form</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            (v_2)^2 &= (v_1)^2 + 2\bar{a}\Delta{x}
+        
+\end{split}
+\end{equation}$$</div></div>
+        <div macro="note">
+          <p>TODO</p></div></div>      <h1 id="--Two-dimensional%5FProjectile%5FMotion">Two-dimensional Projectile Motion</h1>      <div columns="1" boxed macro="layout" cols="1">
+        <div macro="note">
+          <h2 id="--Two-dimensional%255FProjectile%255FMotion--Conventions">Conventions</h2></div></div>      <div columns="1" boxed macro="layout" cols="1">
+        <div macro="note">
+          <h2 id="--Two-dimensional%255FProjectile%255FMotion--Summary">Summary</h2>
+          <div columns="2" cols="2" macro="layout">
+            <div image-wrapper><img style="max-width: 900px; width: 100%;" ss.proc.max-width src="https://colbyn.github.io/school-notes-fall-2022/ss-data/17948490648388806918.svg" max-width="900px" ss.img.processed></img></div>
+            <div macro="note">
+              <div image-wrapper><img style="max-width: 900px; width: 100%;" src="https://colbyn.github.io/school-notes-fall-2022/ss-data/230528048185440317.svg" ss.proc.max-width ss.img.processed max-width="900px"></img></div>
+              <p justify>                    It's easy to see in the above visualization that <span macro="tex" latex="inline">\(t\)</span>                    and <span macro="tex" latex="inline">\(x\)</span> increase linearly, while <span latex="inline" macro="tex">\(y\)</span> is non-linear.
+                </p></div>
+            <div image-wrapper><img ss.img.processed max-width="900px" src="https://colbyn.github.io/school-notes-fall-2022/ss-data/12890388319227743929.svg" style="max-width: 900px; width: 100%;" ss.proc.max-width></img></div>
+            <div image-wrapper><img ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/1447821299155868011.svg" style="max-width: 900px; width: 100%;" ss.proc.max-width max-width="900px"></img></div></div></div></div>      <h2 id="--Two-dimensional%255FProjectile%255FMotion--Formulas">Formulas</h2>      <div cols="1" columns="1" macro="layout" boxed>
+        <div macro="note">
+          <h3 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas--Displacement%5F%26%5FProjectile%5FPosition">Displacement & Projectile Position</h3>
+          <div macro="layout" cols="2" columns="2">
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--Generalized">Generalized</h4>
+              <p>In general (without respect to any <span latex="inline" macro="tex">\(x\)</span> or <span latex="inline" macro="tex">\(y\)</span> axis values)</p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \text{Displacement}
+                        &= \Delta_{\text{general}}\\
+                        &= \bar{v}\cdot\Delta{t}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>Where the distance traveled or displaced is</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \text{Displacement}
+                        &= \Delta_{\text{general}}\\
+                        &= V_1\cdot\Delta{t} + \frac{1}{2}a\Delta{t^2}
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--In%5Fterms%5Fof%5F-%5C%28x%5C%29-%5Fand%5F-%5C%28y%5C%29-%5Faxis%5Fvalues">In terms of <span macro="tex" latex="inline">\(x\)</span> and <span macro="tex" latex="inline">\(y\)</span> axis values</h4>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \Delta{x} &= x_2 - x_1\\
+                    \Delta{y} &= y_2 - y_1
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--With%5Frespect%5Fto%5Fthe%5F-%5C%28y%5C%29-%5Faxis">With respect to the <span latex="inline" macro="tex">\(y\)</span> axis</h4>
+              <p>The displacement of a given projectile in terms of the <span latex="inline" macro="tex">\(y\)</span> axis is</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \Delta{y} = V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>Since <span macro="tex" latex="inline">\(\Delta{y} = y_2 - y_1\)</span></p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \Delta{y} &= V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}\\
+                    y_2 - y_1 &= V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}\\
+                    y_2  &= y_1 + V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>Which can be read as (in terms of the <span latex="inline" macro="tex">\(y\)</span> axis)</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \small{\text{the final position}}\;
+                        &= \small{\text{the initial position}}\;
+                        + V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Formulas---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Formulas--Displacement%255F%2526%255FProjectile%255FPosition--With%5Frespect%5Fto%5Fthe%5F-%5C%28x%5C%29-%5Faxis">With respect to the <span latex="inline" macro="tex">\(x\)</span> axis</h4>
+              <p>The displacement of a given projectile in terms of the <span latex="inline" macro="tex">\(x\)</span> axis is</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \Delta{x} = V_{x}\cdot\Delta{t} + \frac{1}{2}a_x\Delta{t^2} (1)
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    Note that <span latex="inline" macro="tex">\(a_x = 0\)</span> (because there is no force acting on the projectile in
+                    the horizontal direction), and therefore the initial and final velocities are the same.
+                    I.e. it's constant throughout. Therefore in summary
+                </p>
+              <ul>
+                <li><span macro="tex" latex="inline">\(a_x = 0\)</span></li>
+                <li><span macro="tex" latex="inline">\(v_{x1} = v_{x2}\)</span> and therefore we will simple refer to the velocity
+                        vector as as <span latex="inline" macro="tex">\(v_x\)</span>.
+                    </li></ul>
+              <p>Therefore we can simplify equation (1) considerably</p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \Delta{x}
+                        &= V_{x}\cdot\Delta{t} + 0\\
+                        &= V_{x}\cdot\Delta{t}
+                
+\end{split}
+\end{equation}$$</div></div></div></div></div>      <h2 id="--Two-dimensional%255FProjectile%255FMotion--Solving%5FProjectile%5FMotion%5FProblems">Solving Projectile Motion Problems</h2>      <div macro="layout" boxed cols="1" columns="1">
+        <div macro="note">
+          <h3 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems--Projectile%5FMotion">Projectile Motion</h3>
+          <div image-wrapper><img src="https://colbyn.github.io/school-notes-fall-2022/ss-data/12383300519204933531.svg" style="max-width: 600px; width: 100%;" max-width="600px" ss.proc.max-width ss.img.processed></img></div>
+          <div macro="layout" cols="2" columns="2">
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion--In%5Fterms%5Fof%5Fthe%5F-%5C%28x%5C%29-%5Faxis">In terms of the <span latex="inline" macro="tex">\(x\)</span> axis</h4>
+              <p>TODO</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \Delta{x}
+                        &= x_2 - x_1 = V_{0,x} \dot t\\
+                    v_{x}
+                        &= v_{0,x} + a_x
+                
+\end{split}
+\end{equation}$$</div>
+              <p>TODO</p></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion--In%5Fterms%5Fof%5Fthe%5F-%5C%28y%5C%29-%5Faxis">In terms of the <span latex="inline" macro="tex">\(y\)</span> axis</h4>
+              <p>TODO</p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \Delta{y}
+                        &= y_2 - y_1 = V_{0,x} \dot t\\
+                    v_{y}
+                        &= v_{0,y} + a_y
+                
+\end{split}
+\end{equation}$$</div>
+              <p>TODO</p></div></div>
+          <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion--In%5FSummary">In Summary</h4>
+          <p>Initial Quantities</p>
+          <div columns="2" cols="2" macro="layout">
+            <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                v_x &= v_o\cdot\cos\theta\\
+                v_y &= v_o\cdot\sin\theta
+            
+\end{split}
+\end{equation}$$</div>
+            <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                a_y &= -g\\
+                a_x &= 0
+            
+\end{split}
+\end{equation}$$</div></div>
+          <p>Derived expressions</p>
+          <div macro="layout" columns="2" cols="2">
+            <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                \Delta{x} &= v_{0,x} \cdot \Delta{t}\\
+                v_x &= v_{0,x}
+            
+\end{split}
+\end{equation}$$</div>
+            <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                \Delta{y} &= v_{0,y} \cdot \Delta{t} - \frac{1}{2} g \Delta{t^2}\\
+                v_y &= v_{0,y} - g \Delta{t}
+            
+\end{split}
+\end{equation}$$</div></div>
+          <p>Solutions</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            t_{\text{top}} &= \frac{v_0\cdot\sin\theta}{g}\\
+            \Delta{y_{\text{max}}} &= \frac{v_0^2 + sin^2\theta}{2g}\\
+            \text{Range} &= \frac
+                {2 \cdot v_0^2 \cdot \sin\theta \cdot \cos\theta}
+                {g}
+        
+\end{split}
+\end{equation}$$</div></div>
+        <div macro="note">
+          <h3 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems--Projectile%5FMotion%5Ffrom%5Fan%5Finitial%5Fheight%2C%5Fwith%5Fgiven%5Finitial%5Fvelocity%5Fand%5Fangle">Projectile Motion from an initial height, with given initial velocity and angle</h3>
+          <div image-wrapper><img max-width="800px" ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/5039859969017064589.svg" style="max-width: 800px; width: 100%;" ss.proc.max-width></img></div>
+          <p>Given</p>
+          <ul>
+            <li>A projectile angle <span macro="tex" latex="inline">\(\theta\)</span></li>
+            <li>The initial height <span latex="inline" macro="tex">\(y_0\)</span></li>
+            <li>The initial velocity <span latex="inline" macro="tex">\(v_0\)</span></li></ul>
+          <p>            We can therefore derive the the initial velocities for <span latex="inline" macro="tex">\(x\)</span> and <span latex="inline" macro="tex">\(y\)</span> in terms of
+            the given angle and initial velocity.
+        </p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            v_{0x} &= v_0 \cdot \cos\theta\\
+            v_{0y} &= v_0 \cdot \sin\theta
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Given the general formulas for displacement and velocity</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \small
+            \text{displacement}
+                &= \text{initial displacement}
+                + \text{initial velocity} \cdot \Delta{t}
+                + \frac{1}{2}a\Delta{t^2}\\
+            \text{velocity} &= \text{initial velocity} + a\cdot\Delta{t}
+        
+\end{split}
+\end{equation}$$</div>
+          <p>            Which this information, we will derive specific equations in terms of the <span latex="inline" macro="tex">\(x\)</span>            and <span latex="inline" macro="tex">\(y\)</span> axes governing the projectile.
+        </p>
+          <div columns="2" cols="2" macro="layout">
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--In%5Fterms%5Fof%5Fthe%5F-%5C%28x%5C%29-%5Faxis">In terms of the <span macro="tex" latex="inline">\(x\)</span> axis</h4>
+              <h5 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528x%255C%2529-%255Faxis--Deriving%5Fdisplacement%5Fas%5Fa%5Ffunction%5Fof%5Ftime">Deriving displacement as a function of time</h5>
+              <p>                    Using the general formula from above in terms of <span macro="tex" latex="inline">\(x\)</span> as a function
+                    of time.
+                </p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    x(t) &= x_0 + v_{0x} t + \frac{1}{2}a_x t^2
+                
+\end{split}
+\end{equation}$$</div>
+              <p>Which we can simplify using the following facts</p>
+              <ul>
+                <li>From the given depiction of the problem, we know that <span macro="tex" latex="inline">\(x(0) = 0\)</span>.</li>
+                <li>There is no acceleration along the <span macro="tex" latex="inline">\(x\)</span> axis, so <span latex="inline" macro="tex">\(a_x = 0\)</span>.</li>
+                <li><span macro="tex" latex="inline">\(v_{0x} = v_0\cdot\cos\theta\)</span> as shown above.</li></ul>
+              <p>Therefore</p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    x(t) &= 0 + v_{0x}\cdot t + \frac{1}{2}0 t^2\\
+                         &= v_{0x} t\\
+                         &= v_0\cos\theta\cdot t
+                
+\end{split}
+\end{equation}$$</div>
+              <h6 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528x%255C%2529-%255Faxis---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems---Two-dimensional%252525255FProjectile%252525255FMotion---Two-dimensional%25252525255FProjectile%25252525255FMotion--Solving%252525255FProjectile%252525255FMotion%252525255FProblems--Projectile%2525255FMotion%2525255Ffrom%2525255Fan%2525255Finitial%2525255Fheight%2525252C%2525255Fwith%2525255Fgiven%2525255Finitial%2525255Fvelocity%2525255Fand%2525255Fangle--In%25255Fterms%25255Fof%25255Fthe%25255F-%25255C%252528x%25255C%252529-%25255Faxis--Deriving%255Fdisplacement%255Fas%255Fa%255Ffunction%255Fof%255Ftime--Deriving%5Fvelocity">Deriving velocity</h6>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    v_x &= v_{0x} + a_x\cdot t\\
+                        &= v_0\cdot\cos\theta + 0\cdot t\\
+                        &= v_0\cdot\cos\theta
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--In%5Fterms%5Fof%5Fthe%5F-%5C%28y%5C%29-%5Faxis">In terms of the <span latex="inline" macro="tex">\(y\)</span> axis</h4>
+              <h5 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528y%255C%2529-%255Faxis--Deriving%5Fdisplacement%5Fas%5Fa%5Ffunction%5Fof%5Ftime">Deriving displacement as a function of time</h5>
+              <p>                    Using the general formula from above in terms of <span latex="inline" macro="tex">\(y\)</span> as a function
+                    of time.
+                </p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    y(t) &= y_0 + v_{0y} t + \frac{1}{2}a_y t^2
+                
+\end{split}
+\end{equation}$$</div>
+              <p>Which we can simplify using the following facts</p>
+              <ul>
+                <li>                        Initial height is given to us which we will represent as <span macro="tex" latex="inline">\(y_0\)</span>,
+                        for the sake of generality.
+                    </li>
+                <li>                        Acceleration along the <span latex="inline" macro="tex">\(y\)</span> axis is the constant for gravity,
+                        so <span latex="inline" macro="tex">\(a_y = -9.8\frac{\mathrm{m}}{\mathrm{s^2}}\)</span>.
+                    </li>
+                <li><span macro="tex" latex="inline">\(v_{0y} = v_0\cdot\sin\theta\)</span> as shown above.</li></ul>
+              <p>Therefore</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    y(t) &= y_0 + v_{0y} t + \frac{1}{2}a_y t^2\\
+                         &= y_0
+                         + v_0\cdot\sin\theta\cdot t
+                         + \frac{1}{2}\left(-9.8\right) t^2\\
+                         &= y_0
+                         + v_0\cdot\sin\theta\cdot t
+                         - 4.9 t^2
+                
+\end{split}
+\end{equation}$$</div>
+              <h5 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems---Two-dimensional%2525255FProjectile%2525255FMotion---Two-dimensional%252525255FProjectile%252525255FMotion--Solving%2525255FProjectile%2525255FMotion%2525255FProblems--Projectile%25255FMotion%25255Ffrom%25255Fan%25255Finitial%25255Fheight%25252C%25255Fwith%25255Fgiven%25255Finitial%25255Fvelocity%25255Fand%25255Fangle--In%255Fterms%255Fof%255Fthe%255F-%255C%2528y%255C%2529-%255Faxis--Deriving%5Fvelocity">Deriving velocity</h5>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    v_y &= v_{0y} + a_y\cdot t
+                        &= v_{0y} + g \cdot t\\
+                        &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}}
+                
+\end{split}
+\end{equation}$$</div></div></div>
+          <hr></hr>
+          <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--In%5Fsummary">In summary</h4>
+          <div macro="layout" cols="2" columns="2">
+            <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                x(t) &= v_0\cos\theta\cdot t\;(1)\\
+                v_x &= v_0\cdot\cos\theta\;(2)
+            
+\end{split}
+\end{equation}$$</div>
+            <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                y(t) &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\;(3)\\
+                    &= y_0 + v_0\cdot\sin\theta\cdot t - 4.9 t^2\\
+                v_y &= v_0\cdot\sin\theta + g \cdot t\;(4)\\
+                    &= v_0\cdot\sin\theta - 9.8\frac{\mathrm{m}}{\mathrm{s^2}} \cdot t
+            
+\end{split}
+\end{equation}$$</div></div>
+          <hr></hr>
+          <div cols="2" macro="layout" columns="2">
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--To%5Ffind%5Fthe%5Frange">To find the range</h4>
+              <p>We know that at the moment of impact <span latex="inline" macro="tex">\(y = 0\)</span>, therefore we can use equation <span latex="inline" macro="tex">\((3)\)</span></p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    y = y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    Rearranging a bit and setting <span latex="inline" macro="tex">\(y = 0\)</span>, we can see that solving for <span macro="tex" latex="inline">\(t\)</span>                    will yield the time at which <span macro="tex" latex="inline">\(y = 0\)</span>.
+                </p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    0 = \underbrace{\frac{1}{2}g}_{\text{a}}\;t^2
+                    + \underbrace{v_0\cdot\sin\theta}_{\text{b}}\; t
+                    + \underbrace{y_0}_{\text{c}}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>Therefore</p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    t &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\\
+                    &= \frac
+                        {-v_0\cdot\sin\theta\pm\sqrt{\left(v_0\cdot\sin\theta\right)^2 - 4\left(\frac{1}{2}g\right)y_0}}
+                        {2\frac{1}{2}g}\\
+                    &= \frac
+                        {-v_0\cdot\sin\theta\pm\sqrt{\left(v_0\cdot\sin\theta\right)^2 - 2 g y_0}}
+                        {g}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    Plugging the solution for <span latex="inline" macro="tex">\(t\)</span> (and ignoring the negative or non-real solutions for <span macro="tex" latex="inline">\(t\)</span>)
+                    into <span macro="tex" latex="inline">\(x(t)\)</span> will yield the horizontal displacement (range) at the time <span macro="tex" latex="inline">\(y = 0\)</span>.
+                    Therefore:
+                </p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \text{range}\;=x(t)\;\small\text{where $t$ is the point at which $y=0$}
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--To%5Ffind%5Fthe%5Fmaximum%5Fvertical%5Fdisplacement%5F%28i%2Ee%2E%5Fpeak%5Fheight%29">To find the maximum vertical displacement (i.e. peak height)</h4>
+              <p>We begin with equation <span macro="tex" latex="inline">\(\text{(4)}\)</span></p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    v_y &= v_0\cdot\sin\theta + g t
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    We know that at the moment our projectile crests its trajectory,
+                    the vertical component of our projectile will be zero. 
+                    Therefore <span latex="inline" macro="tex">\(v_y = 0\)</span>. To find the time, we simply solve for <span latex="inline" macro="tex">\(t\)</span>.
+                </p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    0 &= v_0\cdot\sin\theta + g \cdot t\\
+                    -v_0\cdot\sin\theta &= g \cdot t\\
+                    \frac{-v_0\cdot\sin\theta}{g} &= t\\
+                    \therefore\;t &= \frac{-v_0\cdot\sin\theta}{g}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    Therefore, knowing the time at which our projectile crests its trajectory,
+                    we simply plugin our solution for <span macro="tex" latex="inline">\(t\)</span> into the function given in
+                    equation <span latex="inline" macro="tex">\((4)\)</span>. I.e:
+                </p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    y_{\text{max}}
+                        &= y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2\\
+                        &= \small y_0 + v_0\cdot\sin\theta\cdot\left(\frac{-v_0\cdot\sin\theta}{g}\right)
+                        + \frac{1}{2}g \left(\frac{-v_0\cdot\sin\theta}{g}\right)^2
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note">
+              <h4 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems---Two-dimensional%25255FProjectile%25255FMotion---Two-dimensional%2525255FProjectile%2525255FMotion--Solving%25255FProjectile%25255FMotion%25255FProblems--Projectile%255FMotion%255Ffrom%255Fan%255Finitial%255Fheight%252C%255Fwith%255Fgiven%255Finitial%255Fvelocity%255Fand%255Fangle--To%5Ffind%5Fthe%5Fvelocity%5Fat%5Fa%5Fgiven%5Fmoment%5Fof%5Ftime">To find the velocity at a given moment of time</h4>
+              <p>                    Given some time which we will denote as <span latex="inline" macro="tex">\(t_n\)</span>,
+                    to find the velocity we simply plug in our given values
+                    for <span macro="tex" latex="inline">\(\theta\)</span> and <span macro="tex" latex="inline">\(v_0\)</span> into equations <span latex="inline" macro="tex">\((2)\)</span>                    and <span latex="inline" macro="tex">\((4)\)</span>. I.e.
+                </p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    v_x &= v_0\cdot\cos\theta\\
+                    v_y &= v_0\cdot\sin\theta + g \cdot t
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    With the given value for <span latex="inline" macro="tex">\(t_n\)</span>, yielding the vector at time <span macro="tex" latex="inline">\(t = t_n\)</span>,
+                    which we will denote as <span latex="inline" macro="tex">\(\vec{v_n}\)</span></p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    A &= v_y(t_n)\\
+                    B &= v_x(t_n)\\
+                
+\end{split}
+\end{equation}$$</div>
+              <p>To define the vector in terms of engineering notation,
+                    (i.e. <span latex="inline" macro="tex">\(v_x\hat{i} + v_y\hat{j}\)</span>)</p>
+              <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                    \vec{v_n} &= B\hat{\textbf{i}} + A\hat{\textbf{j}}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    To define the vector in terms of magnitude (which we will denote as <span macro="tex" latex="inline">\(v_n\)</span>)
+                    and direction (which we will denote as <span latex="inline" macro="tex">\(\theta_n\)</span>)
+                </p>
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    v_n &= \sqrt{A^2 + B^2}\\
+                    \theta_n &= \tan^{-1}\left(\frac{A}{B}\right)
+                
+\end{split}
+\end{equation}$$</div></div></div></div></div>      <div cols="2" boxed columns="2" macro="layout">
+        <div macro="note">
+          <h3 id="--Two-dimensional%255FProjectile%255FMotion---Two-dimensional%25255FProjectile%25255FMotion--Solving%255FProjectile%255FMotion%255FProblems--Range">Range</h3>
+          <p>The distance a projectile travels is called its range.</p>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \underbrace
+                {\text{range}\;=\frac{v^2 \cdot sin\left(2\theta\right)}{g}}
+                _{\small{\text{start/end elevation must be the same}}}
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Only applies in situations where the projectile lands at the same elevation from which it was fired.</p>
+          <div image-wrapper><img src="https://colbyn.github.io/school-notes-fall-2022/ss-data/14650343890088711841.svg" style="max-width: 100%; width: 100%;" ss.proc.max-width max-width="100%" ss.img.processed></img></div></div></div>      <h1 id="--Reasoning%5FAbout%5FProjectile%5FMotion">Reasoning About Projectile Motion</h1>      <div boxed columns="2" macro="layout" cols="2">
+        <div macro="note">
+          <div image-wrapper><img min-width="100px" style="min-width: 100px; max-width: 500px; width: 100%;" ss.proc.max-width ss.proc.min-width max-width="500px" ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/7270356302126142662.svg"></img></div>
+          <div image-wrapper><img min-width="100px" ss.img.processed max-width="500px" style="min-width: 100px; max-width: 500px; width: 100%;" ss.proc.max-width ss.proc.min-width src="https://colbyn.github.io/school-notes-fall-2022/ss-data/7014460272742655939.svg"></img></div></div>
+        <div macro="note">
+          <h2 id="--Reasoning%255FAbout%255FProjectile%255FMotion--Notes">Notes</h2>
+          <ul>
+            <li>An object is in free fall when the only force acting on it is the force of gravity.</li></ul></div>
+        <div macro="note">
+          <div image-wrapper><img ss.proc.min-width ss.img.processed min-width="100px" style="min-width: 100px; max-width: 500px; width: 100%;" ss.proc.max-width src="https://colbyn.github.io/school-notes-fall-2022/ss-data/3497582726152089084.svg" max-width="500px"></img></div>
+          <h2 id="--Reasoning%255FAbout%255FProjectile%255FMotion--Question">Question</h2>
+          <p>Based on the figure, for which trajectory was the object in the air for the greatest amount of time?</p>
+          <h2 id="--Reasoning%255FAbout%255FProjectile%255FMotion--Answer">Answer</h2>
+          <p><mark font>Trajectory A</mark></p>
+          <h3 id="--Reasoning%255FAbout%255FProjectile%255FMotion---Reasoning%25255FAbout%25255FProjectile%25255FMotion--Answer--Explanation">Explanation</h3>
+          <p>            All that matters is the vertical height of the trajectory, which is based on the component of the
+            initial velocity in the vertical direction (<span latex="inline" macro="tex">\(v_0\sin\theta\)</span>).
+            The <mark font>higher the trajectory</mark>, the more time the object will be in the air,
+            <u>regardless of the object's range or horizontal velocity</u>.
+        </p></div></div>      <h2 id="--Reasoning%255FAbout%255FProjectile%255FMotion--Problems">Problems</h2>      <div macro="layout" boxed columns="2" cols="2">
+        <div macro="note">
+          <div image-wrapper><img src="https://colbyn.github.io/school-notes-fall-2022/ss-data/10117892831565503394.svg" max-width="600px" ss.proc.max-width ss.img.processed style="max-width: 600px; width: 100%;"></img></div>
+          <p>The function in this graph represents an object that is speeding up,
+            or accelerating at a constant rate.</p></div>
+        <div macro="note">
+          <p>When you throw a ball directly upward, what is true about
+            its acceleration after the ball has left your hand?</p>
+          <p>Answer: The ball’s acceleration is always directed downward.</p>
+          <p>Wrong: The ball’s acceleration is always directed downward,
+            except at the top of the motion, where the acceleration is zero.</p></div>
+        <div macro="note">
+          <dl>
+            <dt>Question</dt>
+            <dd>                As an object moves in the x-y plane, which statement is true about the object’s
+                instantaneous velocity at a given moment?
+            </dd>
+            <dt>Answer</dt>
+            <dd>                The instantaneous velocity is tangent to the object’s path
+            </dd>
+            <dt>Wrong</dt>
+            <dd>
+              <ul>
+                <li>The instantaneous velocity is perpendicular to the object’s path.</li>
+                <li>The instantaneous velocity can point in any direction, independent of the object’s path.</li></ul></dd>
+            <dt>Explanation</dt>
+            <dd>                As an object moves in the x-y plane the instantaneous velocity is tangent to the
+                object‘s path at a given moment. This is because the displacement vector during
+                an infinitesimally small time interval is always directed along the object’s path
+                and the velocity vector always has the same direction as the displacement vector.  
+            </dd></dl></div></div>      <h1 id="--Relative%5FMotion">Relative Motion</h1>      <div boxed columns="2" macro="layout" cols="2">
+        <div macro="note">
+          <h2 id="--Relative%255FMotion--Galilean%5Ftransformation%5Fof%5Fvelocity">Galilean transformation of velocity</h2>
+          <p>            The velocity <span macro="tex" latex="inline">\(\vec{v}\)</span> of some object P <mark font>as seen from a stationary frame</mark>            must be the sum of <span macro="tex" latex="inline">\(\vec{w}\)</span> and <span latex="inline" macro="tex">\(\vec{v_F}\)</span></p>
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \vec{v} &= \vec{w} + \vec{v_F}
+        
+\end{split}
+\end{equation}$$</div>
+          <p>Where</p>
+          <div table-wrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Description</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\vec{v}\)</span></th>
+                  <td>Velocity as measured in a stationary frame</td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\vec{w}\)</span></th>
+                  <td>Velocity of an object measured in the moving frame relative to the moving frame</td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\vec{v_F}\)</span></th>
+                  <td>velocity of the moving frame - with respect to the stationary frame</td></tr></tbody></table></div></div>
+        <div macro="note">
+          <h2 id="--Relative%255FMotion--Galilean%5Ftransformation%5Fof%5Fvelocity%5F%28alternate%5Fnotation%29">Galilean transformation of velocity (alternate notation)</h2>
+          <p>            Given two reference frames 
+            <text>A</text> and <span latex="inline" macro="tex">\(B\)</span> and some object <span latex="inline" macro="tex">\(O\)</span>.
+            The velocity of the object can be defined in terms of <span latex="inline" macro="tex">\(A\)</span> or <span macro="tex" latex="inline">\(B\)</span> as shown
+        </p>
+          <div table-wrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Description</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th><span macro="tex" latex="inline">\(\vec{v_{O,A}}\)</span></th>
+                  <td>The velocity of <span latex="inline" macro="tex">\(O\)</span> relative to <span macro="tex" latex="inline">\(A\)</span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\vec{v_{O,B}}\)</span></th>
+                  <td>The velocity of <span latex="inline" macro="tex">\(O\)</span> relative to <span latex="inline" macro="tex">\(B\)</span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\vec{v_{A,B}}\)</span></th>
+                  <td>The velocity of <span latex="inline" macro="tex">\(A\)</span> relative to <span macro="tex" latex="inline">\(B\)</span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\vec{v_{B,A}}\)</span></th>
+                  <td>                    The velocity of <span latex="inline" macro="tex">\(B\)</span> relative to <span latex="inline" macro="tex">\(A\)</span>.
+                    It locates the origin of <span macro="tex" latex="inline">\(A\)</span> relative to the origin of <span macro="tex" latex="inline">\(B\)</span>.
+                </td></tr></tbody></table></div>
+          <p>Therefore</p>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \vec{v_{O,B}} &= \vec{v_{O,A}} + \vec{v_{A,B}}\\
+            \vec{v_{O,A}} &= \vec{v_{O,B}} + \vec{v_{B,A}}
+        
+\end{split}
+\end{equation}$$</div></div></div>      <h1 id="--Rotational%5FMotion%5F%26%5FKinematics">Rotational Motion & Kinematics</h1>      <h2 id="--Rotational%255FMotion%255F%2526%255FKinematics--Basics">Basics</h2>      <div columns="3" cols="3" macro="layout">
+        <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+        \smallText{Angular velocity} = \omega
+            &= \tau f\\
+            &= \frac{\tau}{T}\\
+    
+\end{split}
+\end{equation}$$</div>
+        <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+        \smallText{Centripetal acceleration} = a_C
+            &= \frac{v^2}{r}\\
+            &= \frac{\omega^2 r^2}{r}\\
+            &= \omega^2 r
+    
+\end{split}
+\end{equation}$$</div>
+        <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+        \text{Period} = T &= \frac{1}{f} = \frac{\tau}{\omega}
+    
+\end{split}
+\end{equation}$$</div></div>      <div cols="2" columns="2" style="max-width: 700px; margin: 0 auto;" macro="layout">
+        <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+        \vec{v} &\perp \vec{r}\\
+        \vec{a} &\perp \vec{v}\\
+    
+\end{split}
+\end{equation}$$</div>
+        <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+        \left.
+        \begin{array}{ll}
+        \vec{a} &\parallel \vec{r}\\
+        \vec{a} &\propto \vec{r}
+        \end{array}
+        \right\}\;\smallText{They are anti-parallel}
+    
+\end{split}
+\end{equation}$$</div></div>      <h2 id="--Rotational%255FMotion%255F%2526%255FKinematics--Auxiliary%5FFormula%5FReference">Auxiliary Formula Reference</h2>      <div cols="2" macro="layout" columns="2" boxed>
+        <div macro="note">
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \text{Period} = T &= \frac{1}{f} = \frac{\tau}{\omega}
+        
+\end{split}
+\end{equation}$$</div></div></div>      <div boxed cols="2" macro="layout" columns="2">
+        <div macro="note">
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \theta
+                &= \omega \cdot t\\
+                &= \omega_1 \cdot t + \frac{1}{2} \alpha t^2\\
+            \omega_2 &= \omega_1 + \alpha \cdot t\\
+            \omega_2^2 &= \omega_1^2 + 2\cdot\alpha\cdot\theta\\
+            v &= \smaller{\frac{1 \text{circumference}}{1 \text{period}}}\\
+                &= \frac{2 \pi r}{T}
+        
+\end{split}
+\end{equation}$$</div></div>
+        <div macro="note">
+          <div table-wrapper>
+            <table>
+              <thead>
+                <tr>
+                  <th>Formula</th>
+                  <th>Missing</th>
+                  <th>Quantities Present</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\omega_2 = \omega_1 + \alpha\Delta{t}\)</span></th>
+                  <td><span latex="inline" macro="tex">\(\Delta\theta\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span macro="tex" latex="inline">\(\omega_1\)</span><span latex="inline" macro="tex">\(\omega_2\)</span><span latex="inline" macro="tex">\(\alpha\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\Delta\theta = \left(\frac{\omega_2 + \omega_1}{2}\right)\Delta{t}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(a\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span macro="tex" latex="inline">\(\omega_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span latex="inline" macro="tex">\(\omega_2\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\(\Delta\theta = \omega_1 \Delta{t} + \frac{1}{2}\alpha\Delta{t^2}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\omega_2\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span macro="tex" latex="inline">\(\Delta\theta\)</span><span macro="tex" latex="inline">\(\omega_1\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(\alpha\)</span></span></td></tr>
+                <tr>
+                  <th><span macro="tex" latex="inline">\(\Delta\theta = \omega_2\Delta{t} - \frac{1}{2}\alpha\Delta{t^2}\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\omega_1\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span latex="inline" macro="tex">\(\omega_2\)</span><span macro="tex" latex="inline">\(\Delta{t}\)</span><span macro="tex" latex="inline">\(\alpha\)</span></span></td></tr>
+                <tr>
+                  <th><span latex="inline" macro="tex">\((\omega_2)^2 = (\omega_1)^2 + 2\alpha\Delta\theta\)</span></th>
+                  <td><span macro="tex" latex="inline">\(\Delta{t}\)</span></td>
+                  <td><span style="display: flex; justify-content: space-between;"><span latex="inline" macro="tex">\(\Delta\theta\)</span><span latex="inline" macro="tex">\(\omega_1\)</span><span macro="tex" latex="inline">\(\omega_2\)</span><span macro="tex" latex="inline">\(\alpha\)</span></span></td></tr></tbody></table></div></div>
+        <div macro="note">
+          <div columns="1" cols="1" macro="layout">
+            <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+                \underbrace{\smallText{Arc Length}}_{S}
+                    &=  \underbrace{\smallText{radius}}_{r}
+                        \cdot
+                        \underbrace{\smallText{Central angle}}_{\theta}\\
+                S &= r\cdot\theta\\
+            
+\end{split}
+\end{equation}$$</div>
+            <div image-wrapper><img ss.proc.max-width style="max-width: 200px; width: 100%;" max-width="200px" ss.img.processed src="https://colbyn.github.io/school-notes-fall-2022/ss-data/6273794250832682154.svg"></img></div></div>
+          <div latex="block" macro="equation">$$\begin{equation}
+\begin{split}
+
+            \underbrace{\smallText{Linear displacement}}_{\Delta{x}}
+                &= \underbrace{\smallText{Angular displacement}}_{\theta}
+                    \cdot
+                   \underbrace{\smallText{radius}}_{r}\\
+            \Delta{x} &= \theta \cdot r\\
+            \underbrace{\smallText{Linear velocity}}_{v}
+                &=  \underbrace{\smallText{Angular Velocity}}_{\omega}
+                    \cdot
+                    \underbrace{\smallText{radius}}_{r}\\
+            v &= \omega \cdot r\\
+            \underbrace{\smallText{Linear acceleration}}_{a}
+                &=  \underbrace{\smallText{Angular acceleration}}_{\alpha}
+                    \cdot
+                    \underbrace{\smallText{radius}}_{r}\\
+            a &= \alpha \cdot r
+        
+\end{split}
+\end{equation}$$</div></div>
+        <div macro="note">
+          <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+            \underbrace{\smallText{Angular displacement}}_{\theta}
+                &= \underbrace{\smallText{Angular speed}}_{\omega}
+                    \cdot
+                   \underbrace{\smallText{time}}_{t}\\
+            \theta &= \omega \cdot t
+        
+\end{split}
+\end{equation}$$</div>
+          <p>            A particle moves with uniform circular motion if and only
+            if its angular velocity V is constant and unchanging.
+        </p></div></div>      <h1 id="--Uniform%5FCircular%5FMotion">Uniform Circular Motion</h1>      <p>Uniform means content speed</p>      <h1 id="--Newton%27s%5FLaws%5Fof%5FMotion">Newton's Laws of Motion</h1>      <h2 id="--Newton%2527s%255FLaws%255Fof%255FMotion--Laws">Laws</h2>      <ol>
+        <li>
+          <p>            An object at rest remains at rest, or if in motion, remains
+            in motion at a constant velocity unless acted on by a net external force.
+        </p></li>
+        <li>
+          <p>When a body is acted upon by a force, the time rate of change of its momentum equals the force.</p>
+          <div boxed style="grid-template-areas: 'a c' 'b c'; grid-template-columns: max-content;" macro="layout" cols="2" columns="2">
+            <div macro="note" style="grid-area: a; padding: 20px;">
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    \overbrace{\smallText{Force}}^{\mathrm{F}}
+                        &=
+                            \overbrace{\smallText{Mass}}^{m}
+                            \cdot
+                            \overbrace{\smallText{Acceleration}}^{a}\\
+                    \therefore\; F &= m \cdot a 
+                
+\end{split}
+\end{equation}$$</div></div>
+            <div macro="note" style="grid-area: b;" compact>
+              <p center>Units</p>
+              <div table-wrapper>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Symbol</th>
+                      <th>Unit</th></tr></thead>
+                  <tbody>
+                    <tr>
+                      <th>Newtons</th>
+                      <td><span macro="tex" latex="inline">\(\mathrm{N}\)</span></td>
+                      <td><span macro="tex" latex="inline">\(\mathrm{kg}\;\cdot\frac{\mathrm{m}}{\mathrm{s^2}}\)</span></td></tr></tbody></table></div></div>
+            <div style="grid-area: c;" compact macro="note">
+              <div macro="equation" latex="block">$$\begin{equation}
+\begin{split}
+
+                    a = \frac{\overbrace{\sum \mathrm{F}}^{\mathclap{\smallText{Net force}}}}{m}
+                
+\end{split}
+\end{equation}$$</div>
+              <p>                    This is the same formula as <span latex="inline" macro="tex">\(\mathrm{F} = m a\)</span>, except we've written the
+                    force more precisely as the net force <span latex="inline" macro="tex">\(\sum \mathrm{F}\)</span>, and we've
+                    divided both sides by the mass <span latex="inline" macro="tex">\(m\)</span> to get the acceleration <span latex="inline" macro="tex">\(a\)</span> by itself
+                    on one side of the equation.
+                </p>
+              <p>                    One advantage of writing Newton's second law in this form is that it makes people less likely to
+                    think that  <span latex="inline" macro="tex">\(m \cdot a\)</span>—mass times acceleration—is a specific force on an object. The
+                    expression <span macro="tex" latex="inline">\(m \cdot a\)</span>, is not a force, <span latex="inline" macro="tex">\(m \cdot a\)</span>, is what the net force
+                    equals.</p>
+              <p>                    Looking at the form of Newton's second law shown above, we see that the acceleration is
+                    proportional to the net force, <span latex="inline" macro="tex">\(\sum \mathrm{F}\)</span>, and is inversely proportional
+                    to the mass, <span macro="tex" latex="inline">\(m\)</span>.
+                </p></div></div></li>
+        <li>
+          <p>            If an object A exerts a force on object B, then object B must exert a force of equal
+            magnitude and opposite direction back on object A. I.e. "action equals reaction".
+        </p>
+          <div columns="1" macro="layout" boxed cols="1">
+            <div style="height: fit-content;" macro="note">
+              <p>                    This law represents a certain symmetry in nature: forces always occur in pairs, and one
+                    body cannot exert a force on another without experiencing a force itself. We sometimes
+                    refer to this law loosely as action-reaction, where the force exerted is the action and
+                    the force experienced as a consequence is the reaction.
+                </p></div></div></li></ol>      <h2 id="--Newton%2527s%255FLaws%255Fof%255FMotion--Terms">Terms</h2>      <dl>
+        <dt>Inertia</dt>
+        <dd>The property of a body to remain at rest or to remain in motion with constant velocity is called inertia.</dd>
+        <dd>Newton's first law is often called the law of inertia</dd>
+        <dd>The inertia of an object is measured by its mass.</dd>
+        <dd>        Mass can be determined by measuring how difficult an object is to accelerate.
+        The more mass an object has, the harder it is to accelerate
+    </dd>
+        <dt>Force</dt>
+        <dd>A force is a vector.</dd>
+        <dd>A force can be either a <mark font>contact force</mark> or a <mark font>long-range force</mark>.</dd>
+        <dt>Motion</dt>
+        <dd>        By "motion", Newton meant the quantity now called momentum, which depends upon the amount of matter
+        contained in a body, the speed at which that body is moving, and the direction in which it is moving.
+    </dd>
+        <dd>        In modern notation, the momentum of a body is the product of its mass and its velocity:
+        <span latex="inline" macro="tex">\(\vec{p} = m \cdot \vec{v}\)</span></dd></dl>      <h2 id="--Newton%2527s%255FLaws%255Fof%255FMotion--Notes">Notes</h2>      <div macro="layout" cols="3" columns="3" boxed>
+        <div macro="note">
+          <h4 id="--Newton%2527s%255FLaws%255Fof%255FMotion---Newton%252527s%25255FLaws%25255Fof%25255FMotion--Notes--Question">Question</h4>
+          <p><mark font>True of false:</mark> A ball is moving upwards and to the left. A net
+            force that points upwards and to the left must be acting on the ball?
+        </p>
+          <p><mark font>Answer:</mark> false!</p>
+          <ul>
+            <li>                The net force points in the direction of the acceleration, not
+                necessarily in the direction of the velocity.
+            </li>
+            <li>                If the net force points in the direction of velocity, the object will speed up.
+                If the net force points opposite to the velocity, the object will slow down.
+            </li>
+            <li>                Since we don't know the acceleration of this ball which is moving up and left,
+                we can't say anything for sure about the net force.
+            </li></ul></div>
+        <div macro="note">
+          <h4 id="--Newton%2527s%255FLaws%255Fof%255FMotion---Newton%252527s%25255FLaws%25255Fof%25255FMotion--Notes--Question">Question</h4>
+          <p><mark font>True of false:</mark> A less massive object has more inertia than a more massive object?
+        </p>
+          <p><mark font>Answer:</mark> false!</p>
+          <ul>
+            <li>                Mass is a measure of an object's inertia (its tendency to resist change in velocity).
+                Less mass means less inertia.
+            </li></ul></div></div></main></body></html>

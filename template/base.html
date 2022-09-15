@@ -2,15 +2,23 @@
 <html>
     <head>
         <title>Note</title>
-        <link rel="stylesheet" href="../styles/index.scss">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600;700&family=Fredericka+the+Great&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sail&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Yomogi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sail&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Yomogi&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/index.scss">
     </head>
     <body>
         <div toc>
             <h1 site-title toc-ignore>Colbyn's School Notes <span date>Fall 2022</span></h1>
-            <h1 toc-title toc-ignore>Table of Contents</h1>
+            <h1 page-title toc-ignore>Navigation - Sub Sections</h1>
+            <page-nav>
+                <page route="/index.html" title="Everything">
+                    <page route="/chem.html" title="Chemistry"></page>
+                    <page route="/math.html" title="Mathematics"></page>
+                    <page route="/physics.html" title="Physics"></page>
+                </page>
+            </page-nav>
+            <h1 toc-title toc-ignore>Table of Contents (Current Page)</h1>
             <toc></toc>
         </div>
         <main>

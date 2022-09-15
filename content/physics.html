@@ -1,9 +1,9 @@
-<h1>Physics</h1>
-<h2>Constants</h2>
+<h1 top-level>Physics</h1>
+<h1>Constants</h1>
 <layout cols="3">
     <equation>g &= 9.8 \frac{m}{s^2}\;\text{downward} \;\text{where}\; a &= -g</equation>
 </layout>
-<h2>Tables</h2>
+<h1>Tables</h1>
 <layout cols="2" style="grid-template-rows: max-content; grid-template-areas: 'a c' 'b d'">
     <h3 style="grid-area: a">Linear Kinematic Equations <small>(1D)</small></h3>
     <note style="grid-area: b">
@@ -170,12 +170,12 @@
         </table>
     </note>
 </layout>
-<h2>Kinematic Equations in 1D</h2>
+<h1>Kinematic Equations in 1D</h1>
 <layout cols="1" boxed>
     <note>
         <layout cols="2">
             <note>
-                <h3>Conventions</h3>
+                <h2>Conventions</h2>
                 <equation>
                     \bar{v} &= \text{Average velocity}\\
                     \bar{a} &= \text{Average acceleration}\\
@@ -193,7 +193,7 @@
 </layout>
 <layout cols="1" boxed>
     <note>
-        <h3>Standard Equations</h3>
+        <h2>Standard Equations</h2>
         <layout cols="3">
             <equation>
                 v_2 &= v_1 + a\Delta{t}
@@ -207,7 +207,7 @@
                           &= \left(\frac{v_2 + v_1}{2}\right)\Delta{t}
             </equation>
         </layout>
-        <h3>Summary</h3>
+        <h2>Summary</h2>
         <div table-wrapper>
             <table>
                 <thead>
@@ -283,7 +283,7 @@
 </layout>
 <layout cols="1" boxed>
     <note>
-        <h3>Basics</h3>
+        <h2>Basics</h2>
         <layout cols="3">
             <note>
                 <h4>Constant Velocity</h4>
@@ -302,7 +302,7 @@
                 </equation>
             </note>
             <note>
-                <h3>Miscellaneous</h3>
+                <h2>Miscellaneous</h2>
                 <equation>
                     \bar{v} &= \frac{\Delta{x}}{\Delta{t}} = \frac{v_2 + v_1}{2}\\
                     \bar{a} &= \frac{\Delta{v}}{\Delta{t}}
@@ -311,19 +311,19 @@
         </layout>
     </note>
 </layout>
-<h3>Deriving Displacement Formulas</h3>
+<h2>Deriving Displacement Formulas</h2>
 <layout cols="2" boxed>
     <note>
-        <h4>Displacement when object moves with constant velocity</h4>
-        <h5>Deriving <tex>\Delta{x} = \bar{v}\Delta{t}</tex></h5>
+        <h3>Displacement when object moves with constant velocity</h3>
+        <h4>Deriving <tex>\Delta{x} = \bar{v}\Delta{t}</tex></h4>
         <img max-width="500px" src="../images/physics/1.svg">
         <equation>
             \Delta{x} &= \bar{v}\Delta{t}
         </equation>
     </note>
     <note>
-        <h4>Displacement when object accelerates from rest</h4>
-        <h5>Deriving <tex>\Delta{x} = \frac{1}{2}\bar{a}\Delta{t^2}</tex></h5>
+        <h3>Displacement when object accelerates from rest</h3>
+        <h4>Deriving <tex>\Delta{x} = \frac{1}{2}\bar{a}\Delta{t^2}</tex></h4>
         <img min-width="500px" max-width="900px" src="../images/physics/2.svg">
         <equation>
             \Delta{x} &= \frac{1}{2}\Delta{v}\Delta{t}\\
@@ -333,8 +333,8 @@
 </layout>
 <layout cols="1" boxed>
     <note>
-        <h4>Displacement when object accelerates with initial velocity</h4>
-        <h5>Deriving <tex>\Delta{x} = v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}</tex></h5>
+        <h3>Displacement when object accelerates with initial velocity</h3>
+        <h4>Deriving <tex>\Delta{x} = v_1\Delta{t} + \frac{1}{2}\bar{a}\Delta{t^2}</tex></h4>
         <img min-width="500px" max-width="900px" src="../images/physics/4.svg">
         <equation>
             \Delta{x} &= v_1\Delta{t} + \frac{1}{2}\Delta{v}\Delta{t} \\
@@ -342,10 +342,10 @@
         </equation>
     </note>
 </layout>
-<h3>Deriving The Other Kinematic Formulas</h3>
+<h1>Deriving The Other Kinematic Formulas</h1>
 <layout cols="2" boxed>
     <note>
-        <h4>Deriving <tex>v_2 = v_1 + \bar{a}\Delta{t}</tex></h4>
+        <h2>Deriving <tex>v_2 = v_1 + \bar{a}\Delta{t}</tex></h2>
         <p>Given</p>
         <equation>
             \bar{a} &= \frac{\Delta{v}}{\Delta{t}} = \frac{v_2 - v_1}{\Delta{t}}\;(1)
@@ -363,7 +363,7 @@
         </equation>
     </note>
     <note>
-        <h4>Deriving <tex>v_2^2 = v_1^2 + 2\bar{a}\Delta{x}</tex></h4>
+        <h3>Deriving <tex>v_2^2 = v_1^2 + 2\bar{a}\Delta{x}</tex></h3>
         <p>Given</p>
         <equation>
             \bar{a} &= \frac{\Delta{v}}{\Delta{t}}\;(1)\\
@@ -428,15 +428,15 @@
     });
 </script> -->
 
-<h2>Two-dimensional Projectile Motion</h2>
+<h1>Two-dimensional Projectile Motion</h1>
 <layout cols="1" boxed>
     <note>
-        <h3>Conventions</h3>
+        <h2>Conventions</h2>
     </note>
 </layout>
 <layout cols="1" boxed>
     <note>
-        <h3>Summary</h3>
+        <h2>Summary</h2>
         <layout cols="2">
             <img max-width="900px" src="../images/physics/17.svg">
             <note>
@@ -451,13 +451,13 @@
         </layout>
     </note>
 </layout>
-<h3>Formulas</h3>
+<h2>Formulas</h2>
 <layout cols="1" boxed>
     <note>
-        <h4>Displacement & Projectile Position</h4>
+        <h3>Displacement & Projectile Position</h3>
         <layout cols="2">
             <note>
-                <h5>Generalized</h5>
+                <h4>Generalized</h4>
                 <p>In general (without respect to any <tex>x</tex> or <tex>y</tex> axis values)</p>
                 <equation>
                     \text{Displacement}
@@ -472,14 +472,14 @@
                 </equation>
             </note>
             <note>
-                <h5>In terms of <tex>x</tex> and <tex>y</tex> axis values</h5>
+                <h4>In terms of <tex>x</tex> and <tex>y</tex> axis values</h4>
                 <equation>
                     \Delta{x} &= x_2 - x_1\\
                     \Delta{y} &= y_2 - y_1
                 </equation>
             </note>
             <note>
-                <h5>With respect to the <tex>y</tex> axis</h5>
+                <h4>With respect to the <tex>y</tex> axis</h4>
                 <p>The displacement of a given projectile in terms of the <tex>y</tex> axis is</p>
                 <equation>
                     \Delta{y} = V_{y1}\cdot\Delta{t} + \frac{1}{2}a_y\Delta{t^2}
@@ -498,7 +498,7 @@
                 </equation>
             </note>
             <note>
-                <h5>With respect to the <tex>x</tex> axis</h5>
+                <h4>With respect to the <tex>x</tex> axis</h4>
                 <p>The displacement of a given projectile in terms of the <tex>x</tex> axis is</p>
                 <equation>
                     \Delta{x} = V_{x}\cdot\Delta{t} + \frac{1}{2}a_x\Delta{t^2} (1)
@@ -525,14 +525,14 @@
         </layout>
     </note>
 </layout>
-<h3>Solving Projectile Motion Problems</h3>
+<h2>Solving Projectile Motion Problems</h2>
 <layout cols="1" boxed>
     <note>
-        <h4>Projectile Motion</h4>
+        <h3>Projectile Motion</h3>
         <img max-width="600px" src="../images/physics/23.svg">
         <layout cols="2">
             <note>
-                <h5>In terms of the <tex>x</tex> axis</h5>
+                <h4>In terms of the <tex>x</tex> axis</h4>
                 <p>TODO</p>
                 <equation>
                     \Delta{x}
@@ -543,7 +543,7 @@
                 <p>TODO</p>
             </note>
             <note>
-                <h5>In terms of the <tex>y</tex> axis</h5>
+                <h4>In terms of the <tex>y</tex> axis</h4>
                 <p>TODO</p>
                 <equation>
                     \Delta{y}
@@ -554,7 +554,7 @@
                 <p>TODO</p>
             </note>
         </layout>
-        <h5>In Summary</h5>
+        <h4>In Summary</h4>
         <p>Initial Quantities</p>
         <layout cols="2">
             <equation>
@@ -587,7 +587,7 @@
         </equation>
     </note>
     <note>
-        <h4>Projectile Motion from an initial height, with given initial velocity and angle</h4>
+        <h3>Projectile Motion from an initial height, with given initial velocity and angle</h3>
         <img max-width="800px" src="../images/physics/22.svg">
         <p>Given</p>
         <ul>
@@ -618,8 +618,8 @@
         </p>
         <layout cols="2">
             <note>
-                <h5>In terms of the <tex>x</tex> axis</h5>
-                <h6>Deriving displacement as a function of time</h6>
+                <h4>In terms of the <tex>x</tex> axis</h4>
+                <h5>Deriving displacement as a function of time</h5>
                 <p>
                     Using the general formula from above in terms of <tex>x</tex> as a function
                     of time.
@@ -647,8 +647,8 @@
                 </equation>
             </note>
             <note>
-                <h5>In terms of the <tex>y</tex> axis</h5>
-                <h6>Deriving displacement as a function of time</h6>
+                <h4>In terms of the <tex>y</tex> axis</h4>
+                <h5>Deriving displacement as a function of time</h5>
                 <p>
                     Using the general formula from above in terms of <tex>y</tex> as a function
                     of time.
@@ -678,7 +678,7 @@
                          + v_0\cdot\sin\theta\cdot t
                          - 4.9 t^2
                 </equation>
-                <h6>Deriving velocity</h6>
+                <h5>Deriving velocity</h5>
                 <equation>
                     v_y &= v_{0y} + a_y\cdot t
                         &= v_{0y} + g \cdot t\\
@@ -687,7 +687,7 @@
             </note>
         </layout>
         <hr>
-        <h5>In summary</h5>
+        <h4>In summary</h4>
         <layout cols="2">
             <equation>
                 x(t) &= v_0\cos\theta\cdot t\;(1)\\
@@ -703,7 +703,7 @@
         <hr>
         <layout cols="2">
             <note>
-                <h5>To find the range</h5>
+                <h4>To find the range</h4>
                 <p>We know that at the moment of impact <tex>y = 0</tex>, therefore we can use equation <tex>(3)</tex></p>
                 <equation>
                     y = y_0 + v_0\cdot\sin\theta\cdot t + \frac{1}{2}g t^2
@@ -737,7 +737,7 @@
                 </equation>
             </note>
             <note>
-                <h5>To find the maximum vertical displacement (i.e. peak height)</h5>
+                <h4>To find the maximum vertical displacement (i.e. peak height)</h4>
                 <p>We begin with equation <tex>\text{(4)}</tex></p>
                 <equation>
                     v_y &= v_0\cdot\sin\theta + g t
@@ -766,7 +766,7 @@
                 </equation>
             </note>
             <note>
-                <h5>To find the velocity at a given moment of time</h5>
+                <h4>To find the velocity at a given moment of time</h4>
                 <p>
                     Given some time which we will denote as <tex>t_n</tex>,
                     to find the velocity we simply plug in our given values
@@ -804,7 +804,7 @@
 </layout>
 <layout cols="2" boxed>
     <note>
-        <h4>Range</h4>
+        <h3>Range</h3>
         <p>The distance a projectile travels is called its range.</p>
         <equation>
             \underbrace
@@ -816,25 +816,25 @@
     </note>
 </layout>
 
-<h3>Reasoning About Projectile Motion</h3>
+<h1>Reasoning About Projectile Motion</h1>
 <layout cols="2" boxed>
     <note>
         <img min-width="100px" max-width="500px" src="../images/physics/12.svg">
         <img min-width="100px" max-width="500px" src="../images/physics/15.svg">
     </note>
     <note>
-        <h4>Notes</h4>
+        <h2>Notes</h2>
         <ul>
             <li>An object is in free fall when the only force acting on it is the force of gravity.</li>
         </ul>
     </note>
     <note>
         <img min-width="100px" max-width="500px" src="../images/physics/24.svg">
-        <h4>Question</h4>
+        <h2>Question</h2>
         <p>Based on the figure, for which trajectory was the object in the air for the greatest amount of time?</p>
-        <h4>Answer</h4>
+        <h2>Answer</h2>
         <p><mark font>Trajectory A</mark></p>
-        <h5>Explanation</h5>
+        <h3>Explanation</h3>
         <p>
             All that matters is the vertical height of the trajectory, which is based on the component of the
             initial velocity in the vertical direction (<tex>v_0\sin\theta</tex>).
@@ -843,7 +843,7 @@
         </p>
     </note>
 </layout>
-<h3>Problems</h3>
+<h2>Problems</h2>
 <layout cols="2" boxed>
     <note>
         <img max-width="600px" src="../images/physics/14.svg">
@@ -885,10 +885,10 @@
         </dl>
     </note>
 </layout>
-<h2>Relative Motion</h2>
+<h1>Relative Motion</h1>
 <layout cols="2" boxed>
     <note>
-        <h3>Galilean transformation of velocity</h3>
+        <h2>Galilean transformation of velocity</h2>
         <p>
             The velocity <tex>\vec{v}</tex> of some object P <mark font>as seen from a stationary frame</mark>
             must be the sum of <tex>\vec{w}</tex> and <tex>\vec{v_F}</tex>
@@ -919,7 +919,7 @@
         </table>
     </note>
     <note>
-        <h3>Galilean transformation of velocity (alternate notation)</h3>
+        <h2>Galilean transformation of velocity (alternate notation)</h2>
         <p>
             Given two reference frames <text>A</text> and <tex>B</tex> and some object <tex>O</tex>.
             The velocity of the object can be defined in terms of <tex>A</tex> or <tex>B</tex> as shown
@@ -958,8 +958,8 @@
         </equation>
     </note>
 </layout>
-<h2>Rotational Motion & Kinematics</h2>
-<h3>Basics</h3>
+<h1>Rotational Motion & Kinematics</h1>
+<h2>Basics</h2>
 <layout cols="3">
     <equation>
         \smallText{Angular velocity} = \omega
@@ -990,7 +990,7 @@
         \right\}\;\smallText{They are anti-parallel}
     </equation>
 </layout>
-<h3>Auxiliary Formula Reference</h3>
+<h2>Auxiliary Formula Reference</h2>
 <layout cols="2" boxed>
     <note>
         <equation>
@@ -1124,12 +1124,12 @@
         </p>
     </note>
 </layout>
-<h2>Uniform Circular Motion</h2>
+<h1>Uniform Circular Motion</h1>
 <p>Uniform means content speed</p>
 
-<h2>Newton's Laws of Motion</h2>
+<h1>Newton's Laws of Motion</h1>
 
-<h3>Laws</h3>
+<h2>Laws</h2>
 
 <ol>
     <li>
@@ -1212,7 +1212,7 @@
     </li>
 </ol>
 
-<h3>Terms</h3>
+<h2>Terms</h2>
 
 <dl>
     <dt>Inertia</dt>
@@ -1237,7 +1237,7 @@
     </dd>
 </dl>
 
-<h3>Notes</h3>
+<h2>Notes</h2>
 
 <layout cols="3" boxed>
     <note>

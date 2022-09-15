@@ -4,15 +4,6 @@ main {
     overflow-x: hidden;
 }
 
-main > * {
-    // justify-self: center;
-    // width: 90%;
-    // margin-top: 0;
-    // margin-bottom: 0;
-    // margin-left: 12px;
-    // margin-right: 12px;
-}
-
 main > h1,
 main > h2,
 main > h3,
@@ -33,23 +24,65 @@ main > h6 {
     margin: 0;
     margin-bottom: 10px;
 }
+main > h1[top-level] {
+    text-align: center;
+    border-bottom: 2px solid #a5a5a5;
+    border-top: 2px solid #a5a5a5;
+    font-size: 3.8rem;
+}
 main > h1 {
-    padding-left: 4px;
+    padding-left: 10px;
+    font-size: 3.8rem;
 }
 main > h2 {
-    padding-left: 50px;
+    padding-left: 20px;
+    font-size: 3.4rem;
 }
 main > h3 {
-    padding-left: 75px;
+    padding-left: 40px;
+    font-size: 3rem;
 }
 main > h4 {
-    padding-left: 100px;
+    padding-left: 60px;
+    font-size: 2.8rem;
 }
 main > h5 {
-    padding-left: 115px;
+    padding-left: 80px;
+    font-size: 2.2rem;
 }
 main > h6 {
-    padding-left: 125px;
+    padding-left: 100px;
+    font-size: 2rem;
+}
+
+@media (max-width: 650px) {
+    main > h1[top-level] {
+        font-size: 2.8rem;
+    }
+    main > h1 {
+        padding-left: 0px;
+        font-size: 2.8rem;
+    }
+    main > h2 {
+        padding-left: 20px;
+        font-size: 2.4rem;
+    }
+    main > h3 {
+        padding-left: 40px;
+        font-size: 2.2rem;
+    }
+    main > h4 {
+        padding-left: 60px;
+        font-size: 1.8rem;
+    }
+    main > h5 {
+        padding-left: 80px;
+        font-size: 1.4rem;
+    }
+    main > h6 {
+        padding-left: 100px;
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -62,22 +95,22 @@ main > h6 {
         max-width: unset;
     }
     main > h1 {
-        padding-left: 4px;
+        padding-left: 0px;
     }
     main > h2 {
         padding-left: 10px;
     }
     main > h3 {
-        padding-left: 25px;
+        padding-left: 20px;
     }
     main > h4 {
-        padding-left: 50px;
+        padding-left: 30px;
     }
     main > h5 {
-        padding-left: 75px;
+        padding-left: 40px;
     }
     main > h6 {
-        padding-left: 100px;
+        padding-left: 50px;
     }
 }
 

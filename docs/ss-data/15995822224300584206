@@ -122,6 +122,12 @@ hr {
 
 [macro=layout] {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  column-gap: 8px;
+  row-gap: 8px;
+  padding: 0 10px;
 }
 
 [macro=note] {
@@ -129,8 +135,8 @@ hr {
   flex-direction: column;
   align-items: normal;
   grid-row-gap: 12px;
-  padding-bottom: 12px;
   overflow: hidden;
+  padding: 12px 0;
 }
 
 [macro=note][compact] {
@@ -160,13 +166,21 @@ hr {
   margin: 0 !important;
   padding: 10px;
 }
+
+[macro=layout][boxed] > [macro=note] {
+  border-radius: 3px;
+  border-color: #fff;
+  box-shadow: 0 0 0px 1px #eeeeee;
+}
+
+[macro=layout][boxed] > [macro=equation] {
+  border-radius: 3px;
+  border-color: #fff;
+  box-shadow: 0 0 0px 1px #eeeeee;
+}
 @media (min-width: 800px) {
   [macro=layout] {
     display: grid;
-    width: 100%;
-    column-gap: 8px;
-    row-gap: 8px;
-    padding: 0 10px;
   }
   [macro=layout][columns="2"] {
     grid-template-columns: repeat(2, 1fr);
@@ -176,16 +190,6 @@ hr {
   }
   [macro=layout][columns="4"] {
     grid-template-columns: repeat(4, 1fr);
-  }
-  [macro=layout][boxed] > [macro=note] {
-    border-radius: 3px;
-    border-color: #fff;
-    box-shadow: 0 0 0px 1px #eeeeee;
-  }
-  [macro=layout][boxed] > [macro=equation] {
-    border-radius: 3px;
-    border-color: #fff;
-    box-shadow: 0 0 0px 1px #eeeeee;
   }
   [macro=layout] > [macro=note] img {
     min-width: unset !important;
@@ -202,6 +206,50 @@ hr {
   margin-left: 12px;
 }
 
+[macro=note] h1 {
+  font-size: 3rem;
+}
+
+[macro=note] h2 {
+  font-size: 2.6rem;
+}
+
+[macro=note] h3 {
+  font-size: 2.2rem;
+}
+
+[macro=note] h4 {
+  font-size: 1.8rem;
+}
+
+[macro=note] h5 {
+  font-size: 1.4rem;
+}
+
+[macro=note] h6 {
+  font-size: 1.2rem;
+}
+@media (max-width: 650px) {
+  [macro=note] h1 {
+    font-size: 2rem;
+  }
+  [macro=note] h2 {
+    font-size: 1.8rem;
+  }
+  [macro=note] h3 {
+    font-size: 1.6rem;
+  }
+  [macro=note] h4 {
+    font-size: 1.4rem;
+  }
+  [macro=note] h5 {
+    font-size: 1.2rem;
+  }
+  [macro=note] h6 {
+    font-size: 1rem;
+  }
+}
+
 [macro=note] h1:first-child,
 [macro=note] h2:first-child,
 [macro=note] h3:first-child,
@@ -210,6 +258,7 @@ hr {
 [macro=note] h6:first-child {
   text-align: center;
   margin: 8px auto;
+  font-weight: 800;
 }
 
 [macro=layout] > h1,
@@ -257,20 +306,6 @@ hr {
   margin: 0 auto;
   width: fit-content;
 }
-@media (max-width: 650px) {
-  [macro=note] > * {
-    margin: 0 10px;
-  }
-  [macro=note] > img {
-    margin: 0;
-  }
-  [macro=note] > [macro=equation] {
-    margin: 0;
-  }
-  [macro=note] > [table-wrapper] {
-    margin: 0;
-  }
-}
 @media (min-width: 650px) {
   [macro=note] {
     padding: 10px;
@@ -295,11 +330,6 @@ hr {
 [macro=tex] {
   color: #ffb7e4;
 }
-@media (max-width: 650px) {
-  [macro=layout][boxed] > [macro=note] {
-    box-shadow: unset;
-  }
-}
 
 main {
   overflow-x: hidden;
@@ -319,28 +349,70 @@ main > h6 {
   margin-bottom: 10px;
 }
 
+main > h1[top-level] {
+  text-align: center;
+  border-bottom: 2px solid #a5a5a5;
+  border-top: 2px solid #a5a5a5;
+  font-size: 3.8rem;
+}
+
 main > h1 {
-  padding-left: 4px;
+  padding-left: 10px;
+  font-size: 3.8rem;
 }
 
 main > h2 {
-  padding-left: 50px;
+  padding-left: 20px;
+  font-size: 3.4rem;
 }
 
 main > h3 {
-  padding-left: 75px;
+  padding-left: 40px;
+  font-size: 3rem;
 }
 
 main > h4 {
-  padding-left: 100px;
+  padding-left: 60px;
+  font-size: 2.8rem;
 }
 
 main > h5 {
-  padding-left: 115px;
+  padding-left: 80px;
+  font-size: 2.2rem;
 }
 
 main > h6 {
-  padding-left: 125px;
+  padding-left: 100px;
+  font-size: 2rem;
+}
+@media (max-width: 650px) {
+  main > h1[top-level] {
+    font-size: 2.8rem;
+  }
+  main > h1 {
+    padding-left: 0px;
+    font-size: 2.8rem;
+  }
+  main > h2 {
+    padding-left: 20px;
+    font-size: 2.4rem;
+  }
+  main > h3 {
+    padding-left: 40px;
+    font-size: 2.2rem;
+  }
+  main > h4 {
+    padding-left: 60px;
+    font-size: 1.8rem;
+  }
+  main > h5 {
+    padding-left: 80px;
+    font-size: 1.4rem;
+  }
+  main > h6 {
+    padding-left: 100px;
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 800px) {
   main > h1,
@@ -352,22 +424,22 @@ main > h6 {
     max-width: unset;
   }
   main > h1 {
-    padding-left: 4px;
+    padding-left: 0px;
   }
   main > h2 {
     padding-left: 10px;
   }
   main > h3 {
-    padding-left: 25px;
+    padding-left: 20px;
   }
   main > h4 {
-    padding-left: 50px;
+    padding-left: 30px;
   }
   main > h5 {
-    padding-left: 75px;
+    padding-left: 40px;
   }
   main > h6 {
-    padding-left: 100px;
+    padding-left: 50px;
   }
 }
 
@@ -379,7 +451,7 @@ main > [macro=layout]:last-child {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
-  text-align: justify;
+  text-align: left;
   text-rendering: optimizeLegibility;
   hyphens: auto;
 }
@@ -451,13 +523,13 @@ dl, ul, ol {
 }
 
 p, a {
-  font-family: "Roboto", serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
   hyphens: auto;
 }
 
 pre {
-  font-family: "Roboto Slab", monospace;
+  font-family: "Source Code Pro", monospace;
   text-rendering: optimizeLegibility;
 }
 
@@ -475,7 +547,7 @@ p[justify] {
 }
 
 li, dt, dd, th, td {
-  font-family: "Roboto Slab", monospace;
+  font-family: "Source Code Pro", monospace;
   text-rendering: optimizeLegibility;
   text-align: justify;
   hyphens: auto;
@@ -519,6 +591,67 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
   color: #dec3c3;
 }
 /* ========================================================================= */
+/* PAGE-NAV */
+/* ========================================================================= */
+
+[toc] > h1[page-title] {
+  font-size: 2em;
+  padding: 5px 0;
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #a5a5a5;
+  border-top: 1px solid #a5a5a5;
+  margin-bottom: 20px;
+}
+
+[toc] > ul[macro=page-nav] {
+  list-style: none;
+  padding-bottom: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: "Yomogi", cursive;
+}
+
+[toc] > ul[macro=page-nav] > li {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+[toc] > ul[macro=page-nav] > li > a {
+  text-decoration: none;
+}
+
+[toc] > ul[macro=page-nav] > li,
+[toc] > ul[macro=page-nav] > li > a {
+  color: #dba4f9;
+  font-family: "Yomogi", cursive;
+}
+/* SUB-SECTIONS */
+
+[toc] > ul[macro=page-nav] ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+[toc] > ul[macro=page-nav] ul > li {
+  font-size: 1.5rem;
+  text-align: left;
+  font-family: "Yomogi", cursive;
+}
+
+[toc] > ul[macro=page-nav] ul > li > a {
+  text-decoration: none;
+}
+
+[toc] > ul[macro=page-nav] ul > li,
+[toc] > ul[macro=page-nav] ul > li > a {
+  color: #dba4f9;
+  font-family: "Yomogi", cursive;
+}
+/* ========================================================================= */
 /* TOC */
 /* ========================================================================= */
 
@@ -551,7 +684,7 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
 
 [toc] > h1[toc-title] {
   font-size: 2em;
-  padding: 20px 0;
+  padding: 5px 0;
   margin: 0;
   font-family: "Dancing Script", cursive;
   text-align: center;
@@ -560,6 +693,12 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
   border-bottom: 1px solid #a5a5a5;
   border-top: 1px solid #a5a5a5;
   margin-bottom: 20px;
+}
+@media (max-width: 650px) {
+  [toc] > h1[site-title] {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 [macro=toc] {
@@ -586,31 +725,47 @@ h1, h2, h3, h4, h5, h6, p, dl, dd, dt, ul, ol, th, td {
   text-decoration: none;
 }
 
-[macro=toc] > li[for=h1] {
+ul[macro=toc] > li[for=h1][top-level]:not(:first-child) {
+  margin-top: 10px;
+}
+
+[macro=toc] > li[for=h1][top-level] {
   margin-left: 0;
+  border-bottom: 1px solid #a5a5a5;
+  border-top: 1px solid #a5a5a5;
+  width: 100%;
+  padding: 2px 0px;
+  text-align: center;
+}
+
+[macro=toc] > li[for=h1]:not([top-level]) {
+  margin-left: 15;
 }
 
 [macro=toc] > li[for=h2] {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 [macro=toc] > li[for=h3] {
-  margin-left: 40px;
-}
-
-[macro=toc] > li[for=h4] {
   margin-left: 60px;
 }
 
+[macro=toc] > li[for=h4] {
+  margin-left: 90px;
+}
+
 [macro=toc] > li[for=h5] {
-  margin-left: 80px;
+  margin-left: 120px;
 }
 
 [macro=toc] > li[for=h6] {
-  margin-left: 100px;
+  margin-left: 150px;
 }
 @media (max-width: 900px) {
-  [macro=toc] > li[for=h1] {
+  [macro=toc] > li[for=h1][top-level] {
+    margin-left: 0;
+  }
+  [macro=toc] > li[for=h1]:not([top-level]) {
     margin-left: 0;
   }
   [macro=toc] > li[for=h2] {
