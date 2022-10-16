@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@uiw/codemirror-extensions-basic-setup": "^4.12.3",
+    "@uiw/codemirror-extensions-events": "^4.12.3",
+    "@uiw/codemirror-themes-all": "^4.12.3",
+    "@uiw/react-codemirror": "^4.12.3"
+  }
+}

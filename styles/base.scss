@@ -37,6 +37,43 @@ table th, table td {
     padding: 10px;
 }
 
+tr:hover {
+    background-color: #2c2c2c87;
+}
+
+table span[data-table-list] {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 8px;
+}
+table span[data-table-list] > span {
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+table span[data-table-list][data-color] > span {
+    border: 1px solid #01ff5c;
+    color: #01ff5c;
+}
+table span[data-table-list][data-color1] > span {
+    border: 1px solid #c1ff02;
+    color: #c1ff02;
+}
+table span[data-table-list][data-color2] > span {
+    border: 1px solid #27fce2;
+    color: #27fce2;
+}
+
+mark[font][data-color] {
+    color: #01ff5c;
+}
+mark[font][data-color1] {
+    color: #c1ff02;
+}
+mark[font][data-color2] {
+    color: #27fce2;
+}
+
 img {
     // width: 100%;
     // max-width: 100%;

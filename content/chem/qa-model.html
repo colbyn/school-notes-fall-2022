@@ -1,103 +1,65 @@
-<h1 top-level>Chemistry</h1>
-<h2>Conventions</h2>
-<layout cols="4" boxed>
-    <note compact>
-        <p>Given some element <tex>\mathrm{X}</tex></p>
-        <layout cols="2">
-            <equation style="font-size: 3em;">
-                \ce{^{A}_{Z}X}
-            </equation>
-            <equation style="font-size: 3em;">
-                \ce{X-A}
-            </equation>
-        </layout>
-        <p>Where</p>
+<h2>Quantum Mechanical Models of the Atom</h2>
+<h3>The Electromagnetic Spectrum</h3>
+<img max-width="100%" src="../../images/chem/5.svg">
+<h3>Terms</h3>
+<dl>
+    <dt>Pauli Exclusion Principle</dt>
+    <dd>No two electrons in an atom can have the same four quantum numbers.</dd>
+    <dd>Pauli’s Principle prevents two electrons with the same spin from existing in the same subshell,
+        each subshell will be filled with one spin direction before they are filled with the opposite spin.
+        This is the second of Hund’s Rules.</dd>
+    <dt>Aufbau Principle</dt>
+    <dd>This pattern of orbital filling is known as the aufbau principle (the German word aufbau means “build up”).</dd>
+    <dt>Hund’s rule</dt>
+    <dd>When filling degenerate orbitals, electrons fill them singly first, then with parallel spins.</dd>
+    <dd>
+        I.e. start by filling boxes with single 'upward' arrows, and then once all of such boxes are maxed out,
+        then you add double arrows pointing in opposite directions.
+    </dd>
+    <dd>Pauli’s Principle prevents two electrons with the same spin from existing in the same subshell,
+        each subshell will be filled with one spin direction before they are filled with the opposite spin.
+        This is the second of Hund’s Rules.</dd>
+    <dt>Coulomb’s Law</dt>
+    <dd>
+        <equation>
+            \mathrm{E} &= \frac{1}{4\pi\varepsilon_0}\cdot\frac{q_1\;q_2}{r}
+        </equation>
+    </dd>
+</dl>
+<layout cols="2" boxed>
+    <note>
+        <h4>Aufbau Principle</h4>
+        <img max-width="900px" src="../../images/chem/18.svg">
+    </note>
+    <note>
+        <h4>Hund’s rule</h4>
+        <img max-width="900px" src="../../images/chem/19.svg">
+    </note>
+    <note>
+        <h4>Pauli's Exclusion Principle</h4>
+        <p>
+            Each election has a unique set of four quantum numbers (i.e. see quantum numbers).
+            They are
+        </p>
         <ul>
-            <li><tex>A = \text{neutrons + protons}</tex></li>
-            <li><tex>Z = \text{protons}</tex></li>
+            <li><tex>\mathrm{n}</tex></li>
+            <li><tex>\mathrm{l}</tex></li>
+            <li><tex>\mathrm{m}_l</tex></li>
+            <li><tex>\mathrm{m}_s</tex></li>
         </ul>
     </note>
-    <note>
-        <dl>
-            <dt><mark font>Cat</mark>ions</dt>
-            <dd><mark font>Pos</mark>itively (&#65291;) Charged</dd>
-            <dt>Anions</dt>
-            <dd>Negatively (&#8722;) Charged</dd>
-        </dl>
-        <hr>
-        <note compact>
-            <p center>Mnemonic</p>
-            <p center><mark font>Cat</mark>ions are <mark font>Paw</mark>sitive</p>
-        </note>
-    </note>
 </layout>
-<h2>Conventions on homework</h2>
-<layout cols="4" boxed>
-    <note>
-        <p>When a question says, determine the energy of 1 ㏖ of photons, the unit will be ᴶ/㏖.</p>
-    </note>
-</layout>
-<h2>Units</h2>
-<layout cols="3" boxed compact>
-    <equation>
-        1 \mol &= \sci{6.022}{23}
-    </equation>
-    <equation>
-        \small 1 \;\mathrm{amu} &\approx \;\text{protons} + \;\text{neutrons}
-    </equation>
-</layout>
-<h2>SI Prefixes</h2>
-<layout cols="2">
-    <table>
-        <thead><tr><th>Value</th><th>Prefix</th><th>Symbol</th></tr></thead>
-        <tr><th><tex>10^{1}</tex></th><td>deca</td><td><tex>\mathrm{da}</tex></td></tr>
-        <tr><th><tex>10^{2}</tex></th><td>hecto</td><td><tex>\mathrm{h}</tex></td></tr>
-        <tr><th><tex>10^{3}</tex></th><td>kilo</td><td><tex>\mathrm{k}</tex></td></tr>
-        <tr><th><tex>10^{6}</tex></th><td>mega</td><td><tex>\mathrm{M}</tex></td></tr>
-        <tr><th><tex>10^{9}</tex></th><td>giga</td><td><tex>\mathrm{G}</tex></td></tr>
-        <tr><th><tex>10^{12}</tex></th><td>tera</td><td><tex>\mathrm{T}</tex></td></tr>
-    </table>
-    <table>
-        <thead><tr><th>Value</th><th>Prefix</th><th>Symbol</th></tr></thead>
-        <tr><th><tex>10^{-1}</tex></th><td>deci</td><td><tex>\mathrm{d}</tex></td></tr>
-        <tr><th><tex>10^{-2}</tex></th><td>centi</td><td><tex>\mathrm{c}</tex></td></tr>
-        <tr><th><tex>10^{-3}</tex></th><td>mili</td><td><tex>\mathrm{m}</tex></td></tr>
-        <tr><th><tex>10^{-6}</tex></th><td>micro</td><td><tex>\mathrm{\mu}</tex></td></tr>
-        <tr><th><tex>10^{-9}</tex></th><td>nano</td><td><tex>\mathrm{n}</tex></td></tr>
-        <tr><th><tex>10^{-12}</tex></th><td>pico</td><td><tex>\mathrm{p}</tex></td></tr>
-    </table>
-</layout>
-<h2>Classification of Matter</h2>
-<layout cols="1" boxed>
-    <note>
-        <h3>Overview</h3>
-        <img max-width="900px" src="../images/chem/1.svg">
-        <h4>Mixtures</h4>
-        <layout cols="2">
-            <note>
-                <h5><mark font>Hetero</mark>geneous mixture</h5>
-                <p center>Where the prefix <mark font>Hetero-</mark> means <mark font>different</mark></p>
-                <img max-width="300px" src="../images/chem/2.svg">
-            </note>
-            <note>
-                <h5><mark font>Homo</mark>geneous mixture</h5>
-                <p center>Where the prefix <mark font>Homo-</mark> means <mark font>same</mark></p>
-                <img max-width="300px" src="../images/chem/3.svg">
-            </note>
-        </layout>
-    </note>
-</layout>
-<h2>Quantum Mechanics</h2>
-<h3>The Electromagnetic Spectrum</h3>
-<img max-width="100%" src="../images/chem/5.svg">
 <h3>Overview</h3>
-<img max-width="500px" src="../images/chem/4.svg">
+<img max-width="500px" src="../../images/chem/4.svg">
 <layout cols="1">
     <note>
         <h4>Formulas</h4>
         <layout cols="3">
             <equation>
                 \mathrm{f} = \nu &= \frac{c}{\lambda}
+            </equation>
+            <equation>
+                \mathrm{\lambda} = \frac{\smallText{speed}}{\smallText{frequency}}
             </equation>
             <equation>
                 \mathrm{E}
@@ -223,7 +185,17 @@
                 </equation>
             </note>
             <note>
-                <h5>Change in Energy That Occurs in an Atom When It Undergoes a Transition between Levels</h5>
+                <h5>Energy of an Electron in an Orbital with Quantum Number <tex>\mathrm{n}</tex> for any atom</h5>
+                <equation>
+                    E_n &= \sci{-2.18}{-18} \mathrm{J} \left(\frac{1}{n^2}\right) \cdot \mathrm{Z}^2
+                </equation>
+                <p>Where <tex>\mathrm{Z}</tex> is the atomic number of the given element.</p>
+            </note>
+            <note>
+                <h5>
+                    Change in Energy That Occurs in an Atom When It Undergoes a Transition between Levels
+                    <a href="#atomic-spectroscopy-detailed">(Further Details)</a>
+                </h5>
                 <p center>
                     <tex>n_{\small\text{initial}}</tex> and <tex>n_{\small\text{final}}</tex> 
                 </p>
@@ -235,18 +207,62 @@
                     <li>If <tex>\Delta{E}</tex> is positive, energy is being absorbed.</li>
                 </ul>
             </note>
+            <note>
+                <h5>Ionization Energy</h5>
+                <equation>
+                    \mathrm{IE}_{n,\smallText{Big Jump}} -1
+                        &= \smallText{# of valance electrons}\\
+                        &= \smallText{Element row #}
+                </equation>
+                <p>Where</p>
+                <ul>
+                    <li><tex>n</tex> is the electron number</li>
+                    <li>
+                        <tex>\smallText{Big jump}</tex> the point on the table where you see the highest difference/delta.
+                    </li>
+                </ul>
+            </note>
         </layout>
     </note>
 </layout>
+<h4>Atomic Spectroscopy</h4>
+<layout cols="2" boxed>
+    <note id="atomic-spectroscopy-detailed">
+        <h5>The Principal Quantum Number (n) (Hydrogen Atom)</h5>
+        <p>For the hydrogen atom, the energy of an electron in an orbital with quantum number <tex>n</tex> is given by</p>
+        <equation>
+            E_n = \sci{-2.18}{-18}\mathrm{J}\;\frac{1}{n^2}
+        </equation>
+        <p>Therefore the difference in energy is given by the following</p>
+        <equation>
+            \Delta E &= \Delta E_{\smallText{Final}} - \Delta E_{\smallText{Initial}}\\
+                     &= \left(\sci{-2.18}{-18}\mathrm{J}\;\frac{1}{{n_f}^2}\right)
+                     -  \left(\sci{-2.18}{-18}\mathrm{J}\;\frac{1}{{n_i}^2}\right)\\
+                     &= \sci{-2.18}{-18}\mathrm{J}\;\frac{1}{{n_f}^2}
+                     +  \sci{2.18}{-18}\mathrm{J}\;\frac{1}{{n_i}^2}\\
+                     &= \sci{-2.18}{-18}\mathrm{J}\; \left(\frac{1}{{n_f}^2} - \frac{1}{{n_i}^2}\right)
+        </equation>
+    </note>
+    <note id="atomic-spectroscopy-detailed">
+        <h5>The Principal Quantum Number (n) (Any Atom)</h5>
+        <p>For the hydrogen atom, the energy of an electron in an orbital with quantum number <tex>n</tex> is given by</p>
+        <p>TODO</p>
+        <equation>
+            E_n &= \sci{-2.18}{-18} \mathrm{J} \left(\frac{1}{n^2}\right) \cdot \mathrm{Z}^2
+        </equation>
+        <p>Where <tex>\mathrm{Z}</tex> is the atomic number of the given element.</p>
+    </note>
+</layout>
 <h4>Electron Configuration</h4>
-<layout cols="2">
+<layout cols="2" boxed>
     <note>
         <h5>Traditional Chart</h5>
-        <img max-width="600px" src="../images/chem/8.svg">
+        <img max-width="600px" src="../../images/chem/8.svg">
+        <img max-width="600px" src="../../images/chem/20.svg">
     </note>
     <note>
         <h5>Better Method</h5>
-        <img max-width="600px" src="../images/chem/9.svg">
+        <img max-width="600px" src="../../images/chem/9.svg">
     </note>
 </layout>
 <h5>Examples</h5>
@@ -292,6 +308,41 @@
             <li><tex>4s^2</tex> is in a <mark font>higher</mark> electron state</li>
             <li><tex>3d^6</tex> is in a <mark font>lower</mark> electron state</li>
         </ul>
+        <layout cols="1" boxed>
+            <note>
+                <p>
+                    Alternatively, to compute the lowest energy orbital, add the principle quantum number (<tex>n</tex>)
+                    to the The angular momentum quantum number (<tex>l</tex>) to get the orbital with the lowest energy.
+                    Therefore
+                </p>
+                <equation>
+                    \smallText{orbital with the lowest energy} &= O_{\smallText{min}} = n + l\\
+                </equation>
+                <p>Given <tex>\ce{4s^2}</tex> and <tex>\ce{3d^6}</tex></p>
+                <layout cols="2">
+                    <equation>
+                        \ce{4s^2}\;\left\{
+                        \begin{array}{ll}
+                        n &= 4\\
+                        i &= 0\\
+                        \therefore\; O_{\smallText{min}} &= 4
+                        \end{array}
+                        \right.
+                    </equation>
+                    <equation>
+                        \ce{3d^6}\;\left\{
+                        \begin{array}{ll}
+                        n &= 3\\
+                        i &= 2\\
+                        \therefore\; O_{\smallText{min}} &= 5
+                        \end{array}
+                        \right.
+                    </equation>
+                </layout>
+                <p>NVM this is an exception to the rule...</p>
+                <p>TODO move this somewhere else...</p>
+            </note>
+        </layout>
         <p>As shown</p>
         <equation>
             \underbrace{1s^2\; 2s^2\; 2p^6\; 3s^2\; 3p^6}\;
@@ -568,13 +619,13 @@
 <h5>Examples</h5>
 <layout cols="2" boxed>
     <note>
-        <img max-width="600px" src="../images/chem/10.svg">
+        <img max-width="600px" src="../../images/chem/10.svg">
     </note>
     <note>
-        <img max-width="600px" src="../images/chem/12.svg">
+        <img max-width="600px" src="../../images/chem/12.svg">
     </note>
     <note>
-        <img max-width="600px" src="../images/chem/11.svg">
+        <img max-width="600px" src="../../images/chem/11.svg">
     </note>
 </layout>
 
@@ -588,7 +639,7 @@
             align with overlapping crests—a wave with <mark font>twice the amplitude</mark> results. This is
             called <mark font>constructive interference</mark>.
         </p>
-        <img max-width="800px" src="../images/chem/6.svg">
+        <img max-width="800px" src="../../images/chem/6.svg">
     </note>
     <note>
         <h6>Destructive Interference</h6>
@@ -597,8 +648,6 @@
             align so that the crest from one overlaps with the trough from the other—the waves
             cancel by <mark font>destructive interference</mark>.
         </p>
-        <img max-width="800px" src="../images/chem/7.svg">
+        <img max-width="800px" src="../../images/chem/7.svg">
     </note>
 </layout>
-
-

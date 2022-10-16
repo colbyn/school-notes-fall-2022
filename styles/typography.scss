@@ -108,7 +108,6 @@ p[justify] {
 li, dt, dd, th, td {
     font-family: 'Source Code Pro', monospace;
     text-rendering: optimizeLegibility;
-    text-align: justify;
     hyphens: auto;
     padding: 0 10px;
 }
@@ -129,6 +128,10 @@ li > *:last-child, li > p:last-child {
 li, dd {
     margin-bottom: 4px;
 }
+
+// span[red] {
+//     color: red;
+// }
 
 li:last-child,
 dd:last-child {

@@ -4,6 +4,12 @@
 /* ========================================================================= */
 /* LATEX */
 /* ========================================================================= */
+[macro="texblock"][latex="block"] {
+    font-size: 1.5rem;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 [macro="equation"][latex="block"] {
     font-size: 1.5rem;
     max-width: 100%;
@@ -15,6 +21,9 @@
 }
 
 [macro="equation"] > mjx-container {
+    margin: 10px 0 !important;
+}
+[macro="texblock"] > mjx-container {
     margin: 10px 0 !important;
 }
 
@@ -155,10 +164,6 @@
     font-size: 1.5rem;
 }
 
-[macro="equation"] {
-    font-size: 2.5rem;
-}
-
 
 [macro='note'][small] p,
 [macro='note'][small] h1,
@@ -213,7 +218,10 @@
     [macro='layout'][boxed] > [macro="equation"] {
         box-shadow: 0px 0px 1px 1px #655f65;
     }
-    [macro="equation"] {
+    [macro='layout'][boxed] > [macro="texblock"] {
+        box-shadow: 0px 0px 1px 1px #655f65;
+    }
+    [macro="equation"], [macro="texblock"] {
         // color: #fff;
         color: #ffb7e4;
     }
